@@ -21,7 +21,7 @@
 						echo wp_kses_post( $copy_text );
 					} else {
 						echo sprintf( esc_html__( '&copy; %1$s %2$s - All Rights Reserved Made by %3$s', 'cnvschool' ), date( 'Y' ), get_bloginfo(
-							'name' ), '<a href="' . esc_url( 'https://www.codenestventure.com/' ) . '">' . esc_attr( 'CodeNest Venture' ) . '</a>' );
+							'name' ), '<a href="' . esc_url( 'https://www.codenestventures.com/' ) . '" target="_blank">' . esc_attr( 'CodeNest Venture' ) . '</a>' );
 					}
 					?>
 				</p>

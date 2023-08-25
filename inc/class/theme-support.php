@@ -61,8 +61,6 @@ if ( ! class_exists( 'CNV_Theme_Support' ) ) {
 					'gallery',
 					'caption'
 				) );
-				add_theme_support( 'woocommerce' );
-
 
 				// Set up the WordPress core custom background feature.
 				add_theme_support( 'custom-background', apply_filters( 'cnv_custom_background_args', array(
@@ -83,16 +81,7 @@ if ( ! class_exists( 'CNV_Theme_Support' ) ) {
 				) );
 
 				//Image Size
-				add_image_size( 'gotox-team', 265, 300, true );
-				add_image_size( 'cnv_project_grid_625x385', 625, 385, true );
-				add_image_size( 'cnv_project_details_1300x600', 1300, 600, true );
-				add_image_size( 'cnv_project_slider', 600, 470, true );
-				add_image_size( 'cnv_blog_grid_410x290', 410, 290, true );
-				add_image_size( 'cnv_blog_grid_370x400', 370, 390, true );
-				add_image_size( 'cnv_blog_grid_400x182', 400, 182, true );
-				add_image_size( 'gotox-thumbnail_90_90', 90, 90, true );
-				add_image_size( 'gotox-service_740x275', 740, 275, true );
-				add_image_size( 'gotox-blog-list_300x185', 300, 185, true );
+				add_image_size( 'cnv-team', 265, 300, true );
 			}
 		}
 
@@ -101,7 +90,6 @@ if ( ! class_exists( 'CNV_Theme_Support' ) ) {
 			register_nav_menus(
 				array(
 					'primary' => esc_html__( 'Primary Menu', 'cnvschool' ),
-                    'canvas-menu'  => esc_html__( 'Sidebar Menu', 'cnvschool' ),
 				)
 			);
 		}
