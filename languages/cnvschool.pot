@@ -1,0 +1,2389 @@
+# Copyright (C) 2023 Themeboxr
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: CNV 1.0.10\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/cnvschool\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-03-14T12:55:27+01:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.7.1\n"
+"X-Domain: cnvschool\n"
+
+#. Theme Name of the theme
+msgid "CNV"
+msgstr ""
+
+#. Theme URI of the theme
+#. Author URI of the theme
+msgid "https://themeboxr.com"
+msgstr ""
+
+#. Description of the theme
+msgid "WordPress theme for Alumni Website"
+msgstr ""
+
+#. Author of the theme
+msgid "Themeboxr"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Custom Login Page"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Custom Profile Page"
+msgstr ""
+
+#: package/cnvschool/404.php:37
+#: package/cnvschool/inc/framework/admin-option.php:1144
+msgid "The page you’ re looking for fly away"
+msgstr ""
+
+#: package/cnvschool/404.php:43
+msgid "There many variations of passages available but the majority have suffered alteration in that that injected humour."
+msgstr ""
+
+#: package/cnvschool/404.php:45
+msgid "Back to Home"
+msgstr ""
+
+#. translators: %s: post title
+#: package/cnvschool/comments.php:36
+msgctxt "comments title"
+msgid "<span class=\"number-comments\">1</span> Comment"
+msgstr ""
+
+#: package/cnvschool/comments.php:40
+msgctxt "comments title"
+msgid "<span class=\"number-comments\">%1$s</span> Comments"
+msgid_plural "<span class=\"number-comments\">%1$s</span> Comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: package/cnvschool/comments.php:71
+msgid "Name *"
+msgstr ""
+
+#: package/cnvschool/comments.php:72
+msgid "Email *"
+msgstr ""
+
+#: package/cnvschool/comments.php:74
+msgid "Your Comment"
+msgstr ""
+
+#: package/cnvschool/header.php:30
+msgid "Skip to content"
+msgstr ""
+
+#: package/cnvschool/inc/class/theme-helper.php:81
+#: package/cnvschool/inc/class/theme-helper.php:140
+msgid "Home"
+msgstr ""
+
+#: package/cnvschool/inc/class/theme-helper.php:117
+#: package/cnvschool/inc/class/theme-helper.php:119
+#: package/cnvschool/inc/class/theme-helper.php:121
+msgid "Archive for: %s"
+msgstr ""
+
+#: package/cnvschool/inc/class/theme-helper.php:119
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: package/cnvschool/inc/class/theme-helper.php:121
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: package/cnvschool/inc/class/theme-helper.php:123
+msgid "Archive for"
+msgstr ""
+
+#: package/cnvschool/inc/class/theme-helper.php:126
+msgid "Blog Archives"
+msgstr ""
+
+#: package/cnvschool/inc/class/theme-helper.php:129
+msgid "Search Results"
+msgstr ""
+
+#: package/cnvschool/inc/class/theme-helper.php:132
+msgid "Events"
+msgstr ""
+
+#: package/cnvschool/inc/class/theme-helper.php:145
+#: package/cnvschool/inc/framework/admin-option.php:740
+#: package/cnvschool/template-parts/header/page-header.php:51
+#: package/cnvschool/template-parts/header/page-header.php:72
+#: package/cnvschool/template-parts/header/page-header.php:112
+#: package/cnvschool/template-parts/header/page-header.php:127
+msgid "Blog"
+msgstr ""
+
+#: package/cnvschool/inc/class/theme-helper.php:160
+msgid "Post navigation"
+msgstr ""
+
+#: package/cnvschool/inc/class/theme-helper.php:162
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr ""
+
+#: package/cnvschool/inc/class/theme-helper.php:164
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: package/cnvschool/inc/class/theme-helper.php:217
+#: package/cnvschool/inc/class/walker-comment.php:42
+msgid "Pingback:"
+msgstr ""
+
+#: package/cnvschool/inc/class/theme-helper.php:217
+#: package/cnvschool/inc/class/walker-comment.php:42
+msgid "(Edit)"
+msgstr ""
+
+#: package/cnvschool/inc/class/theme-helper.php:233
+msgid "Post author"
+msgstr ""
+
+#. translators: 1: date, 2: time
+#: package/cnvschool/inc/class/theme-helper.php:234
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: package/cnvschool/inc/class/theme-helper.php:238
+#: package/cnvschool/inc/class/walker-comment.php:69
+msgid "Reply"
+msgstr ""
+
+#: package/cnvschool/inc/class/theme-helper.php:246
+#: package/cnvschool/inc/class/walker-comment.php:66
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: package/cnvschool/inc/class/theme-helper.php:250
+#: package/cnvschool/inc/class/walker-comment.php:61
+msgid "Edit"
+msgstr ""
+
+#: package/cnvschool/inc/class/theme-helper.php:272
+msgid "0 comments"
+msgstr ""
+
+#: package/cnvschool/inc/class/theme-helper.php:274
+msgid " comments"
+msgstr ""
+
+#: package/cnvschool/inc/class/theme-helper.php:276
+msgid "1 comment"
+msgstr ""
+
+#: package/cnvschool/inc/class/theme-helper.php:282
+#: package/cnvschool/inc/class/theme-helper.php:286
+msgid "Tags: %2$s"
+msgstr ""
+
+#: package/cnvschool/inc/class/theme-helper.php:284
+msgid "%1$s / Tags: %2$s"
+msgstr ""
+
+#. translators: 1: list of tags.
+#: package/cnvschool/inc/class/theme-helper.php:288
+#: package/cnvschool/inc/class/theme-helper.php:363
+msgid "%1$s"
+msgstr ""
+
+#. Translators: used between list items, there is a space after the comma.
+#: package/cnvschool/inc/class/theme-helper.php:296
+msgid "View all posts by %s"
+msgstr ""
+
+#: package/cnvschool/inc/class/theme-helper.php:297
+msgid "By %1$s"
+msgstr ""
+
+#. translators: %s: post author.
+#: package/cnvschool/inc/class/theme-helper.php:334
+msgctxt "post author"
+msgid "%s"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: package/cnvschool/inc/class/theme-helper.php:345
+msgid " "
+msgstr ""
+
+#. translators: 1: list of categories.
+#: package/cnvschool/inc/class/theme-helper.php:348
+msgid " %1$s"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: package/cnvschool/inc/class/theme-helper.php:360
+msgctxt "list item separator"
+msgid " "
+msgstr ""
+
+#: package/cnvschool/inc/class/theme-helper.php:492
+msgid "by"
+msgstr ""
+
+#: package/cnvschool/inc/class/theme-helper.php:618
+msgid "1 Comment"
+msgstr ""
+
+#: package/cnvschool/inc/class/theme-helper.php:620
+msgid " Comments"
+msgstr ""
+
+#: package/cnvschool/inc/class/theme-helper.php:823
+#: package/cnvschool/inc/class/theme-helper.php:873
+msgid "Older Post"
+msgstr ""
+
+#: package/cnvschool/inc/class/theme-helper.php:838
+#: package/cnvschool/inc/class/theme-helper.php:888
+msgid "Next Post"
+msgstr ""
+
+#: package/cnvschool/inc/class/theme-helper.php:912
+#: package/cnvschool/inc/class/theme-helper.php:930
+#: package/cnvschool/inc/framework/meta-option.php:273
+#: package/cnvschool/inc/template-functions.php:55
+msgid "Default"
+msgstr ""
+
+#: package/cnvschool/inc/class/theme-support.php:98
+msgid "Primary Menu"
+msgstr ""
+
+#: package/cnvschool/inc/class/theme-support.php:99
+msgid "Footer Menu"
+msgstr ""
+
+#: package/cnvschool/inc/class/theme-support.php:119
+msgid "Add widget here to appear it in sidebar."
+msgstr ""
+
+#: package/cnvschool/inc/class/theme-support.php:130
+msgid "Footer Column 1"
+msgstr ""
+
+#: package/cnvschool/inc/class/theme-support.php:134
+msgid "Footer Column 2"
+msgstr ""
+
+#: package/cnvschool/inc/class/theme-support.php:138
+msgid "Footer Column 3"
+msgstr ""
+
+#: package/cnvschool/inc/class/theme-support.php:142
+msgid "Footer Column 4"
+msgstr ""
+
+#: package/cnvschool/inc/class/theme-support.php:152
+msgid "This area will display in footer like a column. Add widget here to appear it in footer column."
+msgstr ""
+
+#: package/cnvschool/inc/class/theme-support.php:163
+msgid "Shop Products"
+msgstr ""
+
+#: package/cnvschool/inc/class/theme-support.php:165
+msgid "Add widgets here to appear in your sidebar on shop page."
+msgstr ""
+
+#: package/cnvschool/inc/customizer.php:34
+msgid "Header Settings"
+msgstr ""
+
+#: package/cnvschool/inc/customizer.php:42
+msgid "Mailchimp Settings"
+msgstr ""
+
+#: package/cnvschool/inc/customizer.php:72
+msgid "Footer Settings"
+msgstr ""
+
+#: package/cnvschool/inc/customizer.php:73
+msgid "Manage your footer widget position sizes and Copyright information."
+msgstr ""
+
+#: package/cnvschool/inc/customizer.php:89
+msgid "Display on site"
+msgstr ""
+
+#: package/cnvschool/inc/customizer.php:99
+#: package/cnvschool/inc/framework/meta-option.php:29
+msgid "Header Style"
+msgstr ""
+
+#: package/cnvschool/inc/customizer.php:110
+msgid "MailChimp API"
+msgstr ""
+
+#: package/cnvschool/inc/customizer.php:120
+msgid "API Key"
+msgstr ""
+
+#: package/cnvschool/inc/customizer.php:121
+msgid "Enter the mailchimp api key to use newsletter form. You can get the api here: http://bit.ly/2Vh4Opr"
+msgstr ""
+
+#: package/cnvschool/inc/customizer.php:131
+msgid "List ID"
+msgstr ""
+
+#: package/cnvschool/inc/customizer.php:132
+msgid "Enter the mailchimp list id. You can found list here: http://bit.ly/2GzQMa7"
+msgstr ""
+
+#: package/cnvschool/inc/customizer.php:187
+msgid "&copy; %1$s %2$s - Designed by %3$s"
+msgstr ""
+
+#: package/cnvschool/inc/customizer.php:190
+msgid "PixelSigns"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:10
+msgid "Theme Option"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:12
+msgid "Theme Settings"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:19
+msgid "General"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:25
+msgid "Enable Preloader"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:30
+msgid "Preloader type"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:32
+msgid "Animated Text"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:33
+msgid "CSS"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:34
+msgid "Media"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:41
+msgid "Preloader Image"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:42
+msgid "Upload Your Image"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:48
+msgid "Preloader Style"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:52
+msgid "Ball Pulse"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:53
+msgid "Ball Grid Pulse"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:54
+msgid "Ball Clip Rotate"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:55
+msgid "Ball Clip Rotate Pulse"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:56
+msgid "Ball Clip Rotate Multiple"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:57
+msgid "Ball Pulse Rise"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:58
+msgid "Ball Pulse Sync"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:59
+msgid "Ball Beat"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:60
+msgid "Ball Gird Beat"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:61
+msgid "Ball Rotate"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:62
+msgid "Ball Zig-Zag"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:63
+msgid "Ball-Zig-Zag Deflect"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:64
+msgid "Ball Triangle Path"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:65
+msgid "Ball Scale"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:66
+msgid "Ball Scale Ripple"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:67
+msgid "Ball Scale Multiple"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:68
+msgid "Ball Scale Ripple Multiple"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:69
+msgid "Ball Spin Fade Loader"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:70
+msgid "Square Spin"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:71
+msgid "Cube Transition"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:72
+msgid "Line Scale"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:73
+msgid "Line Scale Party"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:74
+msgid "Line Scale Pulse Out"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:75
+msgid "Line Scale Pulse Out Rapid"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:76
+msgid "Line Spin Fade Loader"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:77
+msgid "Triangle Skew Spin"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:78
+msgid "Pacman"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:79
+msgid "Semi Circle Spin"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:86
+msgid "Preloader Text"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:87
+msgid "CNV"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:93
+msgid "Preloader background"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:101
+msgid "Text Color"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:111
+msgid "Display Back To Top Button"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:117
+msgid "Enable Enable/Disable Smooth Scroll"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:124
+msgid "Show Back To Top Preloader"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:132
+#: package/cnvschool/inc/framework/admin-option.php:254
+#: package/cnvschool/inc/framework/meta-option.php:192
+#: package/cnvschool/inc/framework/meta-option.php:232
+msgid "Button Color"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:133
+#: package/cnvschool/inc/framework/admin-option.php:255
+#: package/cnvschool/inc/framework/admin-option.php:292
+#: package/cnvschool/inc/framework/meta-option.php:193
+#: package/cnvschool/inc/framework/meta-option.php:233
+msgid "Choose button color"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:142
+#: package/cnvschool/inc/framework/admin-option.php:264
+#: package/cnvschool/inc/framework/meta-option.php:203
+msgid "Button BG Color"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:143
+#: package/cnvschool/inc/framework/admin-option.php:265
+#: package/cnvschool/inc/framework/admin-option.php:302
+#: package/cnvschool/inc/framework/meta-option.php:204
+#: package/cnvschool/inc/framework/meta-option.php:244
+msgid "Choose button background color"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:152
+#: package/cnvschool/inc/framework/admin-option.php:301
+#: package/cnvschool/inc/framework/meta-option.php:243
+msgid "Button Hover BG Color"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:153
+msgid "Choose button hover background color"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:175
+#: package/cnvschool/inc/framework/meta-option.php:22
+msgid "Header"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:181
+msgid "Settings"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:187
+msgid "Enable Header Sticky"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:194
+#: package/cnvschool/inc/framework/meta-option.php:38
+msgid "Transparent Menu"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:201
+#: package/cnvschool/inc/framework/meta-option.php:46
+msgid "Transparent Header Color"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:203
+#: package/cnvschool/inc/framework/meta-option.php:48
+msgid "Dark (For light background)"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:204
+#: package/cnvschool/inc/framework/meta-option.php:49
+msgid "Light (For dark Background)"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:212
+msgid "Responsive Menu"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:219
+msgid "Header Nav Right"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:225
+msgid "Search On/Off"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:232
+msgid "Button On/Off"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:239
+msgid "Button Label"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:240
+msgid "Get Started"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:246
+msgid "Button Link"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:274
+#: package/cnvschool/inc/framework/meta-option.php:214
+msgid "Button Border"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:281
+#: package/cnvschool/inc/framework/meta-option.php:222
+msgid "Button Border Radius"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:291
+msgid "Button Hover Color"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:311
+#: package/cnvschool/inc/framework/meta-option.php:254
+msgid "Button Hover Border"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:318
+#: package/cnvschool/inc/framework/meta-option.php:94
+msgid "Header Menu Style"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:324
+#: package/cnvschool/inc/framework/admin-option.php:371
+#: package/cnvschool/inc/framework/meta-option.php:101
+#: package/cnvschool/inc/framework/meta-option.php:160
+msgid "Menu Text Color"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:325
+#: package/cnvschool/inc/framework/admin-option.php:348
+#: package/cnvschool/inc/framework/admin-option.php:372
+#: package/cnvschool/inc/framework/meta-option.php:102
+#: package/cnvschool/inc/framework/meta-option.php:134
+#: package/cnvschool/inc/framework/meta-option.php:161
+msgid "You can change menu text color."
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:336
+#: package/cnvschool/inc/framework/admin-option.php:379
+#: package/cnvschool/inc/framework/meta-option.php:120
+#: package/cnvschool/inc/framework/meta-option.php:170
+msgid "Menu Text Hover Color"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:337
+#: package/cnvschool/inc/framework/admin-option.php:356
+#: package/cnvschool/inc/framework/admin-option.php:380
+#: package/cnvschool/inc/framework/meta-option.php:121
+#: package/cnvschool/inc/framework/meta-option.php:142
+#: package/cnvschool/inc/framework/meta-option.php:171
+msgid "You can change menu text hover color."
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:347
+#: package/cnvschool/inc/framework/meta-option.php:133
+msgid "Menu Dropdown Text Color"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:355
+#: package/cnvschool/inc/framework/meta-option.php:141
+msgid "Menu Dropdown Text Hover Color"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:365
+#: package/cnvschool/inc/framework/meta-option.php:154
+msgid "Header Sticky Menu Style"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:381
+#: package/cnvschool/inc/framework/admin-option.php:462
+#: package/cnvschool/inc/framework/admin-option.php:470
+#: package/cnvschool/inc/framework/admin-option.php:478
+#: package/cnvschool/inc/framework/admin-option.php:487
+#: package/cnvschool/inc/framework/admin-option.php:494
+#: package/cnvschool/inc/framework/admin-option.php:508
+#: package/cnvschool/inc/framework/admin-option.php:515
+#: package/cnvschool/inc/framework/admin-option.php:1137
+#: package/cnvschool/inc/framework/meta-option.php:59
+#: package/cnvschool/inc/framework/meta-option.php:68
+#: package/cnvschool/inc/framework/meta-option.php:78
+#: package/cnvschool/inc/framework/meta-option.php:88
+#: package/cnvschool/inc/framework/meta-option.php:122
+#: package/cnvschool/inc/framework/meta-option.php:172
+msgid "Upload"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:393
+msgid "Top Bar"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:399
+msgid "Enable Top Bar"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:401
+msgid "Enable/Disable Top Bar"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:408
+msgid "Phone Number"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:410
+msgid "Enter your phone number"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:417
+msgid "Email Address"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:419
+msgid "Enter your email address"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:426
+msgid "Location"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:428
+msgid "Enter your location"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:435
+msgid "Enable Cart Icon"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:437
+msgid "Enable/Disable Cart Icon"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:444
+msgid "Enable Login/Register Menu"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:446
+msgid "Enable/Disable Login/Register Menu"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:455
+#: package/cnvschool/inc/framework/admin-option.php:461
+msgid "Logo"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:463
+#: package/cnvschool/inc/framework/admin-option.php:471
+msgid "Upload your Logo for the header"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:469
+msgid "Transparent Header Logo"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:477
+#: package/cnvschool/inc/framework/meta-option.php:67
+msgid "Retina Logo Upload @2x"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:479
+#: package/cnvschool/inc/framework/meta-option.php:69
+msgid "Upload your Retina Logo. This should be your Logo in double size (If your logo is 100 x 20px, it should be 200 x 40px)"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:485
+#: package/cnvschool/inc/framework/meta-option.php:76
+msgid "Sticky Logo"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:486
+#: package/cnvschool/inc/framework/meta-option.php:77
+msgid "Upload logo for Header Sticky and Inner Page."
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:493
+#: package/cnvschool/inc/framework/meta-option.php:86
+msgid "Sticky Retina Logo @2x"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:495
+msgid "Upload Retina logo for sticky header. This should be your Logo in double size (If your logo is 100 x 20px, it should be 200 x 40px)"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:500
+#: package/cnvschool/inc/framework/admin-option.php:506
+msgid "Mobile Logo"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:507
+msgid "Upload logo for mobile menu."
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:514
+msgid "Mobile Retina Logo @2x"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:516
+msgid "Upload Retina logo for  mobile menu. This should be your Logo in double size (If your logo is 100 x 20px, it should be 200 x 40px)"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:524
+#: package/cnvschool/inc/framework/meta-option.php:327
+msgid "Footer"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:531
+#: package/cnvschool/inc/framework/meta-option.php:344
+msgid "Select Footer Style"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:538
+#: package/cnvschool/inc/framework/meta-option.php:352
+msgid "Switch Footer Dark or Light"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:540
+#: package/cnvschool/inc/framework/meta-option.php:354
+msgid "Dark"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:541
+#: package/cnvschool/inc/framework/meta-option.php:355
+msgid "Light"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:549
+msgid "Footer Social Show/Hide"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:556
+msgid "Padding Top/Bottom"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:569
+msgid "Copyright Text"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:574
+msgid " Footer Style"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:580
+msgid "Footer Background Color"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:588
+msgid "Widget Title Color"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:595
+#: package/cnvschool/inc/framework/admin-option.php:721
+#: package/cnvschool/inc/framework/admin-option.php:1162
+msgid "Header Background"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:596
+#: package/cnvschool/inc/framework/admin-option.php:722
+#: package/cnvschool/inc/framework/admin-option.php:1163
+#: package/cnvschool/inc/framework/meta-option.php:285
+msgid "Default: Featured image, if fail will get image from global settings."
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:613
+msgid "Link Color"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:619
+msgid "Link Color Hover"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:628
+msgid " Social Link"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:634
+msgid "Icon Color"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:640
+msgid "Border Color"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:648
+msgid "Hover Background Color"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:657
+msgid "Hover Icon Color"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:666
+#: package/cnvschool/inc/framework/admin-option.php:886
+#: package/cnvschool/inc/framework/admin-option.php:1006
+msgid "Page Header"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:672
+msgid " Page Header Settings"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:677
+msgid "Page Header Enable"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:693
+msgid "Banner Height"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:707
+msgid "Default Title"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:708
+msgid "Set the default title for the page header"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:713
+#: package/cnvschool/inc/framework/meta-option.php:301
+msgid "Title Typography"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:747
+msgid "Columns"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:748
+msgid "Display number of post per row"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:761
+#: package/cnvschool/inc/framework/admin-option.php:918
+msgid "Layout"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:774
+msgid "Blog Archive Sidebar Width"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:786
+msgid "Blog Archive Sidebar Side Gap"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:806
+msgid "Display Author Bio Box"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:813
+msgid "Share On Post"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:820
+msgid "Hide post-meta author?"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:826
+msgid "Hide post-meta comments?"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:832
+msgid "Hide post-meta categories?"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:838
+msgid "Hide post-meta date?"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:844
+msgid " Single Post"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:850
+msgid "Hide Post Navigation?"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:857
+msgid "Hide Related Post?"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:864
+msgid "Related Post Title"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:865
+msgid "Related Posts"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:874
+msgid "Woocommerce"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:880
+msgid "Archive"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:892
+#: package/cnvschool/inc/framework/admin-option.php:1012
+msgid "Enable Page Header"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:898
+#: package/cnvschool/inc/framework/admin-option.php:1018
+msgid "Page Title"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:900
+msgid "Shop"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:905
+#: package/cnvschool/inc/framework/admin-option.php:1025
+msgid "Page Description"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:911
+msgid "Page Layout"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:931
+msgid "Column"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:944
+msgid "Product Style"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:947
+msgid "One"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:948
+msgid "Two"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:949
+msgid "Three"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:950
+msgid "Four"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:958
+msgid "Shop Archive Sidebar Width"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:970
+msgid "Shop Archive Sidebar Side Gap"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:993
+msgid "Product Per page"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:1020
+msgid "Shop Details"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:1032
+msgid "Show Share Social Link"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:1038
+msgid "Related Product Setting"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:1044
+msgid "Related Post Show/Hide"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:1051
+msgid "Related product Per Page"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:1057
+msgid "Related Post Tittle"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:1059
+msgid "Related Post"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:1067
+#: package/cnvschool/inc/framework/portfolio.php:34
+msgid "Social Link"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:1069
+#: package/cnvschool/inc/framework/admin-option.php:1076
+#: package/cnvschool/inc/framework/admin-option.php:1121
+msgid "This social profiles will display in your whole site."
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:1075
+msgid "Social links"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:1077
+#: package/cnvschool/inc/framework/portfolio.php:24
+msgid "Add New"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:1083
+#: package/cnvschool/woocommerce/single-product-reviews.php:89
+msgid "Name"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:1088
+msgid "Url"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:1093
+msgid "Icon"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:1100
+#: package/cnvschool/inc/framework/portfolio.php:45
+msgid "Facebook"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:1106
+#: package/cnvschool/inc/framework/portfolio.php:50
+msgid "Twitter"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:1112
+msgid "Dribbble"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:1129
+msgid "404 Page"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:1136
+msgid "Image"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:1142
+msgid "Error Title"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:1149
+#: package/cnvschool/inc/menu/edit-menu.php:219
+#: package/cnvschool/inc/menu/edit_mega_menu_walker.php:219
+msgid "Description"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:1151
+msgid "Tell us what you are looking for:"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:1156
+msgid " Style"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:1180
+msgid "Error Text Color"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:1187
+#: package/cnvschool/inc/framework/admin-option.php:1318
+msgid "Heading Color"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:1194
+msgid "Content Color"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:1203
+msgid "Typography"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:1208
+msgid "Body Font Settings"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:1214
+msgid "Body"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:1223
+msgid "Heading Font Settings"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:1228
+msgid "Heading H1"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:1239
+msgid "Heading H2"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:1250
+msgid "Heading H3"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:1261
+msgid "Heading H4"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:1272
+msgid "Heading H5"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:1284
+msgid "Heading H6"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:1298
+msgid "Color Scheme"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:1305
+msgid "General Color"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:1311
+msgid "Body Color"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:1325
+msgid "Primary Color"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:1326
+msgid "Main Color Scheme"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:1371
+msgid "Section Background Color"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:1377
+msgid "Use Theme Gradient?"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:1379
+msgid "On"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:1380
+msgid "Off"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:1410
+msgid "Background Color"
+msgstr ""
+
+#: package/cnvschool/inc/framework/admin-option.php:1421
+msgid "Backup"
+msgstr ""
+
+#: package/cnvschool/inc/framework/icon.php:11
+msgid "Fontawesome Five (Free)"
+msgstr ""
+
+#: package/cnvschool/inc/framework/meta-option.php:13
+msgid "Page Option"
+msgstr ""
+
+#: package/cnvschool/inc/framework/meta-option.php:30
+#: package/cnvschool/inc/framework/meta-option.php:335
+#: package/cnvschool/inc/menu/mega_menu.php:22
+msgid "Yes"
+msgstr ""
+
+#: package/cnvschool/inc/framework/meta-option.php:31
+#: package/cnvschool/inc/framework/meta-option.php:336
+#: package/cnvschool/inc/menu/mega_menu.php:23
+msgid "No"
+msgstr ""
+
+#: package/cnvschool/inc/framework/meta-option.php:58
+msgid "Logo Upload"
+msgstr ""
+
+#: package/cnvschool/inc/framework/meta-option.php:60
+msgid "Upload logo for Header"
+msgstr ""
+
+#: package/cnvschool/inc/framework/meta-option.php:87
+msgid "Upload Retina logo for Header Sticky."
+msgstr ""
+
+#: package/cnvschool/inc/framework/meta-option.php:185
+msgid "Header Button Style"
+msgstr ""
+
+#: package/cnvschool/inc/framework/meta-option.php:271
+msgid "Page Header Option"
+msgstr ""
+
+#: package/cnvschool/inc/framework/meta-option.php:274
+msgid "Enabled"
+msgstr ""
+
+#: package/cnvschool/inc/framework/meta-option.php:275
+msgid "Disabled"
+msgstr ""
+
+#: package/cnvschool/inc/framework/meta-option.php:284
+msgid "Header Image"
+msgstr ""
+
+#: package/cnvschool/inc/framework/meta-option.php:294
+msgid "Custom Title"
+msgstr ""
+
+#: package/cnvschool/inc/framework/meta-option.php:295
+msgid "Set custom title for the page header. Default: The post title."
+msgstr ""
+
+#: package/cnvschool/inc/framework/meta-option.php:308
+msgid "Title Color"
+msgstr ""
+
+#: package/cnvschool/inc/framework/meta-option.php:316
+msgid "Header Breadcrumbs"
+msgstr ""
+
+#: package/cnvschool/inc/framework/meta-option.php:317
+msgid "Display breadcrumbs on the page header"
+msgstr ""
+
+#: package/cnvschool/inc/framework/meta-option.php:334
+msgid "Footer Style"
+msgstr ""
+
+#: package/cnvschool/inc/framework/meta-option.php:364
+msgid "Padding Top"
+msgstr ""
+
+#: package/cnvschool/inc/framework/meta-option.php:375
+msgid "Footer Background"
+msgstr ""
+
+#: package/cnvschool/inc/framework/meta-option.php:376
+msgid "Choose footer background color"
+msgstr ""
+
+#: package/cnvschool/inc/framework/portfolio.php:23
+msgid "Social Share Links"
+msgstr ""
+
+#: package/cnvschool/inc/framework/portfolio.php:29
+msgid "Social Name"
+msgstr ""
+
+#: package/cnvschool/inc/framework/portfolio.php:39
+msgid "Social Icon"
+msgstr ""
+
+#: package/cnvschool/inc/framework/portfolio.php:55
+#: package/cnvschool/inc/framework/portfolio.php:60
+msgid "Linkedin"
+msgstr ""
+
+#. translators: %s: title of menu item which is invalid
+#: package/cnvschool/inc/menu/edit-menu.php:86
+#: package/cnvschool/inc/menu/edit_mega_menu_walker.php:86
+msgid "%s (Invalid)"
+msgstr ""
+
+#. translators: %s: title of menu item in draft status
+#: package/cnvschool/inc/menu/edit-menu.php:90
+#: package/cnvschool/inc/menu/edit_mega_menu_walker.php:90
+msgid "%s (Pending)"
+msgstr ""
+
+#: package/cnvschool/inc/menu/edit-menu.php:102
+#: package/cnvschool/inc/menu/edit_mega_menu_walker.php:102
+msgid "sub item"
+msgstr ""
+
+#: package/cnvschool/inc/menu/edit-menu.php:117
+#: package/cnvschool/inc/menu/edit_mega_menu_walker.php:117
+msgid "Move up"
+msgstr ""
+
+#: package/cnvschool/inc/menu/edit-menu.php:130
+#: package/cnvschool/inc/menu/edit_mega_menu_walker.php:130
+msgid "Move down"
+msgstr ""
+
+#: package/cnvschool/inc/menu/edit-menu.php:132
+#: package/cnvschool/inc/menu/edit-menu.php:138
+#: package/cnvschool/inc/menu/edit_mega_menu_walker.php:132
+#: package/cnvschool/inc/menu/edit_mega_menu_walker.php:138
+msgid "Edit Menu Item"
+msgstr ""
+
+#: package/cnvschool/inc/menu/edit-menu.php:147
+#: package/cnvschool/inc/menu/edit_mega_menu_walker.php:147
+msgid "URL"
+msgstr ""
+
+#: package/cnvschool/inc/menu/edit-menu.php:154
+#: package/cnvschool/inc/menu/edit_mega_menu_walker.php:154
+msgid "Navigation Label"
+msgstr ""
+
+#: package/cnvschool/inc/menu/edit-menu.php:160
+#: package/cnvschool/inc/menu/edit_mega_menu_walker.php:160
+msgid "Title Attribute"
+msgstr ""
+
+#: package/cnvschool/inc/menu/edit-menu.php:167
+#: package/cnvschool/inc/menu/edit_mega_menu_walker.php:167
+msgid "Open link in a new window/tab"
+msgstr ""
+
+#: package/cnvschool/inc/menu/edit-menu.php:172
+#: package/cnvschool/inc/menu/edit_mega_menu_walker.php:172
+msgid "CSS Classes (optional)"
+msgstr ""
+
+#: package/cnvschool/inc/menu/edit-menu.php:178
+#: package/cnvschool/inc/menu/edit_mega_menu_walker.php:178
+msgid "Link Relationship (XFN)"
+msgstr ""
+
+#: package/cnvschool/inc/menu/edit-menu.php:209
+#: package/cnvschool/inc/menu/edit_mega_menu_walker.php:209
+msgid "Upload Image"
+msgstr ""
+
+#: package/cnvschool/inc/menu/edit-menu.php:210
+#: package/cnvschool/inc/menu/edit_mega_menu_walker.php:210
+msgid "Remove Image"
+msgstr ""
+
+#: package/cnvschool/inc/menu/edit-menu.php:221
+#: package/cnvschool/inc/menu/edit_mega_menu_walker.php:221
+msgid "The description will be displayed in the menu if the current theme supports it."
+msgstr ""
+
+#: package/cnvschool/inc/menu/edit-menu.php:227
+#: package/cnvschool/inc/menu/edit_mega_menu_walker.php:227
+msgid "Move"
+msgstr ""
+
+#: package/cnvschool/inc/menu/edit-menu.php:228
+#: package/cnvschool/inc/menu/edit_mega_menu_walker.php:228
+msgid "Up one"
+msgstr ""
+
+#: package/cnvschool/inc/menu/edit-menu.php:229
+#: package/cnvschool/inc/menu/edit_mega_menu_walker.php:229
+msgid "Down one"
+msgstr ""
+
+#: package/cnvschool/inc/menu/edit-menu.php:232
+#: package/cnvschool/inc/menu/edit_mega_menu_walker.php:232
+msgid "To the top"
+msgstr ""
+
+#: package/cnvschool/inc/menu/edit-menu.php:242
+#: package/cnvschool/inc/menu/edit_mega_menu_walker.php:242
+msgid "Original: %s"
+msgstr ""
+
+#: package/cnvschool/inc/menu/edit-menu.php:258
+#: package/cnvschool/inc/menu/edit_mega_menu_walker.php:258
+#: package/cnvschool/woocommerce/cart/cart.php:168
+#: package/cnvschool/woocommerce/cart/mini-cart.php:160
+msgid "Remove"
+msgstr ""
+
+#: package/cnvschool/inc/menu/edit-menu.php:259
+#: package/cnvschool/inc/menu/edit_mega_menu_walker.php:259
+msgid "Cancel"
+msgstr ""
+
+#: package/cnvschool/inc/menu/mega_menu.php:19
+msgid "Enable Wide Menu"
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:334
+msgid "Install Required Plugins"
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:335
+msgid "Install Plugins"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:337
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:339
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:340
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:341
+msgid "This theme requires the following plugins: %1$s."
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:345
+msgid "This theme recommends the following plugins: %1$s."
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:349
+msgid "The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s."
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:353
+msgid "There are updates available for the following plugins: %1$s."
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:357
+msgid "The following required plugins are currently inactive: %1$s."
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:361
+msgid "The following recommended plugins are currently inactive: %1$s."
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:365
+msgid "Begin installing plugins"
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:369
+msgid "Begin updating plugins"
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:373
+msgid "Begin activating plugins"
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:377
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:378
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:897
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:2603
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:3650
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:379
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:3229
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:380
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:3022
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name.
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:382
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:384
+msgid "Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin."
+msgstr ""
+
+#. translators: 1: dashboard link.
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:386
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:387
+msgid "Dismiss this notice"
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:388
+msgid "There are one or more required or recommended plugins to install, update or activate."
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:389
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:592
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:593
+msgid "Update Required"
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:1004
+msgid "The remote plugin package does not contain a folder with the desired slug and renaming did not work."
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:1004
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:1007
+msgid "Please contact the plugin provider and ask them to package their plugin according to the WordPress guidelines."
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:1007
+msgid "The remote plugin package consists of more than one file, but the files are not packaged in a folder."
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:1191
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:3018
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#. translators: %s: version number
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:2052
+msgid "TGMPA v%s"
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:2343
+msgid "Required"
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:2346
+msgid "Recommended"
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:2362
+msgid "WordPress Repository"
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:2365
+msgid "External Source"
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:2368
+msgid "Pre-Packaged"
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:2385
+msgid "Not Installed"
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:2389
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:2391
+msgid "Active"
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:2397
+msgid "Required Update not Available"
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:2400
+msgid "Requires Update"
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:2403
+msgid "Update recommended"
+msgstr ""
+
+#. translators: 1: install status, 2: update status
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:2412
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#. translators: 1: number of plugins.
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:2458
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:2462
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:2466
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:2470
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:2552
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:2560
+msgid "Installed version:"
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:2568
+msgid "Minimum required version:"
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:2580
+msgid "Available version:"
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:2603
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:2617
+msgid "Plugin"
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:2618
+msgid "Source"
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:2619
+msgid "Type"
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:2623
+msgid "Version"
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:2624
+msgid "Status"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:2673
+msgid "Install %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:2678
+msgid "Update %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:2684
+msgid "Activate %2$s"
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:2754
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:2787
+msgid "Install"
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:2793
+#: package/cnvschool/woocommerce/cart/shipping-calculator.php:86
+msgid "Update"
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:2796
+msgid "Activate"
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:2827
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:2829
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:2870
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:2872
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:2978
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:3004
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:3228
+msgid "Plugin activation failed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:3568
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#. translators: 1: plugin name, 2: error message.
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:3571
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:3573
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:3577
+msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:3579
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:3579
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:3587
+msgid "Show Details"
+msgstr ""
+
+#. translators: 1: plugin name.
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:3579
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:3587
+msgid "Hide Details"
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:3580
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:3582
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:3585
+msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:3587
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:3588
+msgid "All installations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: package/cnvschool/inc/tgm/class-tgm-plugin-activation.php:3590
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: package/cnvschool/inc/tgm/init.php:43
+msgid "Codestar Framework"
+msgstr ""
+
+#: package/cnvschool/inc/tgm/init.php:51
+msgid "Elementor"
+msgstr ""
+
+#: package/cnvschool/inc/woocommerce-init.php:371
+msgid "Quick View"
+msgstr ""
+
+#: package/cnvschool/inc/woocommerce-init.php:376
+msgid "Add to wishlist"
+msgstr ""
+
+#: package/cnvschool/inc/woocommerce-init.php:382
+msgid "View Wishlist"
+msgstr ""
+
+#: package/cnvschool/page.php:31
+msgid "Read more!"
+msgstr ""
+
+#: package/cnvschool/page.php:32
+msgid "Pages"
+msgstr ""
+
+#: package/cnvschool/search.php:27
+#: package/cnvschool/template-parts/header/page-header.php:100
+#: package/cnvschool/template-parts/header/page-header.php:102
+msgid "Search Results for: %s"
+msgstr ""
+
+#: package/cnvschool/search.php:35
+#: package/cnvschool/template-parts/content-none.php:14
+#: package/cnvschool/template-parts/post/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: package/cnvschool/search.php:41
+#: package/cnvschool/template-parts/content-none.php:36
+#: package/cnvschool/template-parts/post/content-none.php:33
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: package/cnvschool/search.php:47
+#: package/cnvschool/search.php:58
+msgid "Take me home"
+msgstr ""
+
+#: package/cnvschool/search.php:51
+#: package/cnvschool/template-parts/content-none.php:44
+#: package/cnvschool/template-parts/post/content-none.php:36
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: package/cnvschool/searchform.php:12
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr ""
+
+#. translators: 1: link to WP admin new post page.
+#: package/cnvschool/template-parts/content-none.php:23
+#: package/cnvschool/template-parts/post/content-none.php:22
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: package/cnvschool/template-parts/content-page.php:21
+#: package/cnvschool/template-parts/post/single/post.php:14
+msgid "Pages:"
+msgstr ""
+
+#: package/cnvschool/template-parts/content-search.php:34
+#: package/cnvschool/template-parts/post/content.php:66
+msgid "Read More"
+msgstr ""
+
+#: package/cnvschool/template-parts/footer/site-info.php:23
+msgid "&copy; %1$s %2$s - All Rights Reserved Made by %3$s"
+msgstr ""
+
+#: package/cnvschool/template-parts/header/header.php:160
+msgid "Add Menu"
+msgstr ""
+
+#: package/cnvschool/template-parts/header/page-header.php:58
+msgid "Support Details"
+msgstr ""
+
+#: package/cnvschool/template-parts/header/page-header.php:109
+msgid "All Events"
+msgstr ""
+
+#: package/cnvschool/template-parts/header/page-header.php:125
+msgid "404"
+msgstr ""
+
+#: package/cnvschool/template-parts/header/page-header.php:138
+msgid "Event Details"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Full Width Page"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Home Page Template"
+msgstr ""
+
+#: package/cnvschool/tribe-events/single-event.php:29
+#: tribe-events/single-event.php:29
+msgctxt "%s Events plural label"
+msgid "All %s"
+msgstr ""
+
+#: package/cnvschool/tribe-events/single-event.php:48
+#: package/cnvschool/tribe-events/single-event.php:84
+#: tribe-events/single-event.php:48
+#: tribe-events/single-event.php:84
+msgid "%s Navigation"
+msgstr ""
+
+#: package/cnvschool/woocommerce/cart/cart-empty.php:28
+msgid "Return to shop"
+msgstr ""
+
+#: package/cnvschool/woocommerce/cart/cart.php:109
+msgid "Product"
+msgstr ""
+
+#: package/cnvschool/woocommerce/cart/cart.php:137
+msgid "Available on backorder"
+msgstr ""
+
+#: package/cnvschool/woocommerce/cart/cart.php:160
+msgid "Price"
+msgstr ""
+
+#: package/cnvschool/woocommerce/cart/cart.php:170
+#: package/cnvschool/woocommerce/cart/mini-cart.php:156
+msgid "Remove this item"
+msgstr ""
+
+#: package/cnvschool/woocommerce/cart/cart.php:195
+#: package/cnvschool/woocommerce/checkout/form-coupon.php:35
+msgid "Coupon code"
+msgstr ""
+
+#: package/cnvschool/woocommerce/cart/cart.php:195
+msgid "Apply Coupon"
+msgstr ""
+
+#: package/cnvschool/woocommerce/cart/cart.php:203
+msgid "Update cart"
+msgstr ""
+
+#: package/cnvschool/woocommerce/cart/cross-sells.php:24
+msgid "You may be interested in&hellip;"
+msgstr ""
+
+#: package/cnvschool/woocommerce/cart/mini-cart.php:146
+msgid "QTY:"
+msgstr ""
+
+#: package/cnvschool/woocommerce/cart/mini-cart.php:202
+msgid "Your cart is empty"
+msgstr ""
+
+#: package/cnvschool/woocommerce/cart/mini-cart.php:211
+msgid "Continue Shopping"
+msgstr ""
+
+#: package/cnvschool/woocommerce/cart/proceed-to-checkout-button.php:26
+msgid "Proceed to checkout"
+msgstr ""
+
+#: package/cnvschool/woocommerce/cart/shipping-calculator.php:24
+msgid "Calculate shipping"
+msgstr ""
+
+#: package/cnvschool/woocommerce/cart/shipping-calculator.php:31
+msgid "Select a country / region&hellip;"
+msgstr ""
+
+#: package/cnvschool/woocommerce/cart/shipping-calculator.php:50
+#: package/cnvschool/woocommerce/cart/shipping-calculator.php:55
+#: package/cnvschool/woocommerce/cart/shipping-calculator.php:67
+msgid "State / County"
+msgstr ""
+
+#: package/cnvschool/woocommerce/cart/shipping-calculator.php:56
+msgid "Select an option&hellip;"
+msgstr ""
+
+#: package/cnvschool/woocommerce/cart/shipping-calculator.php:76
+msgid "City"
+msgstr ""
+
+#: package/cnvschool/woocommerce/cart/shipping-calculator.php:82
+msgid "Postcode / ZIP"
+msgstr ""
+
+#: package/cnvschool/woocommerce/checkout/cart-errors.php:21
+msgid "There are some issues with the items in your cart. Please go back to the cart page and resolve these issues before checking out."
+msgstr ""
+
+#: package/cnvschool/woocommerce/checkout/cart-errors.php:25
+msgid "Return to cart"
+msgstr ""
+
+#: package/cnvschool/woocommerce/checkout/form-billing.php:24
+msgid "Billing &amp; Shipping"
+msgstr ""
+
+#: package/cnvschool/woocommerce/checkout/form-billing.php:28
+msgid "Billing details"
+msgstr ""
+
+#: package/cnvschool/woocommerce/checkout/form-billing.php:53
+msgid "Create an account?"
+msgstr ""
+
+#: package/cnvschool/woocommerce/checkout/form-checkout.php:40
+msgid "You must be logged in to checkout."
+msgstr ""
+
+#: package/cnvschool/woocommerce/checkout/form-checkout.php:67
+msgid "Your order"
+msgstr ""
+
+#: package/cnvschool/woocommerce/checkout/form-coupon.php:27
+msgid "Have a coupon?"
+msgstr ""
+
+#: package/cnvschool/woocommerce/checkout/form-coupon.php:27
+msgid "Click here to enter your code"
+msgstr ""
+
+#: package/cnvschool/woocommerce/checkout/form-coupon.php:32
+msgid "If you have a coupon code, please apply it below."
+msgstr ""
+
+#: package/cnvschool/woocommerce/checkout/form-coupon.php:39
+msgid "Apply coupon"
+msgstr ""
+
+#: package/cnvschool/woocommerce/checkout/form-login.php:26
+msgid "Returning customer?"
+msgstr ""
+
+#: package/cnvschool/woocommerce/checkout/form-login.php:26
+msgid "Click here to login"
+msgstr ""
+
+#: package/cnvschool/woocommerce/checkout/form-login.php:32
+msgid "If you have shopped with us before, please enter your details below. If you are a new customer, please proceed to the Billing section."
+msgstr ""
+
+#: package/cnvschool/woocommerce/checkout/form-shipping.php:26
+msgid "Ship to a different address?"
+msgstr ""
+
+#: package/cnvschool/woocommerce/checkout/form-shipping.php:57
+msgid "Additional information"
+msgstr ""
+
+#: package/cnvschool/woocommerce/checkout/payment.php:33
+msgid "Sorry, it seems that there are no available payment methods for your state. Please contact us if you require assistance or wish to make alternate arrangements."
+msgstr ""
+
+#: package/cnvschool/woocommerce/checkout/payment.php:33
+msgid "Please fill in your details above to see available payment methods."
+msgstr ""
+
+#. translators: $1 and $2 opening and closing emphasis tags respectively
+#: package/cnvschool/woocommerce/checkout/payment.php:42
+msgid "Since your browser does not support JavaScript, or it is disabled, please ensure you click the %1$sUpdate Totals%2$s button before placing your order. You may be charged more than the amount stated above if you fail to do so."
+msgstr ""
+
+#: package/cnvschool/woocommerce/checkout/payment.php:44
+msgid "Update totals"
+msgstr ""
+
+#: package/cnvschool/woocommerce/content-widget-price-filter.php:27
+msgid "Min price"
+msgstr ""
+
+#: package/cnvschool/woocommerce/content-widget-price-filter.php:28
+msgid "Max price"
+msgstr ""
+
+#. translators: Filter: verb "to filter"
+#: package/cnvschool/woocommerce/content-widget-price-filter.php:30
+msgid "Filter"
+msgstr ""
+
+#: package/cnvschool/woocommerce/content-widget-price-filter.php:32
+msgid "Price:"
+msgstr ""
+
+#. translators: %s: Quantity.
+#: package/cnvschool/woocommerce/global/quantity-input.php:30
+msgid "%s quantity"
+msgstr ""
+
+#. translators: %s: Quantity.
+#: package/cnvschool/woocommerce/global/quantity-input.php:30
+msgid "Quantity"
+msgstr ""
+
+#: package/cnvschool/woocommerce/global/quantity-input.php:45
+msgctxt "product quantity input tooltip"
+msgid "Qty"
+msgstr ""
+
+#: package/cnvschool/woocommerce/loop/no-products-found.php:21
+msgid "No products were found matching your selection."
+msgstr ""
+
+#: package/cnvschool/woocommerce/loop/orderby.php:25
+msgid "Shop order"
+msgstr ""
+
+#: package/cnvschool/woocommerce/loop/result-count.php:28
+msgid "Showing the single result"
+msgstr ""
+
+#. translators: %d: total results
+#: package/cnvschool/woocommerce/loop/result-count.php:31
+msgid "Showing all %d result"
+msgid_plural "Showing all %d results"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: first result 2: last result 3: total results
+#: package/cnvschool/woocommerce/loop/result-count.php:36
+msgctxt "with first and last result"
+msgid "Showing %1$d&ndash;%2$d of %3$d result"
+msgid_plural "Showing %1$d&ndash;%2$d of %3$d results"
+msgstr[0] ""
+msgstr[1] ""
+
+#: package/cnvschool/woocommerce/loop/sale-flash.php:27
+#: package/cnvschool/woocommerce/single-product/sale-flash.php:27
+msgid "Sale!"
+msgstr ""
+
+#: package/cnvschool/woocommerce/product-searchform.php:24
+msgid "Search for:"
+msgstr ""
+
+#: package/cnvschool/woocommerce/product-searchform.php:25
+msgid "Search products&hellip;"
+msgstr ""
+
+#: package/cnvschool/woocommerce/product-searchform.php:26
+msgctxt "submit button"
+msgid "Search"
+msgstr ""
+
+#. translators: 1: reviews count 2: product name
+#: package/cnvschool/woocommerce/single-product-reviews.php:34
+msgid "%1$s review for %2$s"
+msgid_plural "%1$s reviews for %2$s"
+msgstr[0] ""
+msgstr[1] ""
+
+#: package/cnvschool/woocommerce/single-product-reviews.php:37
+msgid "Reviews"
+msgstr ""
+
+#: package/cnvschool/woocommerce/single-product-reviews.php:64
+msgid "There are no reviews yet."
+msgstr ""
+
+#. translators: %s is product title
+#: package/cnvschool/woocommerce/single-product-reviews.php:75
+msgid "Add a review"
+msgstr ""
+
+#. translators: %s is product title
+#: package/cnvschool/woocommerce/single-product-reviews.php:75
+msgid "Be the first to review &ldquo;%s&rdquo;"
+msgstr ""
+
+#. translators: %s is product title
+#: package/cnvschool/woocommerce/single-product-reviews.php:77
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: package/cnvschool/woocommerce/single-product-reviews.php:81
+msgid "Submit"
+msgstr ""
+
+#: package/cnvschool/woocommerce/single-product-reviews.php:95
+msgid "Email"
+msgstr ""
+
+#. translators: %s opening and closing link tags respectively
+#: package/cnvschool/woocommerce/single-product-reviews.php:120
+msgid "You must be %1$slogged in%2$s to post a review."
+msgstr ""
+
+#: package/cnvschool/woocommerce/single-product-reviews.php:124
+msgid "Your rating"
+msgstr ""
+
+#: package/cnvschool/woocommerce/single-product-reviews.php:125
+msgid "Rate&hellip;"
+msgstr ""
+
+#: package/cnvschool/woocommerce/single-product-reviews.php:126
+msgid "Perfect"
+msgstr ""
+
+#: package/cnvschool/woocommerce/single-product-reviews.php:127
+msgid "Good"
+msgstr ""
+
+#: package/cnvschool/woocommerce/single-product-reviews.php:128
+msgid "Average"
+msgstr ""
+
+#: package/cnvschool/woocommerce/single-product-reviews.php:129
+msgid "Not that bad"
+msgstr ""
+
+#: package/cnvschool/woocommerce/single-product-reviews.php:130
+msgid "Very poor"
+msgstr ""
+
+#: package/cnvschool/woocommerce/single-product-reviews.php:134
+msgid "Your review"
+msgstr ""
+
+#: package/cnvschool/woocommerce/single-product-reviews.php:141
+msgid "Only logged in customers who have purchased this product may leave a review."
+msgstr ""
+
+#: package/cnvschool/woocommerce/single-product/add-to-cart/variation.php:22
+msgid "Sorry, this product is unavailable. Please choose a different combination."
+msgstr ""
+
+#: package/cnvschool/woocommerce/single-product/photoswipe.php:34
+msgid "Close (Esc)"
+msgstr ""
+
+#: package/cnvschool/woocommerce/single-product/photoswipe.php:35
+msgid "Share"
+msgstr ""
+
+#: package/cnvschool/woocommerce/single-product/photoswipe.php:36
+msgid "Toggle fullscreen"
+msgstr ""
+
+#: package/cnvschool/woocommerce/single-product/photoswipe.php:37
+msgid "Zoom in/out"
+msgstr ""
+
+#: package/cnvschool/woocommerce/single-product/photoswipe.php:49
+msgid "Previous (arrow left)"
+msgstr ""
+
+#: package/cnvschool/woocommerce/single-product/photoswipe.php:50
+msgid "Next (arrow right)"
+msgstr ""
+
+#: package/cnvschool/woocommerce/single-product/cnvschool-product-image.php:46
+#: package/cnvschool/woocommerce/single-product/thumbnails-image/quickview.php:35
+msgid "Awaiting product image"
+msgstr ""
+
+#: package/cnvschool/woocommerce/single-product/rating.php:38
+msgid "%s customer review"
+msgid_plural "%s customer reviews"
+msgstr[0] ""
+msgstr[1] ""
+
+#: package/cnvschool/woocommerce/single-product/review-meta.php:27
+msgid "Your review is awaiting approval"
+msgstr ""
+
+#: package/cnvschool/woocommerce/single-product/review-meta.php:37
+msgid "verified owner"
+msgstr ""
+
+#: package/cnvschool/woocommerce/single-product/up-sells.php:26
+msgid "You may also like&hellip;"
+msgstr ""

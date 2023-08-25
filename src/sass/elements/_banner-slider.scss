@@ -1,0 +1,255 @@
+.banner__slider {
+	height:800px;
+	position: relative;
+
+	.swiper-slide {
+		height: 800px;
+		width: 100%;
+	}
+
+	.banner__image {
+		height: 800px;
+
+		img {
+			width: 100%;
+			height: 100% !important;
+			object-fit: cover;
+		}
+	}
+
+	.banner__slide {
+		position: relative;
+		overflow: hidden;
+
+		&:before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background-image: linear-gradient(140deg, #006BE2 0%, #00CFC8 100%);
+			z-index: 2;
+			opacity: 0.7
+		}
+	}
+
+	.banner__content {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 100%;
+		z-index: 3;
+		transform: translate(-50%, -50%);
+		max-width: 630px;
+
+		@media(max-width: 991px) {
+			padding: 0 30px;
+		}
+	}
+
+	.banner__title, .banner__description {
+		color: #fff;
+	}
+
+	.banner__title {
+		font-size: 70px;
+		line-height: 80px;
+		font-weight: 800;
+		margin-bottom: 15px;
+
+		@media(max-width: 991px) {
+			font-size: 50px;
+			line-height: 60px;
+		}
+
+		@media(max-width: 767px) {
+			font-size: 40px;
+			line-height: 50px;
+		}
+
+		@media(max-width: 575px) {
+			font-size: 30px;
+			line-height: 40px;
+		}
+	}
+
+	.banner__description {
+		font-size: 18px;
+		line-height: 30px;
+		margin-bottom: 42px;
+
+		@media(max-width: 400px) {
+			margin-bottom: 32px;
+		}
+	}
+
+	.cnvschool-btn {
+		padding: 16px 41px;
+		line-height: 1;
+		font-size: 16px;
+
+		&:before {
+			transition: all 0.6s ease-in-out;
+		}
+
+		&:hover {
+			color: $color__theme;
+
+			&:after {
+				border-image-source: linear-gradient(90deg, #fff 100%, #fff 100%);
+			}
+		}
+
+		&.btn-outline {
+			margin-left: 20px;
+			color: #fff;
+			border-color: #fff;
+
+			@media(max-width: 400px) {
+				margin-left: 0;
+				margin-top: 20px;
+			}
+
+			&:before {
+				transition: all 0.6s ease-in-out;
+			}
+
+			&:after {
+				border-image-source: linear-gradient(90deg, #fff 100%, #fff 100%);
+			}
+
+			&:hover {
+				border-color: $color__theme;
+
+				&:after {
+					border-image-source: linear-gradient(90deg, #2acaff 25%, #13ade6 75%);
+				}
+			}
+		}
+	}
+
+	.swiper-slide-active {
+		.banner__title {
+			animation: fadeInUp 1s both 1s;
+		}
+
+		.banner__description {
+			animation: fadeInUp 1s both 1.2s;
+		}
+
+		.cnvschool-btn {
+			animation: fadeInUp 1s both 1.5s;
+
+			&.btn-outline {
+				margin-left: 20px;
+				color: #fff;
+				border-color: #fff;
+
+				&:hover {
+					border-color: $color__theme;
+				}
+			}
+		}
+	}
+
+	.swiper-pagination {
+		width: auto !important;
+		left: auto !important;
+		right: 160px;
+		bottom: auto !important;
+		transform: translateY(-50%);
+		top: 50%;
+
+		@media(max-width: 1200px) {
+			right: 50px;
+		}
+
+		@media(max-width: 767px) {
+			display: none;
+		}
+
+		.swiper-pagination-bullet {
+			background: rgba(255, 255, 255, 0.2);
+			opacity: 1;
+			width: 8px;
+			height: 20px;
+			border-radius: 6px;
+			outline: 0;
+			transition: all 0.3s ease-in-out;
+			display: block;
+			left: auto;
+			right: 0;
+			margin: 15px 0 !important;
+
+			&.swiper-pagination-bullet-active {
+				background: #fff;
+				height: 30px;
+			}
+
+		}
+	}
+
+	.banner__slider-prev, .banner__slider-next {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		height: 60px;
+		width: 60px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		border: 1px solid rgba(255, 255, 255, 0.5);
+		color: #fff;
+		z-index: 2;
+		cursor: pointer;
+		font-size: 30px;
+		border-radius: 4px;
+		transition: all 0.3s ease-in-out;
+		opacity: 0;
+		visibility: hidden;
+
+		&:hover {
+			background-color: $color__theme;
+			color: #fff;
+			border-color: $color__theme;
+		}
+	}
+
+	.banner__slider-prev {
+		left: 20px;
+	}
+
+	.banner__slider-next {
+		right: 20px;
+	}
+
+	&:hover {
+		.banner__slider-prev, .banner__slider-next {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}
+
+.banner-pagination {
+	position: absolute;
+	bottom: 40px;
+	z-index: 33;
+	left: 50%;
+	transform: translateX(-50%);
+
+	.swiper-pagination-bullet {
+		height: 15px;
+		width: 15px;
+		margin: 0 5px;
+		opacity: 1;
+		background: rgba(255, 255, 255, 0.3);
+		transition: all 0.3s ease-in-out;
+
+		&.swiper-pagination-bullet-active {
+			background: rgba(255, 255, 255, 1);
+		}
+	}
+}

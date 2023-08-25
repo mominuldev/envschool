@@ -1,0 +1,153 @@
+
+@mixin flex ( $flex-direction: row, $justify-content: flex-start, $align-items: false, $flex-wrap: false ) {
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    @if $align-items {
+        align-items: $align-items;
+    }
+    @if $flex-wrap {
+        flex-wrap: $flex-wrap;
+    }
+}
+
+@mixin typo($font-size: 1rem, $line-height: 1, $font-weight: false, $text-transform: false) {
+    font-size: $font-size;
+    line-height: $line-height;
+    @if $font-weight {
+        font-weight: $font-weight;
+    }
+    @if $text-transform {
+        text-transform: $text-transform;
+    }
+}
+
+@mixin transition( $transition-property: all, $transition-duration: 0.4s, $transition-timing-function: false, $transition-delay: false ) {
+    @if $transition-delay  {
+        transition: $transition-property $transition-duration $transition-timing-function $transition-delay;
+    } @else {
+        transition: $transition-property $transition-duration;
+    }
+}
+
+@mixin box-shadow( $x-axis: false, $y-axis: false, $blur: 20px, $spread: false, $color: $shadow-color) {
+    @if $x-axis and y-axis {
+        box-shadow: $x-axis $y-axis $blur $color;
+    } @else if $x-axis and y-axis and $spread {
+        box-shadow: $x-axis $y-axis $blur $spread $color;
+    } @else {
+        box-shadow: 0 0 $blur $color;
+    }
+}
+
+@mixin img-fluid {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+%input-style {
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    background: $light-color;
+    color: $heading-color;
+    @include typo(1.4rem, 1.5, 400);
+    padding: 2.5rem;
+    @include box-shadow(0, 0, 15px, $shadow-color);
+    &:hover,
+    &:focus {
+        @include box-shadow(0, 0, 30px, $shadow-color);
+        outline: 0;
+        border-color: $border-color;
+        background: $white;
+    }
+}
+
+@mixin button($padding, $color: $white, $bg-color: $secondary-color, $hover-color: $color, $hover-bg: $primary-color) {
+    color: $color;
+    background: $bg-color;
+    padding: $padding;
+    border-radius: 5px;
+    border: 0;
+    @include transition;
+    &:hover,
+    &:focus {
+        color: $hover-color;
+        background: $hover-bg;
+        outline: 0;
+    }
+}
+
+@mixin block-box-shadow($spread: 30px, $color: $shadow-color) {
+    box-shadow: 0 0 $spread $color;
+}
+
+@mixin overley-tl($top, $left, $width, $height, $bg) {
+    content: "";
+    position: absolute;
+    top: $top;
+    left: $left;
+    width: $width;
+    height: $height;
+    display: block;
+    background: $bg;
+}
+@mixin gradient-button($pt: 1.6rem, $pr: 1.6rem, $pb: 1.6rem, $pl: 1.6rem) {
+    @include typo(1.6rem, 1, 600);
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    border-radius: 30px;
+    color: $white;
+    padding: $pt $pr $pb $pl;
+    overflow: hidden;
+    @include transition;
+    background-image: linear-gradient(135deg, $gradient-color-1, $gradient-color-2);
+    &:after {
+        @include overley-tl(0, 0, 100%, 100%, $secondary-color);
+        @include transition;
+        z-index: 2;
+        opacity: 0;
+        background-image: linear-gradient(135deg, $gradient-color-2, $gradient-color-1);
+    }
+    span {
+        position: relative;
+        z-index: 5;
+    }
+    &:hover {
+        &:after {
+            opacity: 1;
+        }
+    }
+}
+@mixin shine-effect {
+    &::before {
+        position: absolute;
+        top: 0;
+        left: -75%;
+        z-index: 2;
+        display: block;
+        content: "";
+        width: 50%;
+        height: 100%;
+        background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+        background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+        -webkit-transform: skewX(-25deg);
+        transform: skewX(-25deg);
+    }
+    &:hover::before {
+        -webkit-animation: shine 0.75s;
+        animation: shine 0.75s;
+    }
+    @-webkit-keyframes shine {
+        100% {
+            left: 125%;
+        }
+    }
+    @keyframes shine {
+        100% {
+            left: 125%;
+        }
+    }
+}

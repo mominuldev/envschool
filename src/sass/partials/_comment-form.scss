@@ -1,0 +1,63 @@
+.comment-respond {
+    background:$light-color;
+    padding: 3rem 0 1.6rem;
+    border-radius: 5px;
+    .comment-reply-title {
+        color: $heading-color;
+        @include typo(1.8rem, 1, 600);
+        padding-left: 3rem;
+        a {
+            color: $heading-color;
+            text-decoration: none;
+            &:hover {
+                color: $secondary-color;
+            }
+        }
+    }
+    .comment-notes {
+        margin-bottom: 2.4rem;
+    }
+}
+.comment-form-wrapper {
+    border-top: 1px solid $border-color;
+    padding-top: 3rem;
+}
+.itl-comment-form {
+    padding: 0 3rem;
+    input[type=text],
+    input[type=email] {
+        @extend %input-style;
+
+        &::placeholder {
+            color: $text-color;
+            font-weight: 500;
+        }
+    }
+    textarea {
+        @extend %input-style;
+    }
+    .btn-post-comment {
+        @include typo(1.4rem,1);
+        border-radius: 5px;
+        padding: 1.4rem 3rem;
+        background: $secondary-color;
+        border: 0;
+        @include transition;
+        &:hover {
+            background: $primary-color;
+            @include box-shadow;
+        }
+        &:focus {
+            outline: 0;
+            box-shadow: none;
+        }
+    }
+    .logged-in-as {
+        a {
+            color: $secondary-color;
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+}

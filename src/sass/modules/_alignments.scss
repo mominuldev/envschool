@@ -1,0 +1,36 @@
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+	margin-bottom: 10px;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+	margin-bottom: 40px;
+
+
+	&.size-full {
+		margin-bottom: 60px;
+	}
+}
+
+.aligncenter {
+	clear: both;
+	@include center-block;
+	padding: 0;
+}
+
+
+.wp-block-image .alignright {
+	float: right;
+	margin: .5em 0 2em 1em;
+}
+
+.wp-block-media-text__media {
+	img {
+		border-radius: 15px;
+	}
+}

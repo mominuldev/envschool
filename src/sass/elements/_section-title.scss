@@ -1,0 +1,127 @@
+.section-heading {
+    position: relative;
+    z-index: 2;
+
+    .subtitle {
+        color: $color__theme-2;
+        font-size: 16px;
+        display: block;
+        font-weight: 700;
+		text-transform: uppercase;
+    }
+
+    &.heading-style--two {
+        .subtitle {
+            border: 1px solid #F5F5F5;
+            border-radius: 5px;
+            color: #52525C;
+            font-size: 16px;
+            display: inline-block;
+            padding: 5px 40px;
+            position: relative;
+            text-transform: capitalize;
+
+            &:before, &:after {
+                content: '';
+                position: absolute;
+               top: 50%;
+                transform: translateY(-50%);
+                background: #F9DF57;
+                height: 12px;
+                width: 12px;
+                display: inline-block;
+                border-radius: 30px;
+            }
+
+            &:before {
+                left: 20px;
+            }
+
+            &:after {
+                right: 20px;
+            }
+        }
+    }
+
+    .section-title {
+        font-weight: 600;
+        font-size: 60px;
+        line-height: 1.2;
+        margin-bottom: 17px;
+
+        @media(max-width: 1200px) {
+            font-size: 50px;
+        }
+
+        @media(max-width: 992px) {
+            font-size: 46px;
+        }
+
+		span {
+			font-weight: 300;
+		}
+
+        &.has-secondary-title {
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+
+        @media(max-width: 992px) {
+            font-size: 32px;
+        }
+
+        @media(max-width: 992px) {
+            br {
+                display: none;
+            }
+        }
+    }
+
+    .description {
+        font-weight: 400;
+        margin: 0;
+        font-size: 16px;
+
+        @media(max-width: 991px) {
+            br {
+                display: none;
+            }
+        }
+
+        p {
+            &:first-child {
+                margin-bottom: 0;
+            }
+
+            &:nth-child(2) {
+                margin-top: 20px;
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+
+    }
+
+    &.text-left {
+        .description {
+            margin: 0;
+        }
+    }
+
+    &.text-right {
+        .description {
+            margin: 0 0 0 auto;
+        }
+    }
+
+    .section-title-secondary {
+        font-size: 46px;
+        font-weight: 700;
+    }
+}
+
+.plus-jakarta h2, .plus-jakarta h3, .plus-jakarta h4, .plus-jakarta h5, .plus-jakarta h6 , .plus-jakarta p, .plus-jakarta span, .plus-jakarta a, .plus-jakarta li {
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+}

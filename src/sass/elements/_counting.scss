@@ -1,0 +1,59 @@
+.rbt-counter {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	//@media(max-width: 1200px) {
+	//	.row & {
+	//		&:not(:last-child) {
+	//			.col-md-4 {
+	//				margin-bottom: 30px;
+	//			}
+	//		}
+	//	}
+	//}
+
+	&__icon-container {
+		position: relative;
+		max-width: 70px;
+		font-size: 40px;
+		color: $black;
+		margin-right: 15px
+	}
+
+	&__number {
+		font-family: $font__main;
+		font-size: 60px;
+		line-height: 1;
+		font-weight: 700;
+		color: $black;
+		position: relative;
+		display: flex;
+		margin-bottom: 0;
+	}
+
+	&__title {
+		font-size: 16px;
+		color: $black;
+		font-weight: 700;
+		margin-bottom: 0;
+		text-transform: uppercase;
+
+		@media(max-width: 1200px) and (min-width: 768px) {
+			font-size: 14px;
+		}
+
+	}
+}
+
+@media(max-width: 1200px) {
+	.row {
+		.col-md-4 {
+			&:not(:last-child) {
+				.rbt-counter {
+					margin-bottom: 30px;
+				}
+			}
+		}
+	}
+}

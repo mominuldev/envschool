@@ -1,0 +1,67 @@
+.give_forms {
+    margin-top: 5rem;
+}
+#give-email-access-form {
+    input[type=email] {
+        @extend %input-style;
+        padding: .85rem;
+    }
+}
+.give-form-title {
+    color: $heading-color;
+}
+.give-goal-progress {
+    .raised {
+        .income {
+            color: $heading-color;
+            font-family: $secondary-font-family;
+        }
+    }
+}
+%donation-symbol {
+    background: $secondary-color;
+    border-color: $secondary-color;
+    color: $white;
+    border-radius: 4px 0 0 4px;
+}
+%donation-amount {
+    border-radius: 0 4px 4px 0;
+    &:focus,
+    &:hover  {
+        border-color: $secondary-color;
+        outline: none;
+    }
+}
+form[id*=give-form] {
+    .give-donation-amount {
+        .give-currency-symbol {
+            @extend %donation-symbol;
+            @include typo(1.8rem, 1.8);
+        }
+        #give-amount,
+        #give-amount-text {
+            @extend %donation-amount;
+        }
+    }
+    #give-final-total-wrap {
+        .give-donation-total-label {
+            @extend %donation-symbol;
+            @include typo(1.6rem, 2);
+        }
+        .give-final-total-amount {
+            @extend %donation-amount;
+            color: $heading-color;
+        }
+    }
+    .form-row {
+        input[type=text],
+        input[type=email] {
+            @include transition;
+            @extend %input-style;
+            padding: 1.6rem;
+        }
+    }
+    .give-btn {
+        @include button(1.5rem 2rem 1.5rem 2rem, $white, $secondary-color, $white, $primary-color);
+    }
+}

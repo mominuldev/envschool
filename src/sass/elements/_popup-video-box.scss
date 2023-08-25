@@ -1,0 +1,198 @@
+//video section css here
+.video_section {
+    overflow: hidden;
+}
+
+.video_section {
+    overflow: hidden;
+    &.video_sec_padding {
+        padding: 130px 0 120px;
+        @media #{$tab}{
+            padding: 100px 0;
+        }
+    }
+
+    .video_section_content {
+        position: relative;
+        z-index: 1;
+        .video_popup {
+            height: 80px;
+            width: 80px;
+            box-shadow: 10px 17.321px 40px 0px rgba(1, 16, 58, 0.14);
+            img{
+                max-width: 14px;
+                margin-left: 3px;
+            }
+            @media #{$tab}{
+                height: 60px;
+                width: 60px;
+            }
+        }
+    }
+
+    .about_img_shape {
+        position: absolute;
+        top: -70px;
+        left: -40px;
+        z-index: -1;
+    }
+
+    .round_shape_animation {
+        border-radius: 50%;
+        background: #acf2f0;
+        position: absolute;
+        right: -130px;
+        bottom: -65px;
+        width: 280px;
+        height: 280px;
+        -webkit-animation: circleAnimation 5s linear infinite;
+        animation: circleAnimation 5s linear infinite;
+        z-index: -1;
+        @media #{$tab}{
+            width: 150px;
+            height: 150px;
+            right: -70px;
+        }
+    }
+}
+
+.video_popup_section {
+    .video_popup {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: 50%;
+        transform: translateY(-50%);
+
+        i {
+            font-size: 18px;
+            color: $color__theme;
+            margin-left: 5px;
+        }
+    }
+}
+
+.video_popup.play_animation:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    animation: pulse-border 1500ms ease-out infinite;
+    z-index: -1;
+}
+
+.video_popup img {
+    position: relative;
+    z-index: 9;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.video_popup {
+    background-color: #fff;
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        background-color: $color__theme;
+
+        i {
+            color: #fff;
+        }
+    }
+}
+
+.popup-video-box {
+    &.video_section .round_shape_animation {
+        top: auto;
+    }
+}
+
+@keyframes pulse-border {
+    0% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+        opacity: 0;
+    }
+}
+
+
+
+.popup-btn {
+    display: inline-block;
+    height: 75px;
+    width: 75px;
+    line-height: 77px;
+    text-align: center;
+    background-color: $color__theme;
+    color: #fff;
+    border-radius: 50%;
+    position: relative;
+    font-size: 20px;
+
+    i {
+        margin-left: 5px;
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        left: -12.5px;
+        top: -12.5px;
+        height: 100px;
+        width: 100px;
+        opacity: 0;
+        border-radius: 50%;
+        border: 1px solid $color__theme;
+        animation: btnWave 1500ms linear infinite;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        border-radius: 50%;
+        border: 10px solid $color__theme;
+        animation: btnWave 1000ms linear infinite;
+    }
+
+    &:hover {
+        color: #fff;
+    }
+}
+
+@keyframes btnWave {
+    0% {
+        opacity: 1;
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        -o-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+}

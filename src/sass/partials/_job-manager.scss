@@ -1,0 +1,67 @@
+.single-job_listing {
+    .itl-blog-post .itl-blog-post__content .itl-blog-post__head .itl-blog-post__title {
+        @include typo(3rem, 1.5);
+        color: $secondary-color;
+    }
+}
+.single_job_listing {
+    .company {
+        @include flex(row, flex-start, center);
+        box-shadow: none;
+        img {
+            position: relative;
+            float: none;
+            left: 0;
+            margin-right: 1rem;
+        }
+        .name {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            color: $heading-color;
+            @include typo(2.5rem, 1);
+        }
+    }
+}
+.button {
+    &.application_button {
+        @include button(1rem);
+    }
+}
+
+.job_filters {
+    margin-bottom: 3rem;
+    border-radius: 5px;
+    input[type=text] {
+        padding: 1.5rem;
+        border: 0;
+        border-radius: 4px;
+        &:focus {
+            outline: none;
+        }
+    }
+    input[type=submit] {
+        border-radius: 4px;
+    }
+    .job_types {
+        padding-top: 12px;
+        padding-left: 8px;
+    }
+}
+
+.job-manager-form {
+    padding-right: 30px;
+    .input-text {
+        @extend %input-style;
+        padding: 1rem 1.5rem;
+        @include transition;
+        @include box-shadow(0, 0, 5px, $shadow-color);
+    }
+    .postform {
+        @extend %input-style;
+    }
+}
+
+ul.job_listings li.job_listing a div.position .company {
+    color: $primary-color;
+}

@@ -1,0 +1,13 @@
+.cnvschoollatesttweets-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+        a {
+            color: $secondary-color;
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+}

@@ -1,0 +1,63 @@
+/**default colors**/
+$white: #ffffff;
+$black: #000000;
+$red: #d93025;
+
+/**theme colors**/
+$heading-color: #333333;
+$text-color: #707070;
+$light-color: #F8F8FD;
+
+$primary-color: #006BE2;
+$secondary-color: #00CFC8;
+
+$gradient-color-1: #16B6FF;
+$gradient-color-2: #09FFCA;
+
+$border-color: #E5E9EF;
+$shadow-color: rgba($color: $black, $alpha: 0.15);
+
+/**typography**/
+$primary-font-family: "Open Sans", sans-serif;
+$secondary-font-family: 'Nunito Sans', sans-serif;
+$base-font-size : 62.5%;
+
+/**navbar-typography**/
+$navbar-parent-item-font-family: $secondary-font-family;
+$navbar-parent-item-font-size: 1.4rem;
+$navbar-parent-item-font-weight: 600;
+
+$navbar-dropdown-item-font-family: $primary-font-family;
+$navbar-dropdown-item-font-size: 1.4rem;
+$navbar-dropdown-item-font-weight: 400;
+
+/**navbar colors**/
+$navbar-bg-color: $white;
+$navbar-parent-link-color: #333333;
+$navbar-parent-hover-color: #333333;
+$navbar-parent-line-color: #d87ce9;
+$navbar-parent-active-link-color: #333333;
+$navbar-dropdown-bg-color: $white;
+$navbar-dropdown-border-color: rgba(0, 0, 0, 0.15);
+$navbar-dropdown-link-color: #333333;
+$navbar-dropdown-hover-color: #333333;
+$navbar-dropdown-line-color: #d87ce9;
+$navbar-parent-active-link-color: #333333;
+
+/**widgets typography**/
+$widget-title-font-family: $secondary-font-family;
+$widget-title-font-size: 1.8rem;
+$widget-title-font-weight: 600;
+
+$widget-text-font-family: $primary-font-family;
+
+/**widgets color**/
+$widget-title-color: $heading-color;
+$widget-wrapper-border-color: $light-color;
+$widget-wrapper-bg-color: $light-color;
+$widget-list-border-color: #cccccc;
+$widget-text-color: $text-color;
+$widget-link-color: $primary-color;
+$widget-hover-color: $widget-link-color;
+
+$sm : 576px;

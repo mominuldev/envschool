@@ -1,0 +1,18 @@
+a {
+	color: $color__heading;
+	transition: all 0.3s ease-in-out;
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color__theme;
+		text-decoration: none;
+	}
+	// &:focus {
+	// 	outline: thin dotted;
+	// }
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}

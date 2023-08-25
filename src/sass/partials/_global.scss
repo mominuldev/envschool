@@ -1,0 +1,156 @@
+html {
+    font-size: $base-font-size;
+}
+
+body {
+    color: $text-color;
+    font-family: $primary-font-family;
+    @include typo(1.6rem, 1.5, 400);
+}
+
+a {
+    text-decoration: none;
+    @include transition;
+    &:hover {
+        color: $secondary-color;
+    }
+    &:hover,
+    &:focus {
+        outline: 0;
+    }
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    color: $heading-color;
+    font-family: $secondary-font-family;
+    font-weight: 600;
+}
+
+h1, .h1 {
+    @include typo(5.6rem, 1.5);
+    margin-bottom: 1rem;
+    @media (max-width: 480px) {
+        @include typo(4rem, 1);
+    }
+}
+h2 {
+    @include typo(4rem, 1.5);
+    margin-bottom: 1rem;
+    @media (max-width: 480px) {
+        @include typo(3.2rem, 1.5);			
+    }
+}
+h3 {
+    @include typo(3.2rem, 1.5);
+    margin-bottom: 1rem;
+    @media (max-width: 480px) {
+        @include typo(2.6rem, 1.5);
+    }
+}
+h4, .h4 {
+    @include typo(2.6rem, 1.5);
+    margin-bottom: 1rem;
+    @media (max-width: 480px) {
+        @include typo(2.2rem, 1.3);
+    }
+}
+h5 {
+    @include typo(2.2rem, 1.3);
+    margin-bottom: 1rem;
+    @media (max-width: 480px) {
+        @include typo(2rem, 1.3);
+    }
+}
+h6 {
+    @include typo(2rem, 1.3);
+    margin-bottom: 1rem;
+    @media (max-width: 480px) {
+        @include typo(1.8rem, 1.3);
+    }
+}
+
+p {
+    font-family: $primary-font-family;
+    @include typo(1.6rem, 1.5, 400);
+    :not(:last-child) {
+        margin-bottom: 1rem;
+    }
+}
+
+.itl-blog-post__body {
+    > div.wp-block-image {
+        &:last-child {
+            .alignright {
+                float: none;
+                display: inline;
+                text-align: right;
+                margin-left: 74%;
+                @media (max-width: 480px) {
+                    margin-left: 40%;
+    
+                }
+            }
+        }
+    }
+}
+
+.alignleft {
+    display: inline;
+    float: left;
+    margin-right: 1.5em;
+}
+.alignright {
+    display: inline;
+    float: right;
+    margin-left: 1.5em;
+}
+.aligncenter {
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.site-wrapper {
+    overflow: hidden;
+}
+
+.blog {
+    .site-main,
+    .widget-area {
+        @media (max-width: 480px) {
+            padding: 0 1rem;
+        }
+    }
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, 
+.btn-primary:not(:disabled):not(.disabled):active:focus, 
+.show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: none;
+}
+
+button,
+input[type=number] {
+    &:focus {
+        outline: 0;
+        box-shadow: none;
+    }
+}
+#fixed__on-scroll {
+    @include transition;
+    &.fixed-top {
+        @include box-shadow();
+    }
+}
+.bg-white {
+    background: $white;
+}
+.fixed-top {
+    position: fixed !important;
+}

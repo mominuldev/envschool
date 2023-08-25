@@ -1,0 +1,186 @@
+%block-editor-front-end-styles {
+    .wp-block-button {
+        margin-bottom: 1rem;
+        .wp-block-button__link {
+            &:not(.has-text-color) {
+                color: $white;
+            }
+            &:not(.has-background) {
+                background: $secondary-color;
+            }
+            &:hover {
+                background: $primary-color;
+            }
+        }
+    }
+    .wp-block-cover {
+        margin-bottom: 2rem;
+        &.has-background-dim {
+            .wp-block-cover-text {
+                color: $white;
+            }
+            a {
+                color: $white;
+                &:hover {
+                    color: $heading-color;
+                }
+            }
+        }
+    }
+    .blocks-gallery-grid {
+        margin-left: 0;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+    blockquote.wp-block-quote {
+        background: $light-color;
+        padding: 3rem;
+        position: relative;
+        p {
+            font-size: 1.2rem;
+            line-height: 1.3;
+            color: darken($color: $text-color, $amount: 0.8);
+        }
+        cite {
+            margin-left: 3rem;
+            position: relative;
+            &:before {
+                top: 0;
+                position: absolute;
+                width: 30px;
+                height: 1px;
+                background: #6c757d;
+                content: '';
+                bottom: 0;
+                margin: 10px 0 13px -40px;
+            }
+        }
+        &.is-style-large {
+            cite {
+                display: flex;
+                flex-direction: row;
+                em {
+                    display: block;
+                    margin-top: -2px;
+                    position: relative;
+                }
+            }
+        }
+        &.has-text-align-right {
+            p {
+                text-align: right;
+            }
+        }
+    }
+    .wp-block-pullquote {
+        border: 0;
+        &:not(.is-style-solid-color) {
+            background: $light-color;
+            text-align: center;
+            border-top-width: 2px;
+            border-bottom-width: 2px;
+            border-top-style: solid;
+            border-bottom-style: solid;
+        }
+        blockquote {
+            text-align: center;
+            background: transparent;
+            &.has-light-gray-color {
+                background: $light-color;
+            }
+            p {
+                text-align: center;
+                font-size: 1.5rem;
+                line-height: 1;
+                margin-bottom: 1rem;
+            }
+
+        }
+        &.has-background {
+            p,
+            cite {
+                color: $white;
+            }
+        }
+    }
+    .gallery {
+        &.gallery-columns-2 {
+            display: flex;
+            .gallery-item {
+                flex: 1;
+                .gallery-icon {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+    .wp-block-archives,
+    .wp-block-rss {
+        list-style: none;
+        margin: 0 0 1.5rem 0;
+        > li {
+            padding: 0.5rem 0;
+        }
+    }
+    .wp-block-calendar {
+        margin-bottom: 1.5rem;
+        .wp-calendar-table {
+            
+        }
+        .wp-calendar-nav {
+            text-align-last: left;
+        }
+    }
+    .wp-block-categories {
+        margin-bottom: 1.5rem;
+    }
+    .wp-block-latest-comments,
+    .wp-block-latest-comments {
+        margin: 0 0 1.5rem 0;
+        a.wp-block-latest-comments__comment-author {
+            font-weight: 600;
+        }
+    }
+    .wp-block-latest-posts {
+        margin: 0 0 1.5rem 0;
+        > li {
+            margin: 0.6rem 0;
+        }
+    }
+    .wp-block-search {
+        margin: 0 0 1.5rem 0;
+        .wp-block-search__input {
+            border: 1px solid $border-color;
+            padding: 1rem;
+            transition: all 0.4s;
+            &:hover,
+            &:focus {
+                border-color: $secondary-color;
+            }
+        }
+        .wp-block-search__button {
+            color: $white;
+            border: 1px solid $secondary-color;
+            background: $secondary-color;
+            padding: 1rem 2rem;
+            transition: all 0.4s;;
+            &:hover,
+            &:focus {
+                background: $primary-color;
+                border-color: $primary-color;
+            }
+        }
+    }
+    .wp-block-tag-cloud {
+        .tag-cloud-link {
+            margin-right: 0.5rem;
+        }
+    }
+    .wp-block-group__inner-container {
+        padding: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    .wp-block-media-text {
+        margin-bottom: 1.5rem;
+    }
+}

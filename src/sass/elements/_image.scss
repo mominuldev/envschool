@@ -1,0 +1,301 @@
+.image-wrapper {
+    position: relative;
+
+	.content-inner {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		width: 100%;
+	}
+}
+
+
+.popup-play-btn {
+	position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    height: 55px;
+    width: 55px;
+    background: #fff;
+    display: block;
+    line-height: 58px;
+    font-size: 24px;
+    border-radius: 50%;
+    animation: ripple-white 1s linear infinite;
+	color: $color__theme;
+
+	i {
+		margin-left: 8px;
+	}
+
+	&:hover {
+		background: $color__theme;
+		color: #fff;
+	}
+}
+
+//.cnvschool-parallax__image {
+//	position: relative;
+//	padding: 40px;
+//
+//	.parallax-image {
+//		img {
+//			border-radius: 1rem;
+//			width: 100%;
+//		}
+//	}
+//
+//	.image-one {
+//		&.image_skew {
+//			backface-visibility: hidden;
+//			transform: rotateY(-35deg) rotateX(15deg);
+//		}
+//	}
+//
+//	.image-two {
+//		position: absolute;
+//		bottom: 0;
+//		right: 0;
+//
+//		img {
+//			border-radius: 1rem;
+//			box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+//		}
+//
+//		@media(max-width: 576px) {
+//			max-width: 150px;
+//		}
+//	}
+//
+//	.dot_shape {
+//		position: absolute;
+//		top: 0;
+//		left: 0;
+//		z-index: -1;
+//		max-width: 80%;
+//		width: 100%;
+//	}
+//}
+
+
+.cnvschool-parallax__image {
+	position: relative;
+	z-index: 3;
+	text-align: right;
+	max-width: 670px;
+
+	.image-two, .image-three {
+		position: absolute;
+	}
+
+	.image-two {
+		left: 190px;
+		top: 210px;
+	}
+
+	.image-three {
+		bottom: 210px;
+		left: 104px;
+	}
+
+	.circle {
+		position: absolute;
+		left: auto;
+		right: 0;
+		bottom: 30px;
+		background-image: linear-gradient( 60deg,#504cfa 0%, #ff3695 100%);
+		height: 500px;
+		width: 500px;
+		opacity: 0.051 !important;
+		border-radius: 50%;
+
+		@media(max-width: 768px) {
+			height: 400px;
+			width: 400px;
+		}
+
+		@media(max-width: 768px) {
+			height: 300px;
+			width: 300px;
+		}
+	}
+
+	.dot_shape {
+		position: absolute;
+		left: 165px;
+		bottom: 45px;
+		z-index: -1;
+		animation: wave 3s 0.1s infinite linear;
+		right: 0;
+		top: 100px;
+	}
+
+
+	&-style-2 {
+		.parallax-image {
+			position: relative;
+			z-index: 2;
+			margin-left: -55px;
+		}
+		.circle {
+			display: block;
+			height: 340px;
+			width: 340px;
+			background: #fefcf3;
+			border-radius: 50%;
+			position: absolute;
+			bottom: -25px;
+			left: -110px;
+			opacity: 1 !important;
+			z-index: -1;
+		}
+
+		.dot_shape {
+			position: absolute;
+			left: 165px;
+			right: auto;
+			bottom: 45px;
+			top: auto;
+			z-index: 1;
+			animation: wave 3s 0.1s infinite linear;
+		}
+	}
+
+	&-style-3 {
+		.parallax-image {
+			margin-right: -50px;
+		}
+
+		.circle {
+			background: #fcf8fc;
+			right: -140px;
+			left: auto;
+			top: auto;
+			bottom: 40px;
+			opacity: 1 !important;
+			height: 340px;
+			width: 340px;
+			z-index: -2;
+		}
+
+		.dot_shape {
+			right: 140px;
+			top: auto;
+			left: auto;
+			bottom: 50px;
+			opacity: 1;
+		}
+
+	}
+
+	&-style-4 {
+		.parallax-image {
+			position: relative;
+			z-index: 3;
+			margin-left: 65px;
+			text-align: left;
+		}
+
+		.image-two {
+			left: 270px;
+			top: 50px;
+			z-index: 2;
+		}
+
+		.circle {
+			position: absolute;
+			right: -40%;
+			left: auto;
+			top: -20%;
+			height: 650px;
+			width: 650px;
+			background: #f6f9fb;
+			border-radius: 50%;
+			opacity: 1 !important;
+		}
+
+		.dot_shape {
+			right: -60px;
+			left: auto;
+			top: auto;
+			bottom: 20px;
+			z-index: 1;
+			animation: jump 3s infinite;
+		}
+	}
+
+	&-style-5 {
+		position: relative;
+		max-width: 470px;
+		height: 624px;
+		margin: 0 auto;
+
+		.animate-circle {
+			&.style-one {
+				position: absolute;
+				top: 0;
+				margin-right: -43px;
+				height: 100%;
+				width: 100%;
+				z-index: -1;
+			}
+
+			img {
+				position: absolute;
+			}
+			.anim-bg-one {
+				right: -80px;
+				top: 80px;
+				animation: wave 4s 0.1s infinite linear;
+			}
+			.anim-bg-two {
+				top: 127px;
+				left: 57px;
+				animation: wave 3s 0.1s infinite linear;
+				transition-delay: 0.3s;
+			}
+			.anim-bg-three {
+				left: 25px;
+				top: 150px;
+				animation: wave 2s 0.1s infinite linear;
+				transition-delay: 0.5s;
+			}
+		}
+
+		.image-one {
+			right: -33px;
+			top: 0;
+		}
+
+		.image-two {
+			left: 3px;
+			top: 53%;
+			transform: translateY(-50%);
+			z-index: 44;
+		}
+	}
+}
+
+
+@keyframes wave {
+	0% {
+		transform: rotateZ(0deg) translate3d(0, 1%, 0) rotateZ(0deg);
+	}
+	100% {
+		transform: rotateZ(360deg) translate3d(0, 1%, 0) rotateZ(-360deg);
+	}
+}
+
+@keyframes jump {
+	0% {
+		transform: translateY(5px);
+	}
+	50% {
+		transform: translateY(-10px);
+	}
+	100% {
+		transform: translateY(5px);
+	}
+}

@@ -1,0 +1,251 @@
+// Faq List
+// --------------------------------------------------------------*/
+.cnvschool-faq {
+	&__item {
+		padding-left: 30px;
+		border-left: 2px solid $color__theme;
+		transition: all 0.3s ease;
+
+		&:not(:last-child) {
+			margin-bottom: 40px;
+		}
+	}
+	&__title {
+		font-size: 20px;
+		line-height: 24px;
+		font-weight: 500;
+		margin-bottom: 15px;
+	}
+
+	&__content {
+		font-size: 16px;
+		line-height: 30px;
+		margin-bottom: 0;
+	}
+}
+
+
+.cnvschool-accordian__nav {
+	display: block;
+	background: #f8f8f8;
+	padding: 40px 40px 40px 0;
+	border-radius: 6px;
+
+	li {
+		display: block;
+		margin-bottom: 6px;
+
+		.nav-link {
+			background-color: transparent;
+			border: 0;
+			font-size: 15px;
+			padding: 4px 20px 4px 40px;
+			color: #6b717c;
+			max-width: 200px;
+			min-width: 200px;
+			text-align: left;
+			font-weight: 500;
+
+			&.active {
+				background-color: #1abf68;
+				color: #fff;
+			}
+		}
+	}
+}
+
+.cnvschool-accordion {
+	.accordion-item {
+		margin-bottom: 10px;
+	}
+	.accordion-button {
+		font-weight: 500;
+		color: #2c2c51;
+		text-decoration: none;
+		white-space: normal;
+		text-align: left;
+		width: 100%;
+		padding: 20px 40px;
+		box-shadow: none;
+		background-color: #f8f8f8;
+		font-size: 16px;
+		display: flex;
+		justify-content: space-between;
+
+		 i {
+			 font-size: 26px;
+			 position: absolute;
+			 right: 30px;
+		 }
+	}
+
+	.accordion-body {
+		background: transparent;
+		padding: 23px 30px 30px;
+	}
+}
+
+
+//faq content style
+.faq_content {
+	position: relative;
+
+	.card-header {
+		padding: 0;
+		background-color: transparent;
+		line-height: 18px;
+		border-bottom: 0;
+
+		.btn {
+			border: none;
+			padding: 20px 45px	20px 30px;
+			font-size: 18px;
+			font-weight: 600;
+			display: block;
+			width: 100%;
+			text-align: left;
+			text-decoration: none;
+
+
+			&:hover {
+				color: $color__theme;
+			}
+
+			&:after {
+				font-family: "Font Awesome 5 Free";
+				font-weight: 900;
+				content: "\f068";
+				transition: 0.5s;
+				color: $color__theme;
+				font-size: 14px;
+				position: absolute;
+				right: 30px;
+				top: 24px;
+			}
+
+			&.collapsed {
+				&:after {
+					content: "\f067";
+					color: $color__heading;
+				}
+			}
+
+			&.collapsed {
+				color: $color__heading;
+				background: transparent;
+			}
+		}
+	}
+
+	.card {
+		border: 2px solid #dee2e6;
+		border-radius: 15px;
+
+		&:not(:last-child) {
+			margin-bottom: 15px;
+		}
+
+		&.active {
+			.card-header .btn {
+				color: $color__theme;
+			}
+		}
+	}
+
+	.card-body {
+		padding: 0 1.5rem 1.5rem 1.5rem;
+		font-size: 16px;
+	}
+}
+
+.btn-link:hover {
+	text-decoration: none;
+}
+
+.elementor-widget-tt-faq-list {
+	.tt-faq-list {
+		&:not(:last-child) {
+			margin-bottom: 53px;
+		}
+	}
+}
+
+.cnvschool-accordion {
+	.accordion-item {
+		margin-bottom: 20px;
+		background: #FFFFFF;
+		border: 1px solid #DDE5E2;
+	}
+
+	.accordion-button {
+		background: #fff;
+		font-size: 24px;
+		font-weight: 500;
+		color: #2c2c51;
+		text-decoration: none;
+		white-space: normal;
+		text-align: left;
+		width: 100%;
+		padding: 35px 45px;
+		box-shadow: none;
+
+		@media(max-width: 575px) {
+			font-size: 18px;
+			padding: 25px 30px;
+		}
+
+		.accordion__icon-container {
+			margin-right: 10px;
+		}
+
+		&:focus {
+			box-shadow: none;
+		}
+
+		&:after {
+			background-image: none;
+			font-family: "Font Awesome 5 Free";
+			font-weight: 900;
+			content: "\f067";
+			transition: 0.5s;
+			color: $color__heading;
+			text-align: right;
+			font-size: 14px;
+			position: absolute;
+			right: 45px;
+			top: 50%;
+			transform: translateY(-50%);
+
+			@media(max-width: 575px) {
+				right: 30px;
+			}
+		}
+
+		&:not(.collapsed) {
+			color: $color__theme;
+			background-color: transparent;
+			box-shadow: none;
+
+			&:after {
+				content: "\f068";
+				color: $color__theme;
+				background-image: none;
+				transform: translateY(-50%) rotate(0);
+			}
+		}
+	}
+
+	.accordion-body {
+		padding: 0 45px 40px;
+		font-size: 18px;
+		line-height: 28px;
+		margin-top: -7px;
+		color: #525A75;
+
+		@media(max-width: 575px) {
+			padding: 0 30px 30px;
+			font-size: 16px;
+			line-height: 26px;
+		}
+	}
+}

@@ -1,0 +1,55 @@
+.cnvschool-contact-info {
+	background: #FFFFFF;
+	border: 1px solid #E4EBED;
+	border-radius: 24px;
+	padding: 32px;
+
+	&__icon {
+		font-size: 26px;
+		color: $color__heading;
+		margin-bottom: 30px;
+	}
+
+	&__title {
+		font-family: $font__main;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 1.2;
+		margin-bottom: 10px;
+	}
+
+	&__info {
+		p {
+			font-size: 14px;
+			font-weight: 400;
+			margin-bottom: 0;
+		}
+	}
+
+	.cnvschool-btn {
+		padding: 8px 16px;
+		margin-right: 10px;
+		font-size: 12px;
+		font-weight: 600;
+		text-transform: uppercase;
+		background-color: $color__theme;
+		border-color: $color__theme;
+
+		&:hover {
+			background-color: transparent;
+			color: $color__theme;
+		}
+	}
+
+	&__button {
+		display: flex;
+		align-items: center;
+		margin-top: 16px;
+		border-radius: 30px;
+
+		p {
+			margin-bottom: 0;
+			font-size: 12px;
+		}
+	}
+}

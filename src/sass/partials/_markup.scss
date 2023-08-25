@@ -1,0 +1,220 @@
+@import "gutenberg";
+//post markup styles start
+%post-markup-styles {
+	a {
+		color: $secondary-color;
+		text-decoration: none;
+		&:hover {
+			color: $primary-color;
+		}
+	}
+	p {
+		text-align: justify;
+		strong {
+			font-weight: 600;
+		}
+		cite {
+			color: $secondary-color;
+		}
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	table {
+		border-style: solid;
+		border-color: $border-color;
+		border-spacing: 0;
+		border-width: 1px 0 0 1px;
+		table-layout: fixed;
+		width: 100%;
+		&.job-manager-jobs {
+			text-align: center;
+		}
+		&.give-table {
+			thead {
+				tr {
+					th {
+						text-align: center;
+					}
+				}
+			}
+			tbody {
+				tr {
+					td {
+						text-align: center;
+					}
+				}
+			}
+		}
+		th,
+		td {
+			color: $heading-color;
+			border-style: solid;
+			border-color: $border-color;
+			border-width: 0 1px 1px 0;
+			padding: 0.5rem;
+			a {
+				color: $secondary-color;
+				&:hover {
+					color: $primary-color;
+				}
+			}
+		}
+		th {
+			font-weight: 400;
+		}
+	}
+	dl {
+		dt {
+			color: $heading-color;
+			font-weight: 600;
+		}
+		dd {
+			margin-bottom: 1rem;
+		}
+	}
+	%ul-ol-list-style {
+		margin-left: 2.4rem;
+		padding: 0;
+		li {
+			padding: 0.2rem 0;
+			> ul {
+				margin-left: 1.2rem;
+			}
+		}
+	}
+	ul {
+		@extend %ul-ol-list-style;
+		list-style: disc;
+	}
+	ol {
+		@extend %ul-ol-list-style;
+	}
+	address {
+		font-style: italic;
+	}
+	del,
+	strike {
+		color: lighten($text-color, 35%);
+	}
+	ins {
+		background: $secondary-color;
+		color: $white;
+		text-decoration: none;
+		padding: 0 0.2rem;
+	}
+	pre {
+		border: 1px solid $border-color;
+		padding: 1.5rem;
+		white-space: pre-wrap;
+		word-wrap: break-word;
+	}
+	small {
+		@include typo(0.8rem);
+	}
+	input[type="password"] {
+		background: $white;
+		color: $text-color;
+		border: 1px solid darken($border-color, 20%);
+		padding: 12px 24px;
+		@include transition;
+		&:hover,
+		&:focus {
+			outline: 0;
+			border-color: $secondary-color;
+			@include box-shadow;
+		}
+	}
+	input[type="submit"] {
+		background: $primary-color;
+		color: $white;
+		border: 1px solid $primary-color;
+		padding: 12px 24px;
+		@include transition;
+		&:hover {
+			background: $secondary-color;
+			border-color: $secondary-color;
+		}
+	}
+	@include img-fluid;
+	.gallery {
+		&.gallery-columns-3 {
+			@include flex( row, flex-start, flex-start ,wrap );
+			.gallery-item {
+				flex-grow: 1;
+				width: calc(100% / 3);
+				height: auto;
+				padding-right: 1rem;
+				@media (max-width: 480px) {
+					width: calc(100% / 2);
+				}
+			}
+		}
+		&.gallery-columns-4 {
+			@include flex( row, flex-start, flex-start ,wrap );
+			.gallery-item {
+				flex-shrink: 1;
+				width: calc(100% / 4);
+				padding-right: 1rem;
+				@media (max-width: 480px) {
+					width: calc(100% / 2);
+				}
+			}
+		}
+		.wp-caption-text {
+			&.gallery-caption {
+				text-align: justify;
+				@media (max-width: 768px) {
+					text-align: left;
+				}
+			}
+		}
+	}
+	blockquote {
+		background: $light-color;
+		padding: 3rem;
+		position: relative;
+		> p {
+			color: darken($color: $text-color, $amount: 0.8);
+			position: relative;
+			margin-bottom: 2rem;
+			&:before {
+				content: "";
+				font-family: "Font Awesome 5 Free";
+				display: block;
+				@include typo(2rem, 1, 900);
+				color: $secondary-color;
+				margin-bottom: 1.5rem;
+			}
+			cite {
+				margin-left: 3rem;
+				position: relative;
+				a {
+					display: block;
+					margin-top: 1rem;
+					&:before {
+						bottom: 0;
+						position: absolute;
+						width: 30px;
+						height: 1px;
+						background: #6c757d;
+						content: '';
+						bottom: 0;
+						margin: 10px 0 13px -40px;
+					}
+				}
+			}
+		}
+	}
+}
+.itl-blog-post__body {
+	@extend %post-markup-styles;
+	@extend %block-editor-front-end-styles;
+}
+.type-page {
+  .itl-blog-post__body {
+    img.alignleft {
+      float: none;
+    }
+  }
+}

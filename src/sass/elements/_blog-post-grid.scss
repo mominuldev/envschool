@@ -1,0 +1,134 @@
+.cnv-post__item {
+	background-color: #fff;
+	border: 1px solid #ecf0f9;
+	box-shadow: 0px 29px 18px rgba(184, 201, 215, 0.15);
+	border-radius: 15px;
+	overflow: hidden;
+	margin-bottom: 30px;
+
+	.cnv-post__feature-image {
+		position: relative;
+		overflow: hidden;
+
+		img {
+			width: 100%;
+
+			transition: all 0.3s ease-in-out;
+			&:hover {
+				transform: scale(1.1) translateY(-5px);
+				box-shadow: 0 30px 30px 0 rgba($color__theme, 0.1);
+			}
+		}
+
+	}
+
+	.cnv-post__category {
+		position: absolute;
+		top: 22px;
+		right: 22px;
+		display: flex;
+
+		.category {
+			color: #fff;
+			padding: 9px 19px;
+			display: inline-block;
+			border-radius: 30px;
+			line-height: 1;
+			font-size: 12px;
+			font-weight: 500;
+
+			&:not(:last-child) {
+				margin-right: 10px;
+			}
+		}
+	}
+
+	.cnv-post__blog-content {
+		padding: 33px 40px 35px;
+
+		@media (max-width: 767px) {
+			padding: 25px 15px 30px;
+		}
+	}
+
+	.cnv-post__date-meta {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 16px;
+		color: #5e6371;
+		margin-bottom: 16px;
+		display: inline-block;
+
+		.posted-on {
+			display: inline-block;
+			vertical-align: middle;
+			margin-left: 3px;
+
+			a {
+				color: #5e6371;
+
+				&:hover {
+					color: $color__theme;
+				}
+			}
+		}
+
+		i {
+			margin-right: 5px;
+			vertical-align: -1px;
+		}
+	}
+
+	.cnv-post__entry-title {
+		font-size: 22px;
+		font-weight: 500;
+	}
+
+	p.cnv-post__entry-content {
+		margin: 0;
+	}
+
+	.cnv-post__footer {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 18px 40px;
+		border-top: 1px solid #ecf0f9;
+	}
+
+	.cnv-post__meta-right {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 20px;
+	}
+
+	.cnv-post__author-avatar {
+		font-size: 14px;
+
+		a {
+			color: $color__heading;
+			font-size: 14px;
+		}
+	}
+
+	.cnv-post__comments,
+	.cnv-post__views {
+		font-size: 14px;
+		color: #5e6371;
+		display: inline-block;
+		line-height: 1;
+
+		.comment-text {
+			display: none;
+		}
+
+		i {
+			margin-right: 3px;
+			vertical-align: -2px;
+			font-size: 16px;
+		}
+	}
+
+}
+

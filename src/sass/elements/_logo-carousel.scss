@@ -1,0 +1,70 @@
+.cnvschool-logo-carousel {
+
+    &:not(.cnvschool-client-logo--marquee) {
+        position: relative;
+        border-radius: 15px;
+        border: 1px solid #F1F6FE;
+        padding: 42px;
+    }
+
+    &.cnvschool-client-logo--marquee {
+        .swiper-wrapper {
+            transition-timing-function: linear;
+        }
+    }
+}
+
+.client-logo {
+	//padding: 20px;
+    transition: all 0.3s ease-in-out;
+
+    //img {
+    //    filter: gray; /* IE */
+    //    -webkit-filter: grayscale(1); /* Old WebKit */
+    //    -webkit-filter: grayscale(100%); /* New WebKit */
+    //    filter: url(resources.svg#desaturate); /* older Firefox */
+    //    filter: grayscale(100%); /* Current draft standard */
+    //    transition: all 0.3s ease-in-out;
+    //    opacity: 0.8;
+    //}
+    //
+    //&:hover {
+    //    img {
+    //        filter: grayscale(0%);
+    //        opacity: 1;
+    //    }
+    //}
+}
+
+.cnvschool-client-logo {
+    .swiper-wrapper {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.slider-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 42px;
+    width: 42px;
+    line-height: 42px;
+    text-align: center;
+    border-radius: 50%;
+    background: #FFF;
+    box-shadow: 0 10px 20px  rgba(0,0,0, 0.15);
+    z-index: 2;
+    cursor: pointer;
+
+    &.logo-next {
+        right: -22px;
+    }
+
+    &.logo-prev {
+        left: -23px;
+    }
+}
+
+
+

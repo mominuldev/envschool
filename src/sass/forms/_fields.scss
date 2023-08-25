@@ -1,0 +1,202 @@
+input:not([type='checkbox']):not([type='submit']),
+textarea {
+	margin-bottom: 20px;
+	width: 100%;
+	padding: 10px 15px;
+	font-weight: 400;
+	outline: 0;
+	transition: all 0.3s linear;
+	border-radius: 5px;
+	background-color: #fff;
+	border: 0;
+	font-size: 15px;
+	height: 60px;
+
+	&::placeholder {
+		color: #6A6A74;
+	}
+
+	&:focus {
+		box-shadow: none !important;
+		background-color: #fff;
+	}
+}
+
+select {
+	width: 100%;
+	background-color: #fafafc;
+	border: 1px solid #f1f1f6;
+	font-size: 16px;
+    display: inline-block;
+    background-position: right 10px center;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    padding: 12px 20px;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 490.656 490.656' style='enable-background:new 0 0 490.656 490.656;' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cpath d='M487.536,120.445c-4.16-4.16-10.923-4.16-15.083,0L245.317,347.581L18.203,120.445c-4.16-4.16-10.923-4.16-15.083,0 c-4.16,4.16-4.16,10.923,0,15.083l234.667,234.667c2.069,2.091,4.8,3.136,7.531,3.136s5.461-1.045,7.552-3.115l234.667-234.667 C491.696,131.368,491.696,124.627,487.536,120.445z'/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+	background-size: 12px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+
+	&:focus {
+		outline: 0;
+	}
+}
+
+.form-submit {
+	margin: 0;
+}
+
+textarea {
+	height: 160px;
+	margin-bottom: 20px;
+}
+
+
+.post-password-form {
+	input, label {
+		margin: 0;
+	}
+
+	input[type="password"] {
+		height: 51px;
+		border-width: 2px;
+		padding: 0 15px;
+		background: #F1F6FE;
+	}
+
+	input[type="submit"] {
+		background: $color__theme;
+		color: #fff;
+		border: 0;
+		height: 50px;
+		border-radius: 4px;
+
+		&:hover {
+			background: $color__heading;
+		}
+	}
+}
+
+.contact-form {
+	label {
+		width: 100%;
+	}
+
+	p {
+		margin-bottom: 0;
+	}
+}
+
+input[type=checkbox], input[type=radio] {
+	height: auto;
+}
+
+.wpcf7-form-control {
+	input[type=checkbox], input[type=radio] {
+		margin: 10px;
+	}
+
+	.wpcf7-list-item {
+		margin-left: 0;
+		margin-bottom: 15px;
+
+		> label {
+			display: flex;
+			align-items: baseline;
+			font-size: 15px;
+			line-height: 22px;
+		}
+	}
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: $color__theme;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.form-result {
+	display: none;
+}
+
+.wpcf7 .ajax-loader {
+	display: block;
+
+}
+
+.contact-form {
+	p {
+		position: relative;
+
+		i {
+			position: absolute;
+			left: 11px;
+			bottom: 35px;
+			z-index: 2;
+			height: 40px;
+			width: 40px;
+			background: #fff;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 50%;
+		}
+	}
+}
+
+.wpcf7-form-control-wrap {
+	display: block;
+
+
+
+	//input {
+	//	margin: 0 !important;
+	//}
+}
