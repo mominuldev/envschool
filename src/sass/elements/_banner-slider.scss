@@ -84,7 +84,7 @@
 		}
 	}
 
-	.cnvschool-btn {
+	.cnv-btn {
 		padding: 16px 41px;
 		line-height: 1;
 		font-size: 16px;
@@ -94,11 +94,9 @@
 		}
 
 		&:hover {
-			color: $color__theme;
-
-			&:after {
-				border-image-source: linear-gradient(90deg, #fff 100%, #fff 100%);
-			}
+			background: $color__theme;
+			color: #fff;
+			border-color: $color__theme;
 		}
 
 		&.btn-outline {
@@ -138,7 +136,7 @@
 			animation: fadeInUp 1s both 1.2s;
 		}
 
-		.cnvschool-btn {
+		.cnv-btn {
 			animation: fadeInUp 1s both 1.5s;
 
 			&.btn-outline {
@@ -147,6 +145,8 @@
 				border-color: #fff;
 
 				&:hover {
+					background: $color__theme;
+					color: #fff;
 					border-color: $color__theme;
 				}
 			}

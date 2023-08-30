@@ -25,9 +25,10 @@
 		a {
 			font-size: 30px;
 			font-weight: 700;
-			padding: 21px 0;
+			padding: 10px 0;
 			display: block;
 			color: $color__heading;
+			max-width: 80px;
 
 			@media(max-width: 991px) {
 				padding: 13px 0;
@@ -268,11 +269,11 @@
 					@media(min-width: 992px) {
 						&:after {
 							position: absolute;
-							content: "\e61a";
-							font-family: "themify";
+							content: "\f078";
+							font-family: "Font Awesome 6 Free";
 							font-weight: 900;
 							right: 0;
-							font-size: 13px;
+							font-size: 14px;
 							top: 2px;
 							line-height: 1;
 							color: $color__heading;
