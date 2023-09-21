@@ -129,8 +129,8 @@ if ( ! class_exists( 'CNV_Theme_Helper' ) ) {
 				} elseif ( is_search() ) {
 					echo "<span>" . esc_html__( 'Search Results', 'cnvschool' );
 					echo '</span>';
-				} elseif ( is_post_type_archive( 'tribe_events' ) ) {
-					echo "<span>" . esc_html__( 'Events', 'cnvschool' );
+				} elseif ( is_post_type_archive( 'notice' ) ) {
+					echo "<span>" . esc_html__( 'নোটিশ', 'cnvschool' );
 				}
 				echo '</div>';
 			} else {

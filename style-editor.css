@@ -19,6 +19,10 @@ body {
     color: #52525c;
 }
 
+.edit-post-visual-editor__post-title-wrapper .editor-post-title {
+    line-height: 1.4;
+}
+
 /*Editor width*/
 p {
     margin: 0 0 20px 0;

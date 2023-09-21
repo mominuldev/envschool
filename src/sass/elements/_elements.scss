@@ -194,6 +194,31 @@ figure {
 	transform: translate(-50%, -50%);
 }
 
+
+// Custom Font face
+@font-face {
+	font-family: 'Kalpurush';
+	src: url('../fonts/kalpurush.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Shurjo';
+	src: url('../fonts/ShurjoWeb_700.woff2') format('woff2'),
+		url('../fonts/ShurjoWeb_700.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ShurjoR';
+	src: url('../fonts/ShurjoWeb_400.woff2') format('woff2'),
+	url('../fonts/ShurjoWeb_400.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
 @import "lists";
 @import "tables";
 
@@ -246,6 +271,11 @@ figure {
 ## Team
 --------------------------------------------------------------*/
 @import "team";
+
+/*--------------------------------------------------------------
+## Notice
+--------------------------------------------------------------*/
+@import "notice";
 
 /*--------------------------------------------------------------
 ## Image Carousel

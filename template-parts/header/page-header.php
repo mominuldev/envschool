@@ -25,7 +25,7 @@ if ( $page_header_crumb == true ) {
 	$banner_crumb = true;
 }
 
-if ( is_404() || is_singular( 'project' )) {
+if ( is_404() || is_singular( 'notice' )) {
 	$banner_disp = false;
 //	$banner_crumb = false;
 }
@@ -100,8 +100,8 @@ if ( is_singular() ) {
 } elseif ( is_archive() ) {
 	$banner_title = get_the_archive_title();
 
-} elseif ( is_post_type_archive( 'tribe_events' ) ) {
-	$banner_title = esc_html__( 'All Events', 'cnvschool' );
+} elseif ( is_post_type_archive( 'notice' ) ) {
+	$banner_title = esc_html__( 'নোটিশ', 'cnvschool' );
 } elseif ( is_home() && !is_front_page() ) {
 	$postId = get_option( 'page_for_posts' );
 	$banner_title = esc_html__( 'Blog', 'cnvschool' );

@@ -1,10 +1,8 @@
 .cnv-btn {
 	position: relative;
-	font-family: 'Poppins', sans-serif;
 	padding: 16px 35px;
 	background-color: $color__heading-2;
 	border: 1px solid $color__heading-2;
-	text-transform: uppercase;
 	z-index: 1;
 	color: #fff;
 	overflow: hidden;
@@ -14,7 +12,6 @@
 	align-items: center;
 	font-weight: 600;
 	transition: all 0.4s ease-in-out;
-	letter-spacing: 1.6px;
 
 	&.btn-circle {
 		border-radius: 40px;
@@ -47,7 +44,8 @@
 	}
 
 	&.btn-small {
-		padding: 5px 30px;
+		padding: 6px 23px;
+		font-size: 14px;
 	}
 
 	&.btn-lg {
@@ -67,12 +65,12 @@
 		}
 
 		&.btn-light {
-			border-color: $color__theme-secondary;
+			border-color: $color__theme;
 			color: $color__heading;
 
 			&:hover {
 				color: #fff;
-				background-color: $color__theme-secondary;
+				background-color: $color__theme;
 			}
 		}
 
@@ -88,9 +86,9 @@
 	}
 
 	&.btn-light:not(.btn-outline) {
-		background-color: $color__theme-secondary;
+		background-color: $color__theme;
 		color: $color__heading;
-        border-color: $color__theme-secondary;
+        border-color: $color__theme;
 
 		&:hover {
 			color: $color__heading;

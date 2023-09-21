@@ -62,6 +62,7 @@ if (!class_exists('CNV_Theme_Autoload')) {
 	        require_once CNV_THEME_DIR . '/inc/framework/admin-option.php';
 	        require_once CNV_THEME_DIR . '/inc/framework/meta-option.php';
 	        require_once CNV_THEME_DIR . '/inc/framework/gallery.php';
+	        require_once CNV_THEME_DIR . '/inc/framework/notice.php';
 	        require_once CNV_THEME_DIR . '/inc/framework/menu.php';
         }
 
