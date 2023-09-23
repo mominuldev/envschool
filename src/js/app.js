@@ -11,7 +11,7 @@ var CNV = CNV || {};
     // USE STRICT
     "use strict";
 
-    window.RBT = {
+    window.CNV = {
         init: function () {
             // Header
             this.header = $('.header-fixed');
@@ -46,7 +46,7 @@ var CNV = CNV || {};
             this.isDesktop = $(window).width() >= 991;
             this.isMobile = $(window).width() <= 991;
             this.isPad = $(window).width() <= 1024;
-            this.isMobileMenu = $(window).width() <= RBT.mobileMenu
+            this.isMobileMenu = $(window).width() <= CNV.mobileMenu
         }
     };
 
@@ -214,17 +214,17 @@ var CNV = CNV || {};
 
         handleMobileHeader: function () {
 
-            if (RBT.header && RBT.header.length) {
+            if (CNV.header && CNV.header.length) {
 
-                if (RBT.isMobileMenu) {
-                    RBT.header.addClass('mobile-header');
-                    RBT.body.addClass('is-mobile-menu');
+                if (CNV.isMobileMenu) {
+                    CNV.header.addClass('mobile-header');
+                    CNV.body.addClass('is-mobile-menu');
                     setTimeout(function () {
                         $('.main-nav').addClass('unhidden');
                     }, 300);
                 } else {
-                    RBT.header.removeClass('mobile-header');
-                    RBT.body.removeClass('is-mobile-menu');
+                    CNV.header.removeClass('mobile-header');
+                    CNV.body.removeClass('is-mobile-menu');
                     $('.main-nav').addClass('visible');
                 }
             }
@@ -236,21 +236,21 @@ var CNV = CNV || {};
 
         handleFixedHeader: function () {
 
-            RBT.init();
-            var fixed = RBT.headerFixed;
+            CNV.init();
+            var fixed = CNV.headerFixed;
 
             if ($(document).scrollTop() > fixed.initialOffset) {
 
-                if ((!RBT.isMobileMenu && fixed.enabled && !fixed.value) ||
-                    (RBT.isMobileMenu && fixed.mobileEnabled && !fixed.mobileValue)) {
+                if ((!CNV.isMobileMenu && fixed.enabled && !fixed.value) ||
+                    (CNV.isMobileMenu && fixed.mobileEnabled && !fixed.mobileValue)) {
 
-                    if (RBT.isMobileMenu) {
+                    if (CNV.isMobileMenu) {
                         fixed.mobileValue = true;
                     } else {
                         fixed.value = true;
                     }
 
-                    RBT.header.addClass('header-fixed no-transition');
+                    CNV.header.addClass('header-fixed no-transition');
 
                 }
 
@@ -259,15 +259,15 @@ var CNV = CNV || {};
                 fixed.value = false;
                 fixed.mobileValue = false;
 
-                RBT.header.removeClass('header-fixed');
+                CNV.header.removeClass('header-fixed');
 
             }
 
             // Effect appearance
             if ($(document).scrollTop() > fixed.initialOffset + 50) {
-                RBT.header.removeClass('no-transition').addClass('showed');
+                CNV.header.removeClass('no-transition').addClass('showed');
             } else {
-                RBT.header.removeClass('showed').addClass('no-transition');
+                CNV.header.removeClass('showed').addClass('no-transition');
             }
         },
 
@@ -410,7 +410,7 @@ var CNV = CNV || {};
 
     CNV.documentOnLoad = {
         init: function () {
-            RBT.init();
+            CNV.init();
             CNV.initialize.handleMobileHeader();
             $("#preloader").fadeOut("slow");
         },
@@ -424,7 +424,7 @@ var CNV = CNV || {};
                     top: "0"
                 })
             }
-            RBT.resize();
+            CNV.resize();
             CNV.initialize.handleMobileHeader();
             CNV.initialize.handleFixedHeader();
         },

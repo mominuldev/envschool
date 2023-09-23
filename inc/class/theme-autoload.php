@@ -67,6 +67,7 @@ if (!class_exists('CNV_Theme_Autoload')) {
 
 			// Widgets
 	        require_once CNV_THEME_DIR . '/inc/framework/widgets/about.php';
+	        require_once CNV_THEME_DIR . '/inc/framework/widgets/contact-info.php';
         }
 
         public function walker_comment(){

@@ -15,49 +15,32 @@ if( class_exists( 'CSF' ) ) {
 			array(
 				'id'    => 'logo',
 				'type'  => 'media',
-				'title' => __('Logo', 'designmonks'),
-				'desc'  => __('Upload your logo here.', 'designmonks'),
+				'title' => __('Logo', 'cnv-school'),
+				'desc'  => __('Upload your logo here.', 'cnv-school'),
 			),
+
+            // School Name
+            array(
+                'id'    => 'school_name',
+                'type'  => 'text',
+                'title' => __('School Name', 'cnv-school'),
+                'desc'  => __('Enter school name here.', 'cnv-school'),
+            ),
 
 			// School Name
 			array(
-				'id'    => 'school_name',
+				'id'    => 'description',
 				'type'  => 'text',
-				'title' => __('School Name', 'designmonks'),
-				'desc'  => __('Enter your school name here.', 'designmonks'),
-			),
-
-			// Phone Number
-			array(
-				'id'    => 'phone_number',
-				'type'  => 'text',
-				'title' => __('Phone Number', 'designmonks'),
-				'desc'  => __('Enter your phone number here.', 'designmonks'),
-			),
-
-			// Email Address
-			array(
-				'id'    => 'email_address',
-				'type'  => 'text',
-				'title' => __('Email Address', 'designmonks'),
-				'desc'  => __('Enter your email address here.', 'designmonks'),
-			),
-
-			// Address
-			array(
-				'id'    => 'address',
-				'type'  => 'text',
-				'title' => __('Address', 'designmonks'),
-				'desc'  => __('Enter your address here.', 'designmonks'),
+				'title' => __('Description', 'cnv-school'),
+				'desc'  => __('Enter description here.', 'cnv-school'),
 			),
 
 			// Social Media enable
 			array(
 				'id'      => 'show_social_icon',
 				'type'    => 'switcher',
-				'title'   => __('Show Social Icon', 'designmonks'),
+				'title'   => __('Show Social Icon', 'cnv-school'),
 			),
-
 		)
 	) );
 
@@ -77,32 +60,21 @@ if( class_exists( 'CSF' ) ) {
 			?>
 
             <?php if( ! empty( $instance['logo']['url'] )) : ?>
-                <div class="csf-about__widget-logo">
+                <div class="cnv-about__widget-logo">
                     <img src="<?php echo $instance['logo']['url']; ?>" alt="logo" class="dm-footer__logo">
 
 	                <?php if( ! empty( $instance['school_name'] )) : ?>
-                        <h3 class="dm-footer__widget-title"><?php echo $instance['school_name']; ?></h3>
+                        <h3 class="cnv-footer__widget-school-name"><?php echo $instance['school_name']; ?></h3>
 	                <?php endif; ?>
                 </div>
             <?php endif; ?>
 
-
-
-            <ul class="cnv-footer-contact-info">
-                <?php if( ! empty( $instance['phone_number'] )) : ?>
-                    <li><i class="fa-solid fa-phone-volume"></i> <?php echo $instance['phone_number']; ?></li>
-                <?php endif; ?>
-
-                <?php if( ! empty( $instance['email_address'] )) : ?>
-                    <li><i class="fa-solid fa-envelope"></i> <?php echo $instance['email_address']; ?></li>
-                <?php endif; ?>
-
-                <?php if( ! empty( $instance['address'] )) : ?>
-                    <li><i class="fa-solid fa-map-location-dot"></i> <?php echo $instance['address']; ?></li>
-                <?php endif; ?>
-            </ul>
+			<?php if( ! empty( $instance['description'] )) : ?>
+                <p class="cnv-footer__widget-description"><?php echo $instance['description']; ?></p>
+			<?php endif; ?>
 
             <?php if( $instance['show_social_icon'] ) : ?>
+                <h4 class="cnv-footer__widget-social-title"><?php esc_html_e( 'Follow Us', 'cnv-school' ); ?></h4>
                 <?php cnv_get_social_icon(); ?>
             <?php endif; ?>
 
@@ -112,6 +84,5 @@ if( class_exists( 'CSF' ) ) {
 
 		}
 	}
-
 }
 

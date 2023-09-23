@@ -82,6 +82,7 @@ if ( ! class_exists( 'CNV_Theme_Support' ) ) {
 
 				//Image Size
 				add_image_size( 'cnv-team', 265, 300, true );
+				add_image_size( 'cnv_blog_grid_382x278', 382, 278, true );
 			}
 		}
 

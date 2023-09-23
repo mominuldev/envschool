@@ -1032,7 +1032,6 @@ if ( class_exists( 'CSF' ) ) {
 		)
 	) );
 
-
 	// Portfolio Setting
 	CSF::createSection( $prefix, array(
 		'title'  => __( 'Project', 'cnvschool' ),

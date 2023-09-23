@@ -25,7 +25,7 @@ if ( $page_header_crumb == true ) {
 	$banner_crumb = true;
 }
 
-if ( is_404() || is_singular( 'notice' )) {
+if ( is_404() || is_singular( 'notice' ) || is_singular( 'gallery' )) {
 	$banner_disp = false;
 //	$banner_crumb = false;
 }

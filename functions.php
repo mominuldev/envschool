@@ -136,9 +136,9 @@ add_filter('get_the_archive_title', 'custom_post_type_archive_title');
 //add_filter('get_the_archive_title', 'custom_post_type_archive_title');
 
 function cnv_get_social_icon() {
-	$social_links = designmonks_option( 'social_links' );
+	$social_links = cnv_option( 'social_links' );
 	?>
-	<ul class="dm-social-links">
+	<ul class="cnv-social-links">
 		<?php foreach ($social_links as $index => $item) :  ?>
 			<li>
 				<a href="<?php echo esc_url($item['url']) ?>">
