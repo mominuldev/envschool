@@ -5,7 +5,7 @@
 
 
 #main-content {
-	max-width: 800px;
+	max-width: 900px;
 	margin: 0 auto;
 }
 
@@ -23,7 +23,7 @@
 
 	&__title {
 		font-size: 16px;
-		font-weight: 700;
+		font-weight: 500;
 		color: #000;
 		margin-bottom: 0;
 		width: 50%;
@@ -95,7 +95,7 @@ h2.cnv-notice__heading {
 }
 
 .notice-list__download-btn {
-	padding: 10px 19px;
+	padding: 10px 15px;
 	background: $color__theme;
 	color: #fff;
 	border-radius: 6px;

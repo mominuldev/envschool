@@ -1,4 +1,4 @@
-.rbt-counter {
+.cnv-counter {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -50,7 +50,7 @@
 	.row {
 		.col-md-4 {
 			&:not(:last-child) {
-				.rbt-counter {
+				.cnv-counter {
 					margin-bottom: 30px;
 				}
 			}

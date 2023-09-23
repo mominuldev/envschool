@@ -68,27 +68,8 @@
 		ul {
 			li {
 				a {
-					&:after {
-						position: absolute;
-						content: '';
-						display: block;
-						bottom: 2px;
-						height: 1px;
-						left: 0;
-						width: 100%;
-						background: $color__theme;
-						transform-origin: right center;
-						transform: scale(0, 1);
-						transition: transform 0.25s cubic-bezier(.37, .31, .2, .85);
-					}
-
 					&:hover {
 						color: $color__theme;
-
-						&:after {
-							transform-origin: left center;
-							transform: scale(1, 1);
-						}
 					}
 				}
 			}
@@ -708,10 +689,29 @@
 
 .site-footer {
 	.widget-title, h2, h3, h4, h5, h6 {
-		font-size: 20px;
-		font-weight: 700;
+		font-size: 24px;
+		font-weight: 500;
 		color: #2c2c51;
-		margin-bottom: 32px;
+		margin-bottom: 36px;
+		position: relative;
+		padding-bottom: 16px;
+
+		&:before, &:after {
+			content: "";
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 51px;
+			height: 3px;
+			background-color: $color__theme;
+		}
+
+		&:after {
+			width: 10px;
+			left: 56px;
+			border-right: 10px solid $color__theme;
+			box-shadow: 15px 0 0 0 $color__theme;
+		}
 	}
 
 	.widget {
@@ -725,11 +725,11 @@
 		ul {
 			li {
 				color: rgba(255, 255, 255, 0.6);
-				font-size: 15px;
+				font-size: 16px;
 
 				a {
 					color: #CDD0D3;
-					font-size: 15px;
+					font-size: 16px;
 					position: relative;
 					display: flex;
 					justify-content: space-between;

@@ -118,7 +118,7 @@ select,
 optgroup,
 textarea {
   color: #52525C;
-  font-family: "Kalpurush", sans-serif;
+  font-family: "Jost", sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -132,7 +132,7 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   clear: both;
-  font-family: "Shurjo", sans-serif;
+  font-family: "Jost", sans-serif;
   line-height: 1.2em;
   font-weight: 700;
   color: #121212;
@@ -846,7 +846,7 @@ nav.wp-calendar-nav {
 /* Back To Top */
 .cnvschool-back-btn {
   position: relative;
-  font-family: "Shurjo", sans-serif;
+  font-family: "Jost", sans-serif;
   display: inline-flex;
   font-size: 24px;
   font-weight: 600;
@@ -2087,20 +2087,20 @@ nav.wp-calendar-nav {
 /*--------------------------------------------------------------
 ## Counting
 --------------------------------------------------------------*/
-.rbt-counter {
+.cnv-counter {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.rbt-counter__icon-container {
+.cnv-counter__icon-container {
   position: relative;
   max-width: 70px;
   font-size: 40px;
   color: #000000;
   margin-right: 15px;
 }
-.rbt-counter__number {
-  font-family: "Kalpurush", sans-serif;
+.cnv-counter__number {
+  font-family: "Jost", sans-serif;
   font-size: 60px;
   line-height: 1;
   font-weight: 700;
@@ -2109,7 +2109,7 @@ nav.wp-calendar-nav {
   display: flex;
   margin-bottom: 0;
 }
-.rbt-counter__title {
+.cnv-counter__title {
   font-size: 16px;
   color: #000000;
   font-weight: 700;
@@ -2117,13 +2117,13 @@ nav.wp-calendar-nav {
   text-transform: uppercase;
 }
 @media (max-width: 1200px) and (min-width: 768px) {
-  .rbt-counter__title {
+  .cnv-counter__title {
     font-size: 14px;
   }
 }
 
 @media (max-width: 1200px) {
-  .row .col-md-4:not(:last-child) .rbt-counter {
+  .row .col-md-4:not(:last-child) .cnv-counter {
     margin-bottom: 30px;
   }
 }
@@ -2189,9 +2189,9 @@ nav.wp-calendar-nav {
 }
 .cnv-team__social li a {
   display: block;
-  height: 35px;
-  width: 35px;
-  line-height: 38px;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
   text-align: center;
   border: 1px solid #e5e5e5;
   border-radius: 50%;
@@ -2211,10 +2211,18 @@ nav.wp-calendar-nav {
 }
 .cnv-team--one .cnv-team__avater {
   overflow: hidden;
-  min-width: 40%;
+  max-width: 40%;
+  min-width: 260px;
+}
+@media (max-width: 991px) {
+  .cnv-team--one .cnv-team__avater {
+    max-width: 30%;
+    min-width: 200px;
+  }
 }
 .cnv-team--one .cnv-team__avater img {
   border-radius: 6px;
+  width: 100%;
 }
 .cnv-team--one .cnv-team__short-info {
   margin: 0;
@@ -2229,10 +2237,14 @@ nav.wp-calendar-nav {
   text-align: center;
   padding: 10px;
   border-radius: 10px;
-  border: 1px solid #e5e5e5;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 .cnv-team--two .cnv-team__avater img {
   border-radius: 10px;
+  height: 260px;
+  width: 100%;
+  object-fit: cover;
 }
 .cnv-team--two .cnv-team__info {
   padding-top: 20px;
@@ -2270,7 +2282,7 @@ nav.wp-calendar-nav {
 .cnv-team__name {
   font-size: 22px;
   font-weight: 700;
-  margin-bottom: 0;
+  margin-bottom: 8px;
   line-height: 1.1;
 }
 .cnv-team__designation {
@@ -2293,7 +2305,7 @@ nav.wp-calendar-nav {
 }
 
 #main-content {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -2311,7 +2323,7 @@ nav.wp-calendar-nav {
 }
 .cnv-notice__title {
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 500;
   color: #000;
   margin-bottom: 0;
   width: 50%;
@@ -2376,7 +2388,7 @@ h2.cnv-notice__heading {
 }
 
 .notice-list__download-btn {
-  padding: 10px 19px;
+  padding: 10px 15px;
   background: #eb4135;
   color: #fff;
   border-radius: 6px;
@@ -2390,18 +2402,18 @@ h2.cnv-notice__heading {
 /*--------------------------------------------------------------
 ## Image Carousel
 --------------------------------------------------------------*/
-.rbt-slider-image img {
+.cnv-slider-image img {
   border-radius: 20px !important;
   overflow: hidden;
 }
-.rbt-slider-image.sbt-slider-image--center {
+.cnv-slider-image.sbt-slider-image--center {
   width: max-content;
   margin: 30px auto 0;
 }
 
-h3.rbt-image-carousel-title {
+h3.cnv-image-carousel-title {
   color: #FFF;
-  font-family: "Kalpurush", sans-serif;
+  font-family: "Jost", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -2879,7 +2891,7 @@ h3.rbt-image-carousel-title {
   margin-right: 7px;
 }
 #cnvschool-dynamic-tabs.horizontal #cnvschool-dynamic-tabs-nav.style-one li a {
-  font-family: "Shurjo", sans-serif;
+  font-family: "Jost", sans-serif;
   font-size: 14px;
   font-weight: 500;
   padding: 6px 20px;
@@ -2960,7 +2972,7 @@ h3.rbt-image-carousel-title {
   background: #BFE3E8;
   border-radius: 30px;
   padding: 17px 36px;
-  font-family: "Shurjo", sans-serif;
+  font-family: "Jost", sans-serif;
   font-size: 18px;
   font-weight: 600;
   display: flex;
@@ -3475,7 +3487,7 @@ h3.rbt-image-carousel-title {
   margin-bottom: 44px;
 }
 .contact-info-wrapper .email .email-id {
-  font-family: "Shurjo", sans-serif;
+  font-family: "Jost", sans-serif;
   font-size: 20px;
   color: #4c4c4c;
   margin: 0;
@@ -3496,7 +3508,7 @@ h3.rbt-image-carousel-title {
   margin-bottom: 30px;
 }
 .cnv-contact-info__title {
-  font-family: "Kalpurush", sans-serif;
+  font-family: "Jost", sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 1.2;
@@ -4031,49 +4043,39 @@ h3.rbt-image-carousel-title {
 .site-footer {
   position: relative;
   overflow: hidden;
-}
-.site-footer.footer_dark {
-  background: #111921;
-}
-.site-footer.footer_dark .description, .site-footer.footer_dark p {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 15px;
-}
-.site-footer.footer_dark .logo-dark {
-  display: none;
+  background-color: #021a40;
 }
 .site-footer .widget {
   position: relative;
   z-index: 2;
   padding: 0;
 }
-.site-footer .widget ul.footer-social-link {
-  margin-top: 15px;
+.site-footer .menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-.site-footer .widget ul.footer-social-link li {
-  display: inline-block;
+.site-footer .menu li {
+  display: block;
+  margin-right: 20px;
+  position: relative;
 }
-.site-footer .widget ul.footer-social-link li:not(:last-child) {
-  margin-right: 7px;
-}
-.site-footer .widget ul.footer-social-link li a {
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  height: 44px;
-  width: 44px;
-  line-height: 41px;
-  border-radius: 6px;
-  color: #fff;
-  text-align: center;
+.site-footer .menu li a {
+  color: rgba(255, 255, 255, 0.7);
   font-size: 15px;
+  font-weight: 400;
+  position: relative;
+  padding-left: 15px;
 }
-.site-footer .widget ul.footer-social-link li a:hover {
-  background-color: #fff;
-  border-color: #fff;
-  color: #eb4135;
-}
-.site-footer .tagcloud a {
-  color: #121212;
-  margin-bottom: 7px;
+.site-footer .menu li a:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.7);
 }
 .site-footer .footer-wrapper {
   padding: 107px 0 70px;
@@ -4107,198 +4109,51 @@ h3.rbt-image-carousel-title {
   }
 }
 .site-footer .site-info .copyright p {
+  font-family: "Jost", sans-serif;
   margin: 0;
   color: #999aa8;
   font-size: 16px;
 }
 .site-footer .site-info .copyright p a {
-  color: #668014;
+  color: #eb4135;
 }
 .site-footer .site-info .copyright p a:hover {
-  color: #eb4135;
-}
-.site-footer.footer_light {
-  background-color: #f5f4f4;
-}
-.site-footer.footer_light .logo-light {
-  display: none;
-}
-.site-footer.footer_light p {
-  color: #6d6d82;
-}
-.site-footer.footer_light .site-info {
-  background-color: #FCFCFC;
-  border-top: 0;
-}
-.site-footer.footer_light .site-info .copyright p {
-  color: #A2A2A2;
-}
-.site-footer.footer_light .site-info .copyright a {
   color: #668014;
 }
-.site-footer.footer_light .site-info .copyright a:hover {
-  color: #eb4135;
-}
-.site-footer.footer_light .widget .widget-title,
-.site-footer.footer_light .widget h1, .site-footer.footer_light .widget h2, .site-footer.footer_light .widget h3, .site-footer.footer_light .widget h4, .site-footer.footer_light .widget h5, .site-footer.footer_light .widget h6 {
-  color: #121212;
-}
-.site-footer.footer_light .widget ul:not(.footer-social-link) li a {
-  color: #8A8A8A;
-}
-.site-footer.footer_light .widget ul:not(.footer-social-link) li a:hover {
-  color: #eb4135;
-}
-.site-footer.footer_light .widget-newsletter input#newsletter-form-email {
-  background-color: transparent;
-  border: 2px solid rgba(0, 0, 0, 0.12);
-}
-.site-footer.footer_light .widget-newsletter .newsletter-submit {
-  box-shadow: 0 11px 18px -8px rgba(23, 92, 255, 0.6);
-}
-.site-footer.footer_light .widget-newsletter .newsletter-submit:hover {
-  background-color: #eb4135;
-  border-color: #eb4135;
-  box-shadow: none;
-}
-.site-footer.footer_light .footer-social-link li a {
-  border-color: rgba(0, 0, 0, 0.12);
-  color: #65676d;
-}
-.site-footer.footer_light .footer-social-link li a:hover {
-  background-color: #eb4135;
-  border-color: #eb4135;
-  color: #fff;
-}
 
-.widget-newsletter .form-result {
-  margin: 10px 0 0;
-  padding: 10px 15px;
-  line-height: 22px;
-}
-.widget-newsletter .newsletter-inner {
-  background-color: #f3f6f8;
-  border-radius: 6px;
-  overflow: hidden;
-}
-.widget-newsletter .form-control[type=email] {
-  margin-bottom: 0 !important;
-  height: 50px;
-  padding: 0 15px !important;
-  border-radius: 0;
-  background-color: transparent !important;
-  border: 0 !important;
-  color: #121212;
-}
-.widget-newsletter .form-control[type=email]:focus {
-  box-shadow: none;
-  color: #121212;
-}
-.widget-newsletter .newsletter-submit {
-  border-radius: 0;
-  padding: 10px 25px;
-  min-width: 60px;
-  box-shadow: none !important;
-}
-.widget-newsletter .newsletter-submit i.fa-circle-o-notch {
-  display: none;
-}
-.widget-newsletter .newsletter-submit:hover {
-  background-color: #eb4135;
-  color: #fff;
-}
-.widget-newsletter .newsletter-submit.clicked i.fa-paper-plane {
-  display: none;
-}
-.widget-newsletter .newsletter-submit.clicked i.fa-circle-o-notch {
-  display: block;
-}
-.widget-newsletter .form-result .content {
-  font-size: 14px;
-}
-
-.site-footer .widget .cnvschool-block-social-link {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.site-footer .widget .cnvschool-block-social-link li {
-  display: inline-block;
-}
-.site-footer .widget .cnvschool-block-social-link li:not(:last-child) {
-  margin-right: 7px !important;
-}
-.site-footer .widget .cnvschool-block-social-link li a {
-  height: 40px;
-  width: 40px;
+.csf-about__widget .csf-about__widget-logo {
+  margin-bottom: 30px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  color: rgba(255, 255, 255, 0.7);
-  border: 1px solid rgba(255, 255, 255, 0.302);
-  border-radius: 30px;
-  font-size: 14px;
+  gap: 15px;
+  max-width: 300px;
 }
-.site-footer .widget .cnvschool-block-social-link li a:hover {
-  background-color: #fff;
-  border-color: #fff;
-  color: #eb4135;
+.csf-about__widget .csf-about__widget-logo .dm-footer__logo {
+  max-width: 70px;
+  background: #fff;
+  border-radius: 50%;
 }
-
-.footer-social-wrap {
+.csf-about__widget .dm-footer__widget-title {
+  margin-bottom: 0;
+  font-size: 24px;
+  line-height: 32px;
+  padding-bottom: 0;
+}
+.csf-about__widget .dm-footer__widget-title:before, .csf-about__widget .dm-footer__widget-title:after {
+  display: none;
+}
+.csf-about__widget .cnv-footer-contact-info li {
+  margin-bottom: 15px !important;
+  color: #fff !important;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: baseline;
+  letter-spacing: 0.5px;
 }
-@media (max-width: 767px) {
-  .footer-social-wrap {
-    display: block;
-    text-align: center;
-  }
-  .footer-social-wrap .footer-social-wrapper {
-    margin-bottom: 20px;
-  }
-  .footer-social-wrap .copyright {
-    padding: 15px 0 5px;
-  }
-}
-
-.wp-widget-block-newsletter {
-  max-width: 400px;
-}
-
-.single-post .footer_light, .blog .footer_light, .archive .footer_light, .search-results .footer_light, .single-cnv_job .footer_light, .single-cnv_support .footer_light {
-  background-color: #F8F9FA;
-}
-
-.site-footer-menu {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.site-footer-menu li {
-  display: inline-block;
-  margin-right: 20px;
-  position: relative;
-}
-.site-footer-menu li:not(:last-child) {
-  margin-right: 15px;
-  padding-right: 15px;
-}
-.site-footer-menu li:not(:last-child):after {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 2px;
-  height: 15px;
-  background-color: rgba(255, 255, 255, 0.2);
-}
-.site-footer-menu li a {
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 15px;
-  font-weight: 400;
+.csf-about__widget .cnv-footer-contact-info li i {
+  color: #eb4135;
+  margin-right: 5px;
+  min-width: 25px;
+  transform: translateY(2px);
 }
 
 /*--------------------------------------------------------------
@@ -4783,9 +4638,8 @@ a:hover, a:active {
 }
 .site-header .site-main-menu > li > a {
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 500;
   color: #121212;
-  text-transform: uppercase;
 }
 .site-header .site-main-menu > li > a:hover {
   color: #eb4135;
@@ -5601,11 +5455,11 @@ a:hover, a:active {
   color: #fff;
   font-size: 27px;
   line-height: 1.4;
-  font-family: "Shurjo", sans-serif;
+  font-family: "Jost", sans-serif;
   margin: 0;
 }
 .cnvschool-offcanvas-sidebar .canvas-menu-title {
-  font-family: "Kalpurush", sans-serif;
+  font-family: "Jost", sans-serif;
   color: #888888;
   font-size: 14px;
   font-weight: 700;
@@ -5834,7 +5688,16 @@ a:hover, a:active {
   overflow: hidden;
   background-size: cover;
   background-position: center center;
-  background: linear-gradient(182.29deg, #DDE6EB 17.49%, rgba(221, 230, 235, 0) 103.85%);
+  background: #eb4135;
+}
+.page-header:after, .event-page-header:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.7);
 }
 @media (max-width: 991px) {
   .page-header, .event-page-header {
@@ -5847,12 +5710,12 @@ a:hover, a:active {
   text-align: center;
 }
 .page-header .page-header_title, .event-page-header .page-header_title {
-  color: #141416;
-  font-size: 70px;
+  color: #fff;
+  font-size: 60px;
   font-weight: 700;
   position: relative;
   z-index: 2;
-  line-height: 1.2;
+  line-height: 1;
   margin-bottom: 10px;
 }
 @media (max-width: 991px) {
@@ -5868,10 +5731,11 @@ a:hover, a:active {
 .page-header .breadcrumbs, .event-page-header .breadcrumbs {
   font-size: 18px;
   font-weight: 400;
-  color: #52525C;
+  color: #fff;
+  font-family: "Jost", sans-serif;
 }
 .page-header .breadcrumbs a, .event-page-header .breadcrumbs a {
-  color: #141416;
+  color: #fff;
 }
 .page-header .breadcrumbs a:hover, .event-page-header .breadcrumbs a:hover {
   color: #eb4135;
@@ -5882,7 +5746,7 @@ a:hover, a:active {
   height: 4px;
   width: 4px;
   border-radius: 20px;
-  background-color: #52525C;
+  background-color: #fff;
 }
 .page-header.single-post-header-bg, .event-page-header.single-post-header-bg {
   background-color: #292a7f;
@@ -6034,25 +5898,8 @@ a:hover, a:active {
   color: #eb4135;
 }
 
-.site-footer .widget_nav_menu ul li a:after {
-  position: absolute;
-  content: "";
-  display: block;
-  bottom: 2px;
-  height: 1px;
-  left: 0;
-  width: 100%;
-  background: #eb4135;
-  transform-origin: right center;
-  transform: scale(0, 1);
-  transition: transform 0.25s cubic-bezier(0.37, 0.31, 0.2, 0.85);
-}
 .site-footer .widget_nav_menu ul li a:hover {
   color: #eb4135;
-}
-.site-footer .widget_nav_menu ul li a:hover:after {
-  transform-origin: left center;
-  transform: scale(1, 1);
 }
 
 @media (max-width: 991px) {
@@ -6562,10 +6409,27 @@ a:hover, a:active {
 }
 
 .site-footer .widget-title, .site-footer h2, .site-footer h3, .site-footer h4, .site-footer h5, .site-footer h6 {
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 24px;
+  font-weight: 500;
   color: #2c2c51;
-  margin-bottom: 32px;
+  margin-bottom: 36px;
+  position: relative;
+  padding-bottom: 16px;
+}
+.site-footer .widget-title:before, .site-footer .widget-title:after, .site-footer h2:before, .site-footer h2:after, .site-footer h3:before, .site-footer h3:after, .site-footer h4:before, .site-footer h4:after, .site-footer h5:before, .site-footer h5:after, .site-footer h6:before, .site-footer h6:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 51px;
+  height: 3px;
+  background-color: #eb4135;
+}
+.site-footer .widget-title:after, .site-footer h2:after, .site-footer h3:after, .site-footer h4:after, .site-footer h5:after, .site-footer h6:after {
+  width: 10px;
+  left: 56px;
+  border-right: 10px solid #eb4135;
+  box-shadow: 15px 0 0 0 #eb4135;
 }
 .site-footer .widget {
   margin-bottom: 30px;
@@ -6576,11 +6440,11 @@ a:hover, a:active {
 }
 .site-footer .widget ul li {
   color: rgba(255, 255, 255, 0.6);
-  font-size: 15px;
+  font-size: 16px;
 }
 .site-footer .widget ul li a {
   color: #CDD0D3;
-  font-size: 15px;
+  font-size: 16px;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -6628,7 +6492,7 @@ a:hover, a:active {
   color: #adadad;
 }
 .site-footer .cnvschool-newsletter-widget .newsletter-inner .newsletter-submit {
-  font-family: "Shurjo", sans-serif;
+  font-family: "Jost", sans-serif;
   font-size: 18px;
   font-weight: 700;
   padding: 11px 33px 6px;
@@ -7425,7 +7289,7 @@ a:hover, a:active {
   line-height: 1;
 }
 .single-post-nav .post-title {
-  font-family: "Shurjo", sans-serif;
+  font-family: "Jost", sans-serif;
   font-size: 18px;
   transition: all 0.3s ease-in-out;
   margin: 0;
@@ -7523,7 +7387,7 @@ blockquote:before, .wp-block-quote:before {
   font-size: 24px;
 }
 blockquote p, .wp-block-quote p {
-  font-family: "Shurjo", sans-serif;
+  font-family: "Jost", sans-serif;
   font-size: 30px;
   line-height: 1.4;
   color: #141416;
@@ -7536,7 +7400,7 @@ blockquote p cite, .wp-block-quote p cite {
   margin-left: 0;
 }
 blockquote cite, .wp-block-quote cite {
-  font-family: "Kalpurush", sans-serif;
+  font-family: "Jost", sans-serif;
   font-size: 18px;
   font-weight: 400;
   font-style: normal;
@@ -8545,7 +8409,7 @@ blockquote cite, .wp-block-quote cite {
   border-bottom: 1px solid #b9b8b8;
 }
 #search-menu-wrapper .search-form input {
-  font-family: "Shurjo", sans-serif;
+  font-family: "Jost", sans-serif;
   border-radius: 0;
   border: 0;
   background: transparent;
@@ -8811,7 +8675,7 @@ blockquote cite, .wp-block-quote cite {
   flex: 2;
 }
 .comment-list .comment .comment-body .comment_info .comment_author_says {
-  font-family: "Shurjo", sans-serif;
+  font-family: "Jost", sans-serif;
   color: #121212;
   margin-top: 0;
   margin-bottom: 0;
@@ -8820,7 +8684,7 @@ blockquote cite, .wp-block-quote cite {
   line-height: 1.2;
 }
 .comment-list .comment .comment-body .comment_info .meta-wrapper {
-  font-family: "Shurjo", sans-serif;
+  font-family: "Jost", sans-serif;
   font-size: 14px;
   color: #777777;
   display: block;
@@ -9390,7 +9254,7 @@ pre.wp-block-preformatted {
 }
 
 .wp-block-search .wp-block-search__label {
-  font-family: "Shurjo", sans-serif;
+  font-family: "Jost", sans-serif;
   display: block;
   font-size: 22px;
   font-weight: 600;

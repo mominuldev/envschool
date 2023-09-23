@@ -17,7 +17,7 @@ get_header();
 <div class="notice-content-area">
     <div class="container">
         <div class="notice-list-wrapper">
-            <div id='main-content' class="notice-list">
+            <div id='main-content' class="notice-lists">
                 <?php  if ( have_posts() ) :
                 get_template_part( 'template-parts/post/posts-notice-list');
                 else :

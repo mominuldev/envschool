@@ -1,19 +1,7 @@
 .site-footer {
     position: relative;
     overflow: hidden;
-
-    &.footer_dark {
-        background: #111921;
-
-        .description, p {
-            color: rgba(255, 255, 255, 0.8);
-			font-size: 15px;
-        }
-
-        .logo-dark {
-            display: none;
-        }
-    }
+    background-color: #021a40;
 
     .widget {
         position: relative;
@@ -21,42 +9,38 @@
         padding: 0;
     }
 
-    .widget {
-        ul.footer-social-link {
-            margin-top: 15px;
+    .menu {
+        margin: 0;
+        padding: 0;
+        list-style: none;
 
-            li {
-                display: inline-block;
+        li {
+            display: block;
+            margin-right: 20px;
+            position: relative;
 
-                &:not(:last-child) {
-                    margin-right: 7px;
-                }
+            a {
+                color: rgba(255,255,255,0.7);
+                font-size: 15px;
+                font-weight: 400;
+                position: relative;
+                padding-left: 15px;
 
-                a {
-                    border: 2px solid rgba(255, 255, 255, 0.2);
-                    height: 44px;
-                    width: 44px;
-                    line-height: 41px;
-                    border-radius: 6px;
-                    color: #fff;
-                    text-align: center;
-                    font-size: 15px;
-
-                    &:hover {
-                        background-color: #fff;
-                        border-color: #fff;
-                        color: $color__theme;
-                    }
+                &:before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 9px;
+                    width: 5px;
+                    height: 5px;
+                    border-radius: 50%;
+                    background: rgba(255,255,255,0.7);
 
                 }
             }
         }
     }
 
-	.tagcloud a {
-		color: $color__heading;
-		margin-bottom: 7px
-	}
 
     .footer-wrapper {
         padding: 107px 0 70px;
@@ -91,264 +75,66 @@
             }
 
             p {
+                font-family: $font__eng;
                 margin: 0;
                 color: #999aa8;
                 font-size: 16px;
 
                 a {
-                    color: $color__theme-2;
+                    color: $color__theme;
 
                     &:hover {
-                        color: $color__theme;
+                        color: $color__theme-2;
                     }
                 }
             }
         }
     }
-
-    &.footer_light {
-        background-color: #f5f4f4;
-        .logo-light {
-            display: none;
-        }
-
-        p {
-            color: #6d6d82;
-        }
-
-        .site-info {
-			background-color: #FCFCFC;
-			border-top: 0;
-            .copyright {
-				p {
-					color: #A2A2A2;
-				}
-
-                a {
-                    color: $color__theme-2;
-
-                    &:hover {
-                        color: $color__theme;
-                    }
-                }
-            }
-        }
-
-        .widget {
-            .widget-title,
-            h1, h2, h3, h4, h5, h6 {
-                color: $color__heading;
-            }
-
-            ul:not(.footer-social-link) {
-                li {
-                    a {
-                        color: #8A8A8A;
-
-                        &:hover {
-                            color: $color__theme;
-                        }
-                    }
-                }
-            }
-        }
-
-        .widget-newsletter {
-
-            input#newsletter-form-email {
-                background-color: transparent;
-                border: 2px solid rgba(0,0,0,0.12);
-            }
-
-            .newsletter-submit {
-                box-shadow: 0 11px 18px -8px rgba(23, 92, 255, 0.60);
-
-                &:hover {
-                    background-color: $color__theme;
-                    border-color: $color__theme;
-                    box-shadow: none;
-                }
-            }
-        }
-
-
-        .footer-social-link {
-            li {
-                a {
-                    border-color: rgba(0, 0, 0, 0.12);;
-                    color: #65676d;
-
-                    &:hover {
-                        background-color: $color__theme;
-                        border-color: $color__theme;
-                        color: #fff;
-                    }
-                }
-            }
-        }
-
-    }
 }
 
-.widget-newsletter {
-
-    .form-result {
-		margin: 10px 0 0;
-		padding: 10px 15px;
-		line-height: 22px;
-    }
-
-    .newsletter-inner {
-        background-color: #f3f6f8;
-        border-radius: 6px;
-		overflow: hidden;
-    }
-
-    .form-control[type="email"] {
-        margin-bottom: 0 !important;
-        height: 50px;
-        padding: 0 15px !important;
-        border-radius: 0;
-        background-color: transparent !important;
-        border: 0 !important;
-        color: $color__heading;
 
 
-        &:focus {
-            box-shadow: none;
-            color: $color__heading;
+.csf-about__widget {
+    .csf-about__widget-logo {
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        max-width: 300px;
+
+        .dm-footer__logo {
+            max-width: 70px;
+            background: #fff;
+            border-radius: 50%;
         }
     }
 
-    .newsletter-submit {
-        border-radius: 0;
-        padding: 10px 25px;
-        min-width: 60px;
-        box-shadow: none !important;
+    .dm-footer__widget-title {
+        margin-bottom: 0;
+        font-size: 24px;
+        line-height: 32px;
+        padding-bottom: 0;
 
-        i.fa-circle-o-notch {
-            display: none;
+        &:before, &:after {
+           display: none;
         }
+    }
 
-        &:hover {
-            background-color: $color__theme;
-            color: #fff;
-        }
+    .cnv-footer-contact-info {
+        li {
+            //font-size: 18px !important;
+            margin-bottom: 15px !important;
+            color: #fff !important;
+            display: flex;
+            align-items: baseline;
+            letter-spacing: 0.5px;
 
-        &.clicked {
-            i.fa-paper-plane {
-                display: none;
+            i {
+                color: $color__theme;
+                margin-right: 5px;
+                min-width: 25px;
+                transform: translateY(2px);
             }
-
-            i.fa-circle-o-notch {
-                display: block;
-            }
-        }
-    }
-
-	.form-result {
-		.content {
-			font-size: 14px;
-		}
-	}
-}
-
-.site-footer {
-	.widget {
-		.cnvschool-block-social-link {
-			margin: 0;
-			padding: 0;
-			list-style: none;
-
-			li {
-				display: inline-block;
-
-				&:not(:last-child) {
-					margin-right: 7px !important;
-				}
-
-				a {
-					height: 40px;
-					width: 40px;
-					display: flex;
-					align-items: center;
-					justify-content: center;
-					color: rgba(255, 255, 255, 0.7);
-					border: 1px solid rgba(255, 255, 255, 0.302);
-					border-radius: 30px;
-					font-size: 14px;
-
-					&:hover {
-						background-color: #fff;
-						border-color: #fff;
-						color: $color__theme;
-					}
-				}
-			}
-		}
-	}
-}
-
-.footer-social-wrap {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-
-    @media(max-width: 767px) {
-        display: block;
-        text-align: center;
-
-        .footer-social-wrapper {
-            margin-bottom: 20px;
-        }
-
-        .copyright {
-            padding: 15px 0 5px;
-        }
-    }
-}
-
-.wp-widget-block-newsletter {
-    max-width: 400px;
-}
-
-.single-post, .blog, .archive, .search-results, .single-cnv_job, .single-cnv_support {
-    .footer_light {
-        background-color: #F8F9FA;
-    }
-}
-
-.site-footer-menu {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-
-    li {
-        display: inline-block;
-        margin-right: 20px;
-        position: relative;
-
-        &:not(:last-child) {
-            margin-right: 15px;
-            padding-right: 15px;
-
-            &:after {
-                content: '';
-                position: absolute;
-                right: 0;
-                top: 50%;
-                transform: translateY(-50%);
-                width: 2px;
-                height: 15px;
-                background-color: rgba(255,255,255,0.2);
-            }
-        }
-
-        a {
-            color: rgba(255,255,255,0.7);
-            font-size: 15px;
-            font-weight: 400;
         }
     }
 }

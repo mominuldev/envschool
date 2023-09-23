@@ -64,6 +64,9 @@ if (!class_exists('CNV_Theme_Autoload')) {
 	        require_once CNV_THEME_DIR . '/inc/framework/gallery.php';
 	        require_once CNV_THEME_DIR . '/inc/framework/notice.php';
 	        require_once CNV_THEME_DIR . '/inc/framework/menu.php';
+
+			// Widgets
+	        require_once CNV_THEME_DIR . '/inc/framework/widgets/about.php';
         }
 
         public function walker_comment(){

@@ -47,7 +47,7 @@ class CNV_Enqueue_Script {
 		wp_enqueue_style( 'preloder', $this->gtdu . '/assets/css/loader.min.css' );
 
 		// Font Include
-		wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap', [], null );
+		wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap', [], null );
 
 		// Main CSS
 		wp_enqueue_style( 'cnv-style', $this->gtdu . '/assets/css/app.css' );
