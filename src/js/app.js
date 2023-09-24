@@ -1,4 +1,4 @@
-var CNV = CNV || {};
+var CNVTHEME = CNVTHEME || {};
 
 (function ($) {
 
@@ -50,12 +50,12 @@ var CNV = CNV || {};
         }
     };
 
-    CNV.initialize = {
+    CNVTHEME.initialize = {
         init: function () {
-            CNV.initialize.general();
-            CNV.initialize.sectionSwitch();
-            CNV.initialize.contactFrom();
-            CNV.initialize.handleMobileHeader();
+            CNVTHEME.initialize.general();
+            CNVTHEME.initialize.sectionSwitch();
+            CNVTHEME.initialize.contactFrom();
+            CNVTHEME.initialize.handleMobileHeader();
         },
 
         /*========================================================*/
@@ -63,23 +63,6 @@ var CNV = CNV || {};
         /*========================================================*/
 
         general: function () {
-
-            //Popup Search
-            $('#search-menu-wrapper').removeClass('toggled');
-
-            $('#search-icon').on('click', function (e) {
-                e.stopPropagation();
-                $('#search-menu-wrapper').toggleClass('toggled');
-                $("#popup-search").focus();
-            });
-
-            $('#search-menu-wrapper input').on('click', function (e) {
-                e.stopPropagation();
-            });
-
-            $('#search-menu-wrapper, body').on('click', function () {
-                $('#search-menu-wrapper').removeClass('toggled');
-            });
 
             if ($('body').hasClass("admin-bar")) {
                 $('body').addClass('header-position');
@@ -142,70 +125,21 @@ var CNV = CNV || {};
 
 
             /* Magnefic Popup */
-            $('.play-button').each(function () {
-                $('.play-button').magnificPopup({
-                    type: 'iframe'
+            // $('.play-button').each(function () {
+            //     $('.play-button').magnificPopup({
+            //         type: 'iframe'
+            //     });
+            // });
+            //
+            $(document).ready(function () {
+                $("#menu-primary-menu").aceResponsiveMenu({
+                    resizeWidth: '991', // Set the same in Media query
+                    animationSpeed: 'fast', //slow, medium, fast
+                    accoridonExpAll: false //Expands all the accordion menu on click
+
                 });
             });
 
-            $('.cnvschool-team__expand-icon').on('click', function () {
-                $(this).parent().toggleClass('active');
-            });
-
-            $('.canvas-nav .site-main-menu li a').on('click', function () {
-                const $this = $(this);
-
-                if ($this.parent().hasClass('open')) {
-                    $this
-                        .parent()
-                        .children('.sub-menu')
-                        .slideUp(400, () => {
-                            $this.parent().removeClass('open');
-                        });
-                } else {
-                    $this
-                        .parent()
-                        .parent()
-                        .children('li.open')
-                        .children('.sub-menu')
-                        .slideUp(200);
-
-                    $this
-                        .parent()
-                        .parent()
-                        .children('li.open')
-                        .children('a')
-                        .removeClass('open');
-
-                    $this
-                        .parent()
-                        .parent()
-                        .children('li.open')
-                        .removeClass('open');
-
-                    $this
-                        .parent()
-                        .children('.sub-menu')
-                        .slideDown(200, () => {
-                            $this.parent().addClass('open');
-                        });
-                }
-            });
-
-
-            // const smoother = ScrollSmoother.create({
-            //     wrapper: "#parallax-wrapper",
-            //     content: "#parallax-content",
-            //     smooth: 1,
-            //     normalizeScroll: true, // prevents address bar from showing/hiding on most devices, solves various other browser inconsistencies
-            //     ignoreMobileResize: true, // skips ScrollTrigger.refresh() on mobile resizes from address bar showing/hiding
-            //     effects: true,
-            //     preventDefault: true
-            // });
-
-            // $('.cnvschool-team').tilt({
-            //     scale: 1,
-            // })
         },
 
         /*===========================================*/
@@ -402,21 +336,21 @@ var CNV = CNV || {};
         }
     };
 
-    CNV.documentOnReady = {
+    CNVTHEME.documentOnReady = {
         init: function () {
-            CNV.initialize.init();
+            CNVTHEME.initialize.init();
         },
     };
 
-    CNV.documentOnLoad = {
+    CNVTHEME.documentOnLoad = {
         init: function () {
             CNV.init();
-            CNV.initialize.handleMobileHeader();
+            CNVTHEME.initialize.handleMobileHeader();
             $("#preloader").fadeOut("slow");
         },
     };
 
-    CNV.documentOnResize = {
+    CNVTHEME.documentOnResize = {
         init: function () {
             if ($("#wpadminbar").length && $(window).width() < 768) {
                 $("#wpadminbar").css({
@@ -425,28 +359,27 @@ var CNV = CNV || {};
                 })
             }
             CNV.resize();
-            CNV.initialize.handleMobileHeader();
-            CNV.initialize.handleFixedHeader();
+            CNVTHEME.initialize.handleMobileHeader();
+            CNVTHEME.initialize.handleFixedHeader();
         },
     };
 
-    CNV.documentOnScroll = {
+    CNVTHEME.documentOnScroll = {
         init: function () {
-            CNV.initialize.handleFixedHeader();
+            CNVTHEME.initialize.handleFixedHeader();
             if ($(window).scrollTop() > 300) {
                 $('.return-to-top').addClass('back-top');
             } else {
                 $('.return-to-top').removeClass('back-top');
             }
-
         },
     };
 
     // Initialize Functions
-    $(document).ready(CNV.documentOnReady.init);
-    $(window).on('load', CNV.documentOnLoad.init);
-    $(window).on('resize', CNV.documentOnResize.init);
-    $(window).on('scroll', CNV.documentOnScroll.init);
+    $(document).ready(CNVTHEME.documentOnReady.init);
+    $(window).on('load', CNVTHEME.documentOnLoad.init);
+    $(window).on('resize', CNVTHEME.documentOnResize.init);
+    $(window).on('scroll', CNVTHEME.documentOnScroll.init);
 
 })(jQuery);
 

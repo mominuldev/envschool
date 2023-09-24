@@ -1,8 +1,8 @@
 .cnv-btn {
 	position: relative;
-	padding: 16px 35px;
-	background-color: $color__heading-2;
-	border: 1px solid $color__heading-2;
+	padding: 11px 35px;
+	background-color: $color__theme;
+	border: 1px solid $color__theme;
 	z-index: 1;
 	color: #fff;
 	overflow: hidden;
@@ -35,8 +35,10 @@
 	}
 
 	&:hover {
-		background: transparent;
-		color: $color__heading-2;
+		background: darken($color__theme, 10%);
+		color: #fff;
+		border-color: darken($color__theme, 10%);
+
 
         &:before {
             height: 0;

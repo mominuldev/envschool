@@ -802,7 +802,7 @@
 					padding: 11px 35px;
 				}
 
-				i.fa-chevron-down {
+				i.fa-plus {
 					position: absolute;
 					right: 20px;
 					top: 12px;
@@ -894,7 +894,7 @@
 					&.is-open {
 						a {
 							&.is-open {
-								.fa-chevron-down {
+								.fa-plus {
 									color: $color__theme;
 								}
 							}

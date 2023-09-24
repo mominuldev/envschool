@@ -34,6 +34,10 @@ $login   = cnv_option( 'topbar_login' );
 
 $header_classes = '';
 
+if($is_fixed) {
+	$header_classes .= ' header-fixed';
+}
+
 if ( $header_type == true || $header_type == 1 ) {
 
 	if ( $meta_transparent ) {
@@ -87,7 +91,7 @@ if ( $header_type == true || $header_type == 1 ) {
                         </a>
 
                         <div class="close-menu page-close-main-menu" id="page-close-main-menu">
-                            <i class="ti-close"></i>
+                            <i class="fa-solid fa-xmark"></i>
                         </div>
                     </div>
                     <!-- /.mobile-menu-header -->
@@ -127,15 +131,9 @@ if ( $header_type == true || $header_type == 1 ) {
                             </span>
 						<?php endif;
 
-						if ( $canvas_menu == true ) : ?>
-                            <span class="canvas-btn" id="canvas-icon" data-bs-toggle="offcanvas" data-bs-target="#cnvschoolSidebarOffCanvas"
-                                  aria-controls="cnvschoolSidebarOffCanvas">
-                                <i class="feather-menu"></i>
-                            </span>
-						<?php endif;
 
 						if ( $nav_btn && $btn_text ) :
-							echo '<a href="' . $btn_link . '" class="cnvschool-btn nav-btnn btn-circle">' . $btn_text . '</a>';
+							echo '<a href="' . $btn_link . '" class="cnv-btn nav-btnn btn-circle">' . $btn_text . '</a>';
 						endif;
 						?>
                     </div>
@@ -144,95 +142,3 @@ if ( $header_type == true || $header_type == 1 ) {
         </div><!-- /.header-inner -->
     </div><!-- /.container -->
 </header><!-- #masthead -->
-
-<div class="offcanvas offcanvas-end cnvschool-offcanvas-sidebar" tabindex="-1" id="cnvschoolSidebarOffCanvas" aria-labelledby="cnvschoolSidebarOffCanvasLabel">
-
-	<?php
-	$canvas_logo               = cnv_option( 'offcanvas_sidebar_logo' );
-	$canvas_description        = cnv_option( 'offcanvas_sidebar_description' );
-	$canvas_contact_info_title = cnv_option( 'offcanvas_sidebar_contact_info_title' );
-	$canvas_contact_info       = cnv_option( 'offcanvas_sidebar_contact_info' );
-	$canvas_newsletter_is_on   = cnv_option( 'offcanvas_sidebar_newsletter_form_switcher' );
-	$canvas_newsletter_title   = cnv_option( 'offcanvas_sidebar_newsletter_info_title' );
-	?>
-
-    <div class="offcanvas-body">
-        <div class="offcavas-content-wrapper">
-            <div class="offcanvas-menu">
-                <div class="offcanvas-menu-inner">
-                    <div class="offcanvas-menu-header d-flex align-items-center justify-content-between">
-                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-							<?php if ( ! empty( $canvas_logo['url'] ) ) { ?>
-                                <img src="<?php echo esc_url( $canvas_logo['url'] ); ?>"
-                                     alt="<?php esc_attr( bloginfo( 'name' ) ); ?>" class="main-logo"/>
-							<?php } else { ?>
-                                <h3><?php bloginfo( 'name' ); ?></h3>
-							<?php } ?>
-                        </a>
-
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fas fa-times"></i></button>
-                    </div>
-                    <!-- /.offcanvas-menu-header -->
-
-					<?php if ( $canvas_description ) : ?>
-                        <div class="canvas-menu-description">
-                            <p><?php echo esc_html( $canvas_description ); ?></p>
-                        </div>
-                        <!-- /.canvas-menu-description -->
-					<?php endif; ?>
-
-                    <div class="canvas-menu-contact-info">
-						<?php if ( $canvas_contact_info_title ) : ?>
-                            <h3 class="canvas-menu-title"><?php echo esc_html( $canvas_contact_info_title ); ?></h3>
-						<?php endif; ?>
-
-						<?php if ( $canvas_contact_info ) : ?>
-                            <ul class="contact-info">
-                                <?php foreach ( $canvas_contact_info as $info ) : ?>
-                                    <li>
-                                        <?php echo esc_html( $info['contact_info_text'] ); ?>
-                                    </li>
-                                <?php endforeach; ?>
-                            </ul>
-						<?php endif; ?>
-                    </div>
-
-	                <?php if ( $canvas_newsletter_is_on ) : ?>
-                        <div class="canvas-menu-newaletter">
-
-			                <?php if ( $canvas_newsletter_title ) : ?>
-                                <h3 class="canvas-menu-title"><?php echo esc_html( $canvas_newsletter_title ); ?></h3>
-			                <?php endif; ?>
-
-                            <div class="newsletter">
-                                <form class="newsletter-form">
-                                    <input type="hidden" name="action" value="cnv_mailchimp_subscribe">
-                                    <div class="newsletter-inner">
-                                        <div class="input-inner">
-                                            <input type="email" name="email" class="form-control" id="elementor-newsletter-form-email"
-                                                   placeholder="Enter your emil" required>
-                                        </div>
-                                        <button type="submit" name="submit" id="elementor-newsletter-submit" class="newsletter-submit cnvschool-btn">
-                                            <i class="fas fa-paper-plane"></i>
-                                            <i class="fa fa-circle-o-notch fa-spin"></i>
-                                        </button>
-                                    </div>
-                                    <div class="form-result alert">
-                                        <div class="content"></div>
-                                    </div><!-- /.form-result-->
-                                </form><!-- /.newsletter-form -->
-                            </div>
-                            <!-- /.newsletter -->
-                        </div>
-                        <!-- /.canvas-menu-newaletter -->
-	                <?php endif; ?>
-
-                </div>
-                <!-- /.offcanvas-menu-inner -->
-            </div>
-
-        </div>
-        <!-- /.offcavas-contener-wrapper -->
-    </div>
-</div>
-<!-- /.offcanvas -->

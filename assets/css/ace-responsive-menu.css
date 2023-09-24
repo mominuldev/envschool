@@ -1,0 +1,195 @@
+/* 
+Ace Responsive Menu Plugin
+Version: 1.0
+Author: Samson Onna
+E-mail: samson3d@gmail.com
+Website: www.webthemez.com
+
+
+/* Ace Responsive Menu
+----------------------------------------*/
+
+
+/*.site-main-menu {*/
+/*    list-style: none;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    width: 100%;*/
+/*}*/
+
+/*.site-main-menu li {*/
+/*    list-style: none;*/
+/*}*/
+
+.site-main-menu li ul {
+    display: none;
+}
+
+/*.site-main-menu > li {*/
+/*    display: inline-block;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+
+/*.site-main-menu li a {*/
+/*    color: #c0c0c0;*/
+/*}*/
+
+/*.site-main-menu > li > a {*/
+/*    display: block;*/
+/*    position: relative;*/
+/*    margin: 0;*/
+/*    border: 0;*/
+/*    padding: 37px 0;*/
+/*    text-decoration: none;*/
+/*    font-size: 15px;*/
+/*    font-weight: 300;*/
+/*    color: #c0c0c0;*/
+/*}*/
+
+/*.site-main-menu li a i {*/
+/*    margin-left: 5px;*/
+/*}*/
+
+/*.site-main-menu > li > a i {*/
+/*    font-size: 15px;*/
+/*}*/
+
+/*.site-main-menu li ul.sub-menu li a {*/
+/*    display: flex !important;*/
+/*    align-items: center;*/
+/*    justify-content: space-between;*/
+/*}*/
+
+/*.site-main-menu li ul.sub-menu li a i {*/
+/*    padding-right: 10px;*/
+/*}*/
+
+/*.site-main-menu li.menu-active > a {*/
+/*    color: #FF5737;*/
+/*}*/
+
+/*.site-main-menu .sub-menu li.menu-active > a {*/
+/*    background: #FF5737;*/
+/*    color: #fff;*/
+/*}*/
+
+/*.site-main-menu li .menu-active {*/
+/*    position: relative;*/
+/*}*/
+
+/*.site-main-menu > li > a > .arrow:before {*/
+/*    font-family: FontAwesome;*/
+/*    margin-left: 15px;*/
+/*    font-size: 16px;*/
+/*    height: auto;*/
+/*    content: " \276F";*/
+/*    font-weight: 300;*/
+/*    text-shadow: none;*/
+/*    width: 10px;*/
+/*    display: inline-block;*/
+/*    transform: rotate(90deg);*/
+/*}*/
+
+/*.site-main-menu li ul.sub-menu li > a > .arrow:before {*/
+/*    content: "\f105" !important;*/
+/*}*/
+
+/*.site-main-menu > li > ul.sub-menu {*/
+/*    display: none;*/
+/*    list-style: none;*/
+/*    clear: both;*/
+/*    margin: 0;*/
+/*    position: absolute;*/
+/*    z-index: 999;*/
+/*}*/
+
+/*.site-main-menu li ul.sub-menu {*/
+/*    background: #fff;*/
+/*    padding: 0;*/
+/*}*/
+
+/*@media(min-width: 992px) {*/
+/*    .site-main-menu li ul.sub-menu {*/
+/*        box-shadow: 0 5px 10px #14303a15;*/
+/*    }*/
+/*}*/
+
+/*.site-main-menu li ul.sub-menu > li {*/
+/*    width: 200px;*/
+/*}*/
+
+/*.site-main-menu li ul.sub-menu li a {*/
+/*    display: block;*/
+/*    margin: 0;*/
+/*    padding: 7px 15px;*/
+/*    font-size: 15px;*/
+/*}*/
+
+/*.site-main-menu > li > ul.sub-menu > li {*/
+/*    position: relative;*/
+/*}*/
+
+/*.site-main-menu > li > ul.sub-menu > li ul.sub-menu {*/
+/*    position: absolute;*/
+/*    left: 200px;*/
+/*    top: 0;*/
+/*    display: none;*/
+/*    list-style: none;*/
+/*}*/
+
+/*.site-main-menu > li > ul.sub-menu > li ul.sub-menu > li ul.sub-menu {*/
+/*    position: absolute;*/
+/*    left: 200px;*/
+/*    top: 0;*/
+/*    display: none;*/
+/*    list-style: none;*/
+/*}*/
+
+
+@media screen and (max-width: 991px) {
+
+
+    /*.site-main-menu {*/
+    /*    !*float: left;*!*/
+    /*    width: 100%;*/
+    /*}*/
+
+    /*.site-main-menu > li {*/
+    /*    border-bottom: 1px solid #e6e6e6;*/
+    /*    !*float: none;*!*/
+    /*}*/
+
+    .site-main-menu li a:hover {
+        background: #f5f5f5;
+        color: #fff;
+    }
+
+    /*.site-main-menu > li > a > .arrow:before {*/
+    /*    float: right;*/
+    /*    content: " \276F";*/
+    /*    font-weight: 300;*/
+    /*    text-shadow: none;*/
+    /*    width: 10px;*/
+    /*    display: inline-block;*/
+    /*    transform: rotate(90deg);*/
+    /*}*/
+
+    /*.site-main-menu li ul.sub-menu > li {*/
+    /*    width: 100%;*/
+    /*}*/
+
+
+    /*.site-main-menu > li > ul.sub-menu {*/
+    /*    position: static;*/
+    /*}*/
+
+    /*.site-main-menu > li > ul.sub-menu > li ul.sub-menu {*/
+    /*    position: static;*/
+    /*}*/
+
+    /*.site-main-menu > li > ul.sub-menu > li ul.sub-menu > li ul.sub-menu {*/
+    /*    position: static;*/
+    /*}*/
+} 
+ 

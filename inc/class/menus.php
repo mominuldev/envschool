@@ -15,9 +15,103 @@ class CNV_Main_Nav_Walker extends Walker_Nav_Menu {
 		$indent = str_repeat( "\t", $depth );
 
 		if ( $args->has_children ) {
-			$output .= "\n$indent<ul role=\"menu\" class=\"icon-submenu sub-menu \">\n";
+			$output .= "\n$indent<ul role=\"menu\" class=\"sub-menu \">\n";
 		}
 	}
+
+//	function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
+//		$indent               = ( $depth ) ? str_repeat( "\t", $depth ) : '';
+//		$this->current_Item   = $item;
+//		$menu_icon_class      = get_post_meta( $item->ID, '_menu_item_icon', true );
+//		$menu_container_class = get_post_meta( $item->ID, '_menu_item_fullwidth_menu', true );
+//		$meta = get_post_meta( $item->ID, '_prefix_menu_options', true );
+//
+//
+//		if ( strcasecmp( $item->attr_title, 'divider' ) == 0 && $depth === 1 ) {
+//			$output .= $indent . '<li role="presentation" class="divider">';
+//		} else if ( strcasecmp( $item->attr_title, 'dropdown-header' ) == 0 && $depth === 1 ) {
+//			$output .= $indent . '<li role="presentation" class="dropdown-header">' . esc_attr( $item->title );
+//		} else if ( strcasecmp( $item->attr_title, 'disabled' ) == 0 ) {
+//			$output .= $indent . '<li role="presentation" class="disabled"><a href="#">' . esc_attr( $item->title ) . '</a>';
+//		} else {
+//
+//			$class_names = $value = '';
+//
+//			$classes   = empty( $item->classes ) ? array() : (array) $item->classes;
+//			$classes[] = 'menu-item-' . $item->ID;
+//			$classes[] = 'menu-item';
+//
+//			$class_names = join( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item, $args ) );
+//
+//			if ( $args->has_children && $depth > 0 ) {
+//				$class_names .= ' has-submenu ';
+//			}
+//			if ( ! empty( $meta['class'] )  && $depth == 0 ) {
+//				$class_names .= ' ' .$meta['class'] .' ' . 'mega-menu';
+//			}
+//
+//			if ( in_array( 'current-menu-parent', $classes ) ) {
+//				$class_names .= ' current-menu-item';
+//			}
+//			if ( in_array( 'current_page_parent', $classes ) ) {
+//				$class_names .= ' current-menu-item';
+//			}
+//			if ( in_array( 'current-menu-item', $classes ) ) {
+//				$class_names .= ' current-menu-item';
+//			}
+//
+//			$class_names = $class_names ? ' class="' . esc_attr( $class_names ) . '"' : '';
+//
+//			$id = apply_filters( 'nav_menu_item_id', 'menu-item-' . $item->ID, $item, $args );
+//			$id = $id ? ' id="' . esc_attr( $id ) . '"' : '';
+//
+//			$output .= $indent . '<li' . $id . $value . $class_names . '>';
+//
+//
+//			$atts           = array();
+//			$atts['title']  = ! empty( $item->title ) ? $item->title : '';
+//			$atts['target'] = ! empty( $item->target ) ? $item->target : '';
+//			$atts['rel']    = ! empty( $item->xfn ) ? $item->xfn : '';
+//			$atts['href']   = ! empty( $item->url ) ? $item->url : '';
+//
+//			$atts = apply_filters( 'nav_menu_link_attributes', $atts, $item, $args );
+//
+//			$attributes = '';
+//			foreach ( $atts as $attr => $value ) {
+//				if ( ! empty( $value ) ) {
+//					$value      = ( 'href' === $attr ) ? esc_url( $value ) : esc_attr( $value );
+//					$attributes .= ' ' . $attr . '="' . $value . '"';
+//				}
+//			}
+//
+//			if ( $menu_icon_class != "" ) {
+//				$menu_icon_html = '<i class="' . esc_attr( $menu_icon_class ) . '"></i>';
+//			} else {
+//				$menu_icon_html = '';
+//			}
+//			$item_output = $args->before;
+//			if ( $item->object == 'mega_menu' && $depth == 1 ) {
+//
+//				$content = '';
+//				if ( class_exists( 'Elementor\Plugin' ) ) {
+//					$elementor = Elementor\Plugin::instance();
+//					$content   = $elementor->frontend->get_builder_content_for_display( $item->object_id );
+//				}
+//				$class       = ! empty( $menu_container_class ) ? $menu_container_class : '';
+//				$item_output .= '<div class="mega-menu-wrapper ' . $class . '">' . $content . '</div>';
+//			} else {
+//
+//				$item_output .= '<a' . $attributes . '>';
+//				$item_output .= $menu_icon_html;
+//				$item_output .= $args->link_before . apply_filters( 'the_title', $item->title, $item->ID ) . $args->link_after;
+//				$item_output .= '</a>';
+//			}
+//
+//			$item_output .= $args->after;
+//			$output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
+//		}
+//	}
+
 
 	function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
 		$indent               = ( $depth ) ? str_repeat( "\t", $depth ) : '';
@@ -28,12 +122,11 @@ class CNV_Main_Nav_Walker extends Walker_Nav_Menu {
 
 		if ( strcasecmp( $item->attr_title, 'divider' ) == 0 && $depth === 1 ) {
 			$output .= $indent . '<li role="presentation" class="divider">';
-		} else if ( strcasecmp( $item->attr_title, 'dropdown-header' ) == 0 && $depth === 1 ) {
+		} elseif ( strcasecmp( $item->attr_title, 'dropdown-header' ) == 0 && $depth === 1 ) {
 			$output .= $indent . '<li role="presentation" class="dropdown-header">' . esc_attr( $item->title );
-		} else if ( strcasecmp( $item->attr_title, 'disabled' ) == 0 ) {
+		} elseif ( strcasecmp( $item->attr_title, 'disabled' ) == 0 ) {
 			$output .= $indent . '<li role="presentation" class="disabled"><a href="#">' . esc_attr( $item->title ) . '</a>';
 		} else {
-
 			$class_names = $value = '';
 
 			$classes   = empty( $item->classes ) ? array() : (array) $item->classes;
@@ -66,7 +159,6 @@ class CNV_Main_Nav_Walker extends Walker_Nav_Menu {
 
 			$output .= $indent . '<li' . $id . $value . $class_names . '>';
 
-
 			$atts           = array();
 			$atts['title']  = ! empty( $item->title ) ? $item->title : '';
 			$atts['target'] = ! empty( $item->target ) ? $item->target : '';
@@ -83,14 +175,14 @@ class CNV_Main_Nav_Walker extends Walker_Nav_Menu {
 				}
 			}
 
-			if ( $menu_icon_class != "" ) {
-				$menu_icon_html = '<i class="' . esc_attr( $menu_icon_class ) . '"></i>';
-			} else {
-				$menu_icon_html = '';
+			$menu_icon_html = '';
+			if ( $args->has_children ) {
+				// Add the icon when the item has a submenu.
+				$menu_icon_html = '<i class="fa-solid fa-plus"></i>';
 			}
+
 			$item_output = $args->before;
 			if ( $item->object == 'mega_menu' && $depth == 1 ) {
-
 				$content = '';
 				if ( class_exists( 'Elementor\Plugin' ) ) {
 					$elementor = Elementor\Plugin::instance();
@@ -99,10 +191,9 @@ class CNV_Main_Nav_Walker extends Walker_Nav_Menu {
 				$class       = ! empty( $menu_container_class ) ? $menu_container_class : '';
 				$item_output .= '<div class="mega-menu-wrapper ' . $class . '">' . $content . '</div>';
 			} else {
-
 				$item_output .= '<a' . $attributes . '>';
-				$item_output .= $menu_icon_html;
 				$item_output .= $args->link_before . apply_filters( 'the_title', $item->title, $item->ID ) . $args->link_after;
+				$item_output .= $menu_icon_html; // Include the icon here.
 				$item_output .= '</a>';
 			}
 
@@ -110,6 +201,7 @@ class CNV_Main_Nav_Walker extends Walker_Nav_Menu {
 			$output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
 		}
 	}
+
 
 	function display_element( $element, &$children_elements, $max_depth, $depth, $args, &$output ) {
 		if ( ! $element ) {

@@ -44,6 +44,7 @@ class CNV_Enqueue_Script {
 		wp_enqueue_style( 'feather', $this->gtdu . '/assets/css/feather.css' );
 		wp_enqueue_style( 'magnific-popup', $this->gtdu . '/assets/css/magnific-popup.css' );
 		wp_enqueue_style( 'animate', $this->gtdu . '/assets/css/animate.css' );
+//		wp_enqueue_style( 'ace-menu', $this->gtdu . '/assets/css/ace-responsive-menu.css' );
 		wp_enqueue_style( 'preloder', $this->gtdu . '/assets/css/loader.min.css' );
 
 		// Font Include
@@ -97,7 +98,8 @@ class CNV_Enqueue_Script {
 		wp_enqueue_script( 'appear', $this->gtdu . '/assets/js/jquery.appear.js', array( 'jquery' ), '3.1.12', true );
 		wp_enqueue_script( 'swiper', $this->gtdu . '/assets/js/swiper.min.js', array( 'jquery' ), '3.1.12', true );
 		wp_enqueue_script( 'magnefic-popup', $this->gtdu . '/assets/js/jquery.magnific-popup.min.js', array( 'jquery' ), '3.1.12', true );
-		wp_enqueue_script( 'header', $this->gtdu . '/assets/js/header.js', array( 'jquery' ), '3.1.12', true );
+//		wp_enqueue_script( 'header', $this->gtdu . '/assets/js/header.js', array( 'jquery' ), '3.1.12', true );
+		wp_enqueue_script( 'header', $this->gtdu . '/assets/js/ace-responsive-menu.min.js', array( 'jquery' ), '3.1.12', true );
 		wp_register_script( 'isotope', $this->gtdu . '/assets/js/isotope.pkgd.min.js', array( 'jquery' ), '3.1.12', true );
 		wp_enqueue_script( 'cnv-theme', $this->gtdu . '/assets/js/app.js', array( 'jquery' ), false, true );
 

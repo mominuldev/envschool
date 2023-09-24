@@ -130,7 +130,9 @@ if ( ! class_exists( 'CNV_Theme_Helper' ) ) {
 					echo "<span>" . esc_html__( 'Search Results', 'cnvschool' );
 					echo '</span>';
 				} elseif ( is_post_type_archive( 'notice' ) ) {
-					echo "<span>" . esc_html__( 'নোটিশ', 'cnvschool' );
+					echo "<span>" . esc_html__( 'Notice', 'cnvschool' );
+				} elseif ( is_post_type_archive( 'gallery' ) ) {
+					echo "<span>" . esc_html__( 'Gallery', 'cnvschool' );
 				}
 				echo '</div>';
 			} else {

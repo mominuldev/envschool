@@ -119,21 +119,22 @@ function custom_post_type_archive_title($title) {
 
 add_filter('get_the_archive_title', 'custom_post_type_archive_title');
 
-//function custom_post_type_archive_title($title) {
-//	// Check if we are on a custom post type archive page
-//	if (is_post_type_archive()) {
-//		// Replace 'your_custom_post_type' with the name of your custom post type
-//		$post_type = get_post_type_object('notice');
-//
-//		if ($post_type) {
-//			$title = 'সব নোটিশ'; // Change this to the desired title
-//		}
-//	}
-//
-//	return $title;
-//}
-//
-//add_filter('get_the_archive_title', 'custom_post_type_archive_title');
+function cnv_gallery_archive_title($title) {
+	// Check if we are on a custom post type archive page
+	if (is_post_type_archive()) {
+		// Replace 'your_custom_post_type' with the name of your custom post type
+		$post_type = get_post_type_object('gallery');
+
+		if ($post_type) {
+			$title = 'গ্যালারি'; // Change this to the desired title
+		}
+	}
+
+	return $title;
+}
+
+add_filter('get_the_archive_title', 'cnv_gallery_archive_title');
+
 
 function cnv_get_social_icon() {
 	$social_links = cnv_option( 'social_links' );
