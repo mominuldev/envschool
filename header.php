@@ -45,8 +45,11 @@ do_action( 'cnv_after_body' ); ?>
 	}
 
 	//Site Header
-    get_template_part( 'template-parts/header/header' );
-
+    if( $layout == 'default' ) {
+	    get_template_part( 'template-parts/header/header' );
+    } else {
+	    get_template_part( 'template-parts/header/header-two' );
+    }
 
 	get_template_part( 'template-parts/header/page-header' );
 

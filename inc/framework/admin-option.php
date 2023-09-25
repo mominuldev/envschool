@@ -189,8 +189,8 @@ if ( class_exists( 'CSF' ) ) {
 				'title'   => esc_html__( 'Header Style', 'cnvschool' ),
 				'desc'    => esc_html__( 'Select header style', 'cnvschool' ),
 				'options' => array(
-					'default' => __('Header Default', 'cnvschool'),
-					'canvas' => __('Header Canvas', 'cnvschool')
+					'default' => __('Layout One', 'cnvschool'),
+					'layout-two' => __('Layout Two', 'cnvschool')
 				)
 			),
 
@@ -234,21 +234,6 @@ if ( class_exists( 'CSF' ) ) {
 			array(
 				'type'    => 'heading',
 				'content' => esc_html__( 'Header Nav Right', 'cnvschool' ),
-			),
-
-			array(
-				'id'      => 'header_search',
-				'type'    => 'switcher',
-				'title'   => esc_html__( 'Search On/Off', 'cnvschool' ),
-				'default' => false,
-			),
-
-			// Canvas Menu
-			array(
-				'id'      => 'canvas_menu',
-				'type'    => 'switcher',
-				'title'   => esc_html__( 'Canvas Menu On/Off', 'cnvschool' ),
-				'default' => false,
 			),
 
 			array(
@@ -417,6 +402,59 @@ if ( class_exists( 'CSF' ) ) {
 
 	CSF::createSection( $prefix, array(
 		'parent' => 'header_section', // The slug id of the parent section
+		'title'  => __( 'Top bar', 'cnvschool' ),
+		'fields' => array(
+			// Enable/Disable Top bar
+			array(
+				'id'      => 'topbar_switch',
+				'type'    => 'switcher',
+				'title'   => esc_html__( 'Enable Topbar', 'cnvschool' ),
+				'default' => false,
+			),
+
+			array(
+				'id'      => 'phone',
+				'type'    => 'text',
+				'title'   => esc_html__( 'Phone Number', 'cnvschool' ),
+				'default' => __( '017 000 00 00', 'cnvschool' ),
+				'description'    => esc_html__( 'Enter your phone number', 'cnvschool' ),
+				'dependency' => array( 'topbar_switch', '==', 'true' ),
+			),
+
+			array(
+				'id'      => 'email',
+				'type'    => 'text',
+				'title'   => esc_html__( 'Email ID', 'cnvschool' ),
+				'default' => 'info@codenestventures.com',
+				'description'    => esc_html__( 'Enter your email ID', 'cnvschool' ),
+				'dependency' => array( 'topbar_switch', '==', 'true' ),
+			),
+
+			// EIIN Number
+			array(
+				'id'      => 'eiin_number',
+				'type'    => 'text',
+				'title'   => esc_html__( 'EIIN Number', 'cnvschool' ),
+				'default' => __( '124502', 'cnvschool' ),
+				'description'    => esc_html__( 'Enter your EIIN number', 'cnvschool' ),
+				'dependency' => array( 'topbar_switch', '==', 'true' ),
+			),
+
+
+			array(
+				'id'      => 'show_social_link',
+				'type'    => 'switcher',
+				'title'   => esc_html__( 'Social Link Show/Hide', 'cnvschool' ),
+				'default' => true,
+				'dependency' => array( 'topbar_switch', '==', 'true' ),
+			),
+
+		),
+
+	) );
+
+	CSF::createSection( $prefix, array(
+		'parent' => 'header_section', // The slug id of the parent section
 		'title'  => __( 'Logo', 'cnvschool' ),
 		'fields' => array(
 
@@ -462,13 +500,13 @@ if ( class_exists( 'CSF' ) ) {
 
 			array(
 				'type'    => 'heading',
-				'content' => esc_html__( 'Sidebar Menu Logo', 'cnvschool' ),
+				'content' => esc_html__( 'Nav Right', 'cnvschool' ),
 			),
 
 			array(
-				'id'        => 'sidebar_logo',
+				'id'        => 'right-logo',
 				'type'      => 'media',
-				'title'     => esc_html__( 'Sidebar Menu Logo', 'cnvschool' ),
+				'title'     => esc_html__( 'RightLogo', 'cnvschool' ),
 				'desc'      => esc_html__( 'Upload logo for mobile menu.', 'cnvschool' ),
 				'add_title' => esc_html__( 'Upload', 'cnvschool' ),
 			),
@@ -495,90 +533,6 @@ if ( class_exists( 'CSF' ) ) {
 				'desc'      => esc_html__( 'Upload Retina logo for  mobile menu. This should be your Logo in double size (If your logo is 100 x 20px, it should be 200 x 40px)', 'cnvschool' ),
 			),
 		),
-
-	) );
-
-	// Offcanvas Sidebar
-	CSF::createSection( $prefix, array(
-		'parent' => 'header_section', // The slug id of the parent section
-		'title'  => __( 'Offcanvas Sidebar', 'cnvschool' ),
-		'fields' => array(
-
-			array(
-				'id'        => 'offcanvas_sidebar_logo',
-				'type'      => 'media',
-				'title'     => esc_html__( 'Logo', 'cnvschool' ),
-				'add_title' => esc_html__( 'Upload', 'cnvschool' ),
-				'desc'      => esc_html__( 'Upload your Logo for the off canvas sidebar', 'cnvschool' ),
-			),
-
-
-			// Description textarea field
-			array(
-				'id'    => 'offcanvas_sidebar_description',
-				'type'  => 'textarea',
-				'title' => esc_html__( 'Description Textarea', 'cnvschool' ),
-				'desc'  => esc_html__( 'Enter your description', 'cnvschool' ),
-				'default' => esc_html__( 'CNV is a experience Agency & our Team provide digital solution', 'cnvschool' ),
-			),
-
-			// Contact Info Title
-			array(
-				'id'    => 'offcanvas_sidebar_contact_info_title',
-				'type'  => 'text',
-				'title' => esc_html__( 'Contact Info Title', 'cnvschool' ),
-				'desc'  => esc_html__( 'Enter your contact info title', 'cnvschool' ),
-				'default' => esc_html__( 'Contact us', 'cnvschool' ),
-			),
-
-			// Repeatable field groups for contact info
-			array(
-				'id'          => 'offcanvas_sidebar_contact_info',
-				'type'        => 'group',
-				'title'       => esc_html__( 'Contact Info', 'cnvschool' ),
-				'button_title'=> esc_html__( 'Add New', 'cnvschool' ),
-				'accordion_title'=> esc_html__( 'Add New Contact Info', 'cnvschool' ),
-				'fields'      => array(
-					array(
-						'id'    => 'contact_info_text',
-						'type'  => 'text',
-						'title' => esc_html__( 'Text', 'cnvschool' ),
-					),
-				),
-				'default'     => array(
-					array(
-						'contact_info_text' => esc_html__( 'Melbone st, Australia, Ny 12099', 'cnvschool' ),
-					),
-					array(
-						'contact_info_text' => esc_html__( '+01 800 123 400 55', 'cnvschool' ),
-					),
-					array(
-						'contact_info_text' => esc_html__( 'pollexmail@gmail.com', 'cnvschool' ),
-					),
-
-				),
-			),
-
-			// Newsletter Form in on offcanvas sidebar switcher field
-
-			array(
-				'id'      => 'offcanvas_sidebar_newsletter_form_switcher',
-				'type'    => 'switcher',
-				'title'   => esc_html__( 'Newsletter Form', 'cnvschool' ),
-				'default' => true,
-			),
-
-			// Newsletter Title
-			array(
-				'id'    => 'offcanvas_sidebar_newsletter_info_title',
-				'type'  => 'text',
-				'title' => esc_html__( 'Newsletter Title', 'cnvschool' ),
-				'desc'  => esc_html__( 'Enter your newsletter info title', 'cnvschool' ),
-				'default' => esc_html__( 'Get Update', 'cnvschool' ),
-				'dependency' => array( 'offcanvas_sidebar_newsletter_form_switcher', '==', 'true' ),
-			),
-
-		)
 
 	) );
 

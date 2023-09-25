@@ -24,13 +24,7 @@ $mobile_logo          = cnv_option( 'mobile_logo' );
 $mobile_retina_logo   = cnv_option( 'mobile_retina_logo' );
 
 // Top Bar Options
-$top_bar = cnv_option( 'topbar_enable' );
-$phone   = cnv_option( 'topbar_phone' );
-$email   = cnv_option( 'topbar_email' );
-$address = cnv_option( 'topbar_location' );
-$cart    = cnv_option( 'topbar_cart' );
-$login   = cnv_option( 'topbar_login' );
-
+$top_bar = cnv_option( 'topbar_switch' );
 
 $header_classes = '';
 
@@ -54,14 +48,17 @@ if ( $header_type == true || $header_type == 1 ) {
 
 ?>
 
-<header id="masthead"
-        class="site-header header-1 header-width <?php echo esc_attr( $header_classes ); ?>" <?php if ( $is_fixed && ! empty( $logo_contrast ) ) {
+<header id="masthead" class="site-header header-1 header-width <?php echo esc_attr( $header_classes ); ?>" <?php if ( $is_fixed && ! empty( $logo_contrast ) ) {
 	echo ' data-header-fixed="true"';
 } ?> <?php if ( $mobile_is_fixed ) {
 	echo ' data-mobile-header-fixed="true"';
 } ?> <?php if ( $fixed_initial_offset ) {
 	echo ' data-fixed-initial-offset="' . $fixed_initial_offset . '"';
 } ?> data-mobile-menu-resolution="<?php echo esc_attr( $mobile_menu ) ?>">
+
+    <?php if( $top_bar) {
+        get_template_part( 'template-parts/header/top-bar' );
+    } ?>
 
     <div class="container">
         <div class="header-inner">
