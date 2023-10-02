@@ -220,6 +220,12 @@
 			display: none;
 		}
 
+		&.site-header--two {
+			.site-header-logo-area {
+				display: none;
+			}
+		}
+
 		.site-logo {
 			.main-logo {
 				display: none;

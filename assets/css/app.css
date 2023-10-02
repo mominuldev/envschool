@@ -653,6 +653,10 @@ nav.wp-calendar-nav {
 .cnv-btn.btn-round {
   border-radius: 5px;
 }
+.cnv-btn.btn-full {
+  width: 100%;
+  text-align: center;
+}
 .cnv-btn .cnvschool-btn-content-wrapper {
   display: flex;
   align-items: center;
@@ -1599,6 +1603,16 @@ nav.wp-calendar-nav {
   font-size: 46px;
   line-height: 1.2;
   margin-bottom: 17px;
+  position: relative;
+  display: inline-block;
+}
+.section-heading .section-title:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  width: 100px;
+  height: 3px;
+  background: #eb4135;
 }
 @media (max-width: 1200px) {
   .section-heading .section-title {
@@ -1657,8 +1671,17 @@ nav.wp-calendar-nav {
   font-weight: 700;
 }
 
-.plus-jakarta h2, .plus-jakarta h3, .plus-jakarta h4, .plus-jakarta h5, .plus-jakarta h6, .plus-jakarta p, .plus-jakarta span, .plus-jakarta a, .plus-jakarta li {
-  font-family: "Plus Jakarta Sans", sans-serif !important;
+.cnv-heading-align-left .section-heading .section-title:after {
+  left: 0;
+}
+
+.cnv-heading-align-center .section-heading .section-title:after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.cnv-heading-align-right .section-heading .section-title:after {
+  right: 0;
 }
 
 /*--------------------------------------------------------------
@@ -2306,6 +2329,70 @@ nav.wp-calendar-nav {
 }
 
 /*--------------------------------------------------------------
+## Students
+--------------------------------------------------------------*/
+.cnv-student-chart {
+  border: 1px solid #e5e5e5;
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+}
+.cnv-student-chart__header {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  text-align: center;
+  background: #eb4135;
+}
+.cnv-student-chart__header-item {
+  padding: 15px 0;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid #e5e5e5;
+}
+.cnv-student-chart__header-item:last-child {
+  border-right: none;
+}
+.cnv-student-chart__header-item__label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0;
+}
+.cnv-student-chart__class-info {
+  display: grid;
+  grid-template-columns: [first] 1fr [line2] 3fr [line3] 1fr;
+  align-items: center;
+}
+.cnv-student-chart__class-info:not(:last-child) {
+  border-bottom: 1px solid #e5e5e5;
+}
+.cnv-student-chart__students > div {
+  padding: 10px;
+}
+.cnv-student-chart__students:not(:last-child) {
+  border-bottom: 1px solid #e5e5e5;
+}
+.cnv-student-chart__students-list, .cnv-student-chart__male {
+  border-right: 1px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
+}
+.cnv-student-chart__students {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.cnv-student-chart .total-students {
+  background: #e8e8e8;
+}
+.cnv-student-chart__footer {
+  background: #668014;
+}
+.cnv-student-chart__footer .cnv-student-chart__students-list, .cnv-student-chart__footer .cnv-student-chart__male, .cnv-student-chart__footer .cnv-student-chart__total-student {
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-weight: 600;
+}
+
+/*--------------------------------------------------------------
 ## Notice
 --------------------------------------------------------------*/
 .notice-content-area {
@@ -2359,6 +2446,10 @@ nav.wp-calendar-nav {
 .cnv-notice__list-wrapper {
   border: 1px solid #eee;
   border-radius: 10px;
+  overflow: hidden;
+}
+.cnv-notice__list-wrapper .cnv-notice__list-inner {
+  min-height: 470px;
 }
 
 h2.cnv-notice__heading {
@@ -2535,7 +2626,7 @@ h3.cnv-image-carousel-title {
 .cnv-post__entry-title {
   font-size: 24px;
   font-weight: 500;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 .cnv-post__read-more {
   font-weight: 500;
@@ -4520,6 +4611,9 @@ a:hover, a:active {
   }
 }
 .site-header.showed .cnv-header-topbar {
+  display: none;
+}
+.site-header.showed.site-header--two .site-header-logo-area {
   display: none;
 }
 .site-header.showed .site-logo .main-logo {

@@ -57,6 +57,12 @@
 .cnv-notice__list-wrapper {
 	border: 1px solid #eee;
 	border-radius: 10px;
+	overflow: hidden;
+
+
+	.cnv-notice__list-inner {
+		min-height: 470px;
+	}
 }
 
 h2.cnv-notice__heading {

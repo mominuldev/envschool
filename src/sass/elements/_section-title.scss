@@ -48,6 +48,17 @@
         font-size: 46px;
         line-height: 1.2;
         margin-bottom: 17px;
+        position: relative;
+        display: inline-block;
+
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            width: 100px;
+            height: 3px;
+            background: $color__theme;
+        }
 
         @media(max-width: 1200px) {
             font-size: 50px;
@@ -122,6 +133,33 @@
     }
 }
 
-.plus-jakarta h2, .plus-jakarta h3, .plus-jakarta h4, .plus-jakarta h5, .plus-jakarta h6 , .plus-jakarta p, .plus-jakarta span, .plus-jakarta a, .plus-jakarta li {
-    font-family: 'Plus Jakarta Sans', sans-serif !important;
+.cnv-heading-align-left {
+    .section-heading {
+        .section-title {
+            &:after {
+                left: 0;
+            }
+        }
+    }
+}
+
+.cnv-heading-align-center {
+    .section-heading {
+        .section-title {
+            &:after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+}
+
+.cnv-heading-align-right {
+    .section-heading {
+        .section-title {
+            &:after {
+                right: 0;
+            }
+        }
+    }
 }

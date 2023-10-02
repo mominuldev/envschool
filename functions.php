@@ -103,7 +103,7 @@ add_filter( 'comment_form_fields', 'cnv_reorder_comment_fields' );
 add_filter( 'csf_welcome_page', '__return_false' );
 
 
-function custom_post_type_archive_title($title) {
+function cnv_post_notice_archive_title($title) {
 	// Check if we are on a custom post type archive page
 	if (is_post_type_archive()) {
 		// Replace 'your_custom_post_type' with the name of your custom post type
@@ -117,7 +117,7 @@ function custom_post_type_archive_title($title) {
 	return $title;
 }
 
-add_filter('get_the_archive_title', 'custom_post_type_archive_title');
+add_filter('get_the_archive_title', 'cnv_post_notice_archive_title');
 
 function cnv_gallery_archive_title($title) {
 	// Check if we are on a custom post type archive page
