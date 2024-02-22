@@ -632,8 +632,7 @@ nav.wp-calendar-nav {
 .cnv-btn {
   position: relative;
   padding: 11px 35px;
-  background-color: #eb4135;
-  border: 1px solid #eb4135;
+  background: linear-gradient(to left, #FF9800, #eb4135, #FF9800);
   z-index: 1;
   color: #fff;
   overflow: hidden;
@@ -643,6 +642,7 @@ nav.wp-calendar-nav {
   align-items: center;
   font-weight: 600;
   transition: all 0.4s ease-in-out;
+  background-size: 300% 100%;
 }
 .cnv-btn.btn-circle {
   border-radius: 40px;
@@ -665,9 +665,8 @@ nav.wp-calendar-nav {
   order: 2;
 }
 .cnv-btn:hover {
-  background: #d82215;
   color: #fff;
-  border-color: #d82215;
+  background-position: 100% 0;
 }
 .cnv-btn:hover:before {
   height: 0;
@@ -1612,7 +1611,7 @@ nav.wp-calendar-nav {
   bottom: -10px;
   width: 100px;
   height: 3px;
-  background: #eb4135;
+  background: linear-gradient(to left, #eb4135, #FF9800);
 }
 @media (max-width: 1200px) {
   .section-heading .section-title {
@@ -1913,7 +1912,7 @@ nav.wp-calendar-nav {
   transition: all 0.3s ease-in-out;
 }
 .banner-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background: #668014;
+  background: linear-gradient(174deg, #80cc06, #388811) !important;
 }
 
 /*--------------------------------------------------------------
@@ -2342,7 +2341,7 @@ nav.wp-calendar-nav {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   text-align: center;
-  background: #eb4135;
+  background: linear-gradient(174deg, #80cc06, #388811) !important;
 }
 .cnv-student-chart__header-item {
   padding: 15px 0;
@@ -2384,7 +2383,7 @@ nav.wp-calendar-nav {
   background: #e8e8e8;
 }
 .cnv-student-chart__footer {
-  background: #668014;
+  background: linear-gradient(174deg, #80cc06, #388811) !important;
 }
 .cnv-student-chart__footer .cnv-student-chart__students-list, .cnv-student-chart__footer .cnv-student-chart__male, .cnv-student-chart__footer .cnv-student-chart__total-student {
   border-color: rgba(255, 255, 255, 0.2);
@@ -2444,8 +2443,9 @@ nav.wp-calendar-nav {
 }
 
 .cnv-notice__list-wrapper {
-  border: 1px solid #eee;
-  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07);
+  border-radius: 5px;
   overflow: hidden;
 }
 .cnv-notice__list-wrapper .cnv-notice__list-inner {
@@ -2456,9 +2456,8 @@ h2.cnv-notice__heading {
   padding: 10px;
   text-align: center;
   width: 100%;
-  background: #668014;
+  background: linear-gradient(to left, #eb4135, #FF9800);
   color: #fff;
-  border-radius: 10px 10px 0 0;
   font-size: 26px;
 }
 
@@ -2489,14 +2488,9 @@ h2.cnv-notice__heading {
 
 .notice-list__download-btn {
   padding: 10px 15px;
-  background: #eb4135;
-  color: #fff;
   border-radius: 6px;
   font-size: 12px;
-}
-.notice-list__download-btn:hover {
-  background: #d82215;
-  color: #fff;
+  line-height: 1.4;
 }
 
 /*--------------------------------------------------------------
@@ -4103,7 +4097,7 @@ h3.cnv-image-carousel-title {
   width: 45px;
   height: 45px;
   line-height: 45px;
-  background-color: #1e2c46;
+  background: #1e2c46;
   color: #b3c1d3;
   font-size: 16px;
   text-align: center;
@@ -4112,7 +4106,7 @@ h3.cnv-image-carousel-title {
   justify-content: center !important;
 }
 .cnv-social-links li a:hover {
-  background-color: #eb4135;
+  background: linear-gradient(to left, #eb4135, #FF9800);
   color: #fff !important;
 }
 
@@ -4124,10 +4118,18 @@ h3.cnv-image-carousel-title {
   letter-spacing: 0.5px;
 }
 .cnv-contact__widget .cnv-footer-contact-info li i {
-  color: #eb4135;
+  background-image: linear-gradient(to left, #eb4135, #FF9800);
+  font-size: 20px;
   margin-right: 5px;
   min-width: 25px;
   transform: translateY(2px);
+  background-repeat: repeat;
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 
 /*--------------------------------------------------------------
@@ -4682,10 +4684,11 @@ a:hover, a:active {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
 }
 .site-header .site-main-menu li a i {
   margin-left: 5px;
-  font-size: 14px;
+  font-size: 12px;
 }
 .site-header .site-main-menu li.menu-active > a {
   color: #eb4135;
@@ -4717,9 +4720,9 @@ a:hover, a:active {
     padding: 10px 15px 10px 30px;
   }
 }
-.site-header .site-main-menu li .sub-menu li.menu-active > a, .site-header .site-main-menu li .sub-menu li.current-menu-item a {
+.site-header .site-main-menu li .sub-menu li.menu-active > a, .site-header .site-main-menu li .sub-menu li.current_page_item a {
   color: #fff;
-  background: #eb4135;
+  background: linear-gradient(174deg, #80cc06, #388811) !important;
 }
 .site-header .site-main-menu > li {
   position: relative;
@@ -4744,12 +4747,14 @@ a:hover, a:active {
   }
 }
 .site-header .site-main-menu > li > a {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   color: #121212;
   display: block;
   position: relative;
   padding: 37px 0;
+  border-right: 1px solid #dbc4c2;
+  text-transform: uppercase;
 }
 .site-header .site-main-menu > li > a:hover {
   color: #eb4135;
@@ -4774,7 +4779,7 @@ a:hover, a:active {
     list-style: none;
   }
 }
-.site-header .site-main-menu > li.current-menu-item > a {
+.site-header .site-main-menu > li.current_page_item > a {
   color: #eb4135;
 }
 .site-header .site-main-menu > li.menu-item-has-children > a {
@@ -4883,7 +4888,7 @@ a:hover, a:active {
   padding: 10px 16px;
 }
 .site-header--two .site-main-menu > li.current-menu-item > a {
-  background: #eb4135;
+  background: linear-gradient(174deg, #80cc06, #388811) !important;
   color: #fff;
 }
 .site-header .right-logo img {
@@ -6019,7 +6024,7 @@ a:hover, a:active {
   bottom: 0;
   width: 51px;
   height: 3px;
-  background-color: #eb4135;
+  background: #eb4135;
 }
 .site-footer .widget-title:after, .site-footer h2:after, .site-footer h3:after, .site-footer h4:after, .site-footer h5:after, .site-footer h6:after {
   width: 10px;

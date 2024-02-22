@@ -703,7 +703,7 @@
 			bottom: 0;
 			width: 51px;
 			height: 3px;
-			background-color: $color__theme;
+			background: $color__theme;
 		}
 
 		&:after {
@@ -1117,25 +1117,3 @@
 		}
 	}
 }
-
-//.footer_dark {
-//	.cnvschool-block-social-link {
-//		li {
-//			a {
-//				border-color: rgba(255, 255, 255, 0.2);
-//				color: #9090a3;
-//
-//				&:hover {
-//					background: $color__theme;
-//					border-color: $color__theme;
-//					box-shadow: 0 20px 30px 0 rgba($color__theme, 0.34);
-//					color: #fff;
-//				}
-//			}
-//		}
-//	}
-//}
-
-
-//Do you have experience working with Figma and creating websites that match incredibly closely?
-//Answer: Yes, I have experience working with Figma and creating websites that match incredibly closely.

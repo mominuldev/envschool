@@ -1,8 +1,8 @@
 .cnv-btn {
 	position: relative;
 	padding: 11px 35px;
-	background-color: $color__theme;
-	border: 1px solid $color__theme;
+	background: $gradient_button;
+	//border: 1px solid $color__theme;
 	z-index: 1;
 	color: #fff;
 	overflow: hidden;
@@ -12,6 +12,7 @@
 	align-items: center;
 	font-weight: 600;
 	transition: all 0.4s ease-in-out;
+	background-size: 300% 100%;
 
 	&.btn-circle {
 		border-radius: 40px;
@@ -40,10 +41,10 @@
 	}
 
 	&:hover {
-		background: darken($color__theme, 10%);
+		//background: darken($color__theme, 10%);
 		color: #fff;
-		border-color: darken($color__theme, 10%);
-
+		//border-color: darken($color__theme, 10%);
+		background-position: 100% 0;
 
         &:before {
             height: 0;

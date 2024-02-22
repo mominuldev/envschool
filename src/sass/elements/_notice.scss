@@ -55,8 +55,10 @@
 
 
 .cnv-notice__list-wrapper {
-	border: 1px solid #eee;
-	border-radius: 10px;
+	//border: 1px solid #eee;
+	background: #fff;
+	box-shadow: 0 10px 20px rgba(0,0,0, 0.07);
+	border-radius: 5px;
 	overflow: hidden;
 
 
@@ -69,9 +71,10 @@ h2.cnv-notice__heading {
 	padding: 10px;
 	text-align: center;
 	width: 100%;
-	background: #668014;
+	//background: #668014;
+	background: $gradient_red;
 	color: #fff;
-	border-radius: 10px 10px 0 0;
+	//border-radius: 10px 10px 0 0;
 	font-size: 26px;
 }
 
@@ -102,14 +105,7 @@ h2.cnv-notice__heading {
 
 .notice-list__download-btn {
 	padding: 10px 15px;
-	background: $color__theme;
-	color: #fff;
 	border-radius: 6px;
 	font-size: 12px;
-
-
-	&:hover {
-		background: darken($color__theme, 10%);
-		color: #fff;
-	}
+	line-height: 1.4;
 }

@@ -289,6 +289,7 @@ var CNVTHEME = CNVTHEME || {};
         /*=================================*/
         /*=           Contact Form         =*/
         /*=================================*/
+
         contactFrom: function () {
             $('[data-cnvschool-form]').each(function () {
                 var $this = $(this);

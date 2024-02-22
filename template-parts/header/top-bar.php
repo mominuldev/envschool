@@ -32,10 +32,9 @@ $show_social = cnv_option( 'show_social_link' );
 			<div class="cnv-header-topbar__right">
 				<?php if ( $eiin ) : ?>
 					<div class="cnv-header-topbar__item">
-                        <i class="fa-solid fa-school"></i>
-						<a href="tel:<?php echo esc_attr( $eiin ); ?>">
-							<?php echo esc_html( $eiin ); ?>
-						</a>
+                        <span class="cnv-header-topbar__title"><?php echo esc_html__('EIIN:') ?></span>
+						<?php echo esc_html( $eiin ); ?>
+
 					</div>
 				<?php endif; ?>
 

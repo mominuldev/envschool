@@ -159,7 +159,7 @@
 			width: 45px;
 			height: 45px;
 			line-height: 45px;
-			background-color: #1e2c46;
+			background: #1e2c46;
 			color: #b3c1d3;
 			font-size: 16px;
 			text-align: center;
@@ -168,7 +168,7 @@
 			justify-content: center !important;
 
 			&:hover {
-				background-color: $color__theme;
+				background: $gradient_red;
 				color: #fff !important;
 			}
 		}
@@ -186,10 +186,20 @@
 			letter-spacing: 0.5px;
 
 			i {
-				color: $color__theme;
+				background-image: $gradient_red;
+				font-size: 20px;
 				margin-right: 5px;
 				min-width: 25px;
 				transform: translateY(2px);
+
+				background-repeat: repeat;
+
+				/* Use the text as a mask for the background. */
+				/* This will show the gradient as a text color rather than element bg. */
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				-moz-background-clip: text;
+				-moz-text-fill-color: transparent;
 			}
 		}
 	}
