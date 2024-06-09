@@ -397,7 +397,7 @@
 			}
 
 			> a {
-				font-size: 14px;
+				font-size: 16px;
 				font-weight: 500;
 				color: $color__heading;
 				display: block;
@@ -556,8 +556,6 @@
 		.site-main-menu {
 			li {
 				a {
-
-
 					&:hover {
 						color: $color__theme;
 					}

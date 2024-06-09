@@ -1,0 +1,64 @@
+h2.school-info-heading {
+	background: linear-gradient(174deg, #80cc06, #388811) !important;
+	color: #fff;
+	margin-bottom: 0;
+	text-align: center;
+	padding: 10px 30px;
+	border: 1px solid #b0b0b0;
+	border-bottom: 0;
+	font-size: 24px;
+	border-radius: 6px 6px 0 0;
+}
+
+
+.school-info {
+	border: 1px solid #b0b0b0;
+	border-radius: 0 0 6px 6px;
+}
+
+.school-info-item {
+	display: flex;
+	flex-wrap: wrap;
+	border-bottom: 1px solid #b0b0b0;
+
+	&:last-child {
+		border-bottom: 0;
+	}
+
+
+	@media(max-width: 576px) {
+		flex-direction: column;
+	}
+
+	.school-info-title {
+		flex: 1 1 30%;
+		max-width: 30%;
+		font-size: 18px;
+		font-weight: 500;
+		border-right: 1px solid #b0b0b0;
+		margin-bottom: 0;
+		padding: 14px 20px;
+
+		@media(max-width: 576px) {
+			font-size: 16px;
+			max-width: 100%;
+			flex: 1 1 100%;
+			border-right: 0;
+			border-bottom: 1px solid #b0b0b0;
+			text-align: center;
+		}
+	}
+
+	.school-info-content {
+		flex: 0 0 70%;
+		max-width: 70%;
+		padding: 12px 20px;
+		margin-bottom: 0;
+
+		@media(max-width: 576px) {
+			max-width: 100%;
+			flex: 0 0 100%;
+			text-align: center;
+		}
+	}
+}

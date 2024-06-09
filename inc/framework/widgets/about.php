@@ -74,7 +74,6 @@ if( class_exists( 'CSF' ) ) {
 			<?php endif; ?>
 
             <?php if( $instance['show_social_icon'] ) : ?>
-                <h4 class="cnv-footer__widget-social-title"><?php esc_html_e( 'Follow Us', 'cnv-school' ); ?></h4>
                 <?php cnv_get_social_icon(); ?>
             <?php endif; ?>
 

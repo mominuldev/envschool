@@ -195,7 +195,7 @@ pre {
 }
 
 code {
-  color: #eb4135;
+  color: #cb251c;
 }
 
 code, kbd, tt, var {
@@ -483,7 +483,7 @@ ul ul {
   width: 1em;
   height: 1em;
   position: relative;
-  color: #eb4135;
+  color: #cb251c;
   font-size: 16px;
 }
 .cnv__list li p {
@@ -501,7 +501,7 @@ ul ul {
   align-items: baseline;
 }
 .cnv__list li a:hover {
-  color: #eb4135;
+  color: #cb251c;
 }
 .cnv__list.list-dice li {
   padding-left: 25px;
@@ -547,7 +547,7 @@ table th a {
   color: #121212;
 }
 table th a:hover {
-  color: #eb4135;
+  color: #cb251c;
 }
 table td {
   padding: 10px 15px;
@@ -578,7 +578,7 @@ tbody > tr {
 }
 
 tfoot tr #prev a:hover, tfoot tr #next a:hover {
-  color: #eb4135;
+  color: #cb251c;
 }
 
 tbody > tr > th {
@@ -681,21 +681,21 @@ nav.wp-calendar-nav {
 }
 .cnv-btn.btn-outline {
   background: transparent;
-  color: #eb4135;
-  border-color: #eb4135;
+  color: #cb251c;
+  border-color: #cb251c;
 }
 .cnv-btn.btn-outline:hover {
   color: #fff;
-  border-color: #eb4135;
-  background-color: #eb4135;
+  border-color: #cb251c;
+  background-color: #cb251c;
 }
 .cnv-btn.btn-outline.btn-light {
-  border-color: #eb4135;
+  border-color: #cb251c;
   color: #121212;
 }
 .cnv-btn.btn-outline.btn-light:hover {
   color: #fff;
-  background-color: #eb4135;
+  background-color: #cb251c;
 }
 .cnv-btn.btn-outline.btn-dark {
   border: 1px solid #EAEEF3;
@@ -706,9 +706,9 @@ nav.wp-calendar-nav {
   background-color: #121212;
 }
 .cnv-btn.btn-light:not(.btn-outline) {
-  background-color: #eb4135;
+  background-color: #cb251c;
   color: #121212;
-  border-color: #eb4135;
+  border-color: #cb251c;
 }
 .cnv-btn.btn-light:not(.btn-outline):hover {
   color: #121212;
@@ -800,7 +800,7 @@ nav.wp-calendar-nav {
   width: 75px;
   line-height: 77px;
   text-align: center;
-  background-color: #eb4135;
+  background-color: #cb251c;
   color: #fff;
   border-radius: 50%;
   position: relative;
@@ -818,7 +818,7 @@ nav.wp-calendar-nav {
   width: 100px;
   opacity: 0;
   border-radius: 50%;
-  border: 1px solid #eb4135;
+  border: 1px solid #cb251c;
   animation: btnWave 1500ms linear infinite;
 }
 .popup-btn:after {
@@ -830,7 +830,7 @@ nav.wp-calendar-nav {
   width: 100%;
   opacity: 0;
   border-radius: 50%;
-  border: 10px solid #eb4135;
+  border: 10px solid #cb251c;
   animation: btnWave 1000ms linear infinite;
 }
 .popup-btn:hover {
@@ -868,13 +868,13 @@ nav.wp-calendar-nav {
   background-color: #121212;
 }
 .cnvschool-back-btn:hover {
-  color: #eb4135;
+  color: #cb251c;
 }
 .cnvschool-back-btn:hover svg path {
-  stroke: #eb4135;
+  stroke: #cb251c;
 }
 .cnvschool-back-btn:hover:after {
-  background-color: #eb4135;
+  background-color: #cb251c;
 }
 
 /*--------------------------------------------------------------
@@ -1599,7 +1599,7 @@ nav.wp-calendar-nav {
 }
 .section-heading .section-title {
   font-weight: 700;
-  font-size: 46px;
+  font-size: 36px;
   line-height: 1.2;
   margin-bottom: 17px;
   position: relative;
@@ -1779,9 +1779,9 @@ nav.wp-calendar-nav {
   transition: all 0.6s ease-in-out;
 }
 .banner__slider .cnv-btn:hover {
-  background: #eb4135;
+  background: #cb251c;
   color: #fff;
-  border-color: #eb4135;
+  border-color: #cb251c;
 }
 .banner__slider .cnv-btn.btn-outline {
   margin-left: 20px;
@@ -1801,7 +1801,7 @@ nav.wp-calendar-nav {
   border-image-source: linear-gradient(90deg, #fff 100%, #fff 100%);
 }
 .banner__slider .cnv-btn.btn-outline:hover {
-  border-color: #eb4135;
+  border-color: #cb251c;
 }
 .banner__slider .cnv-btn.btn-outline:hover:after {
   border-image-source: linear-gradient(90deg, #2acaff 25%, #13ade6 75%);
@@ -1821,9 +1821,9 @@ nav.wp-calendar-nav {
   border-color: #fff;
 }
 .banner__slider .swiper-slide-active .cnv-btn.btn-outline:hover {
-  background: #eb4135;
+  background: #cb251c;
   color: #fff;
-  border-color: #eb4135;
+  border-color: #cb251c;
 }
 .banner__slider .swiper-pagination {
   width: auto !important;
@@ -1857,7 +1857,7 @@ nav.wp-calendar-nav {
   margin: 15px 0 !important;
 }
 .banner__slider .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background: #eb4135;
+  background: #cb251c;
   height: 30px;
 }
 .banner__slider .banner__slider-prev, .banner__slider .banner__slider-next {
@@ -1881,9 +1881,9 @@ nav.wp-calendar-nav {
   visibility: hidden;
 }
 .banner__slider .banner__slider-prev:hover, .banner__slider .banner__slider-next:hover {
-  background-color: #eb4135;
+  background-color: #cb251c;
   color: #fff;
-  border-color: #eb4135;
+  border-color: #cb251c;
 }
 .banner__slider .banner__slider-prev {
   left: 20px;
@@ -1988,7 +1988,7 @@ nav.wp-calendar-nav {
 }
 .video_popup_section .video_popup i {
   font-size: 18px;
-  color: #eb4135;
+  color: #cb251c;
   margin-left: 5px;
 }
 
@@ -2025,7 +2025,7 @@ nav.wp-calendar-nav {
   justify-content: center;
 }
 .video_popup:hover {
-  background-color: #eb4135;
+  background-color: #cb251c;
 }
 .video_popup:hover i {
   color: #fff;
@@ -2051,7 +2051,7 @@ nav.wp-calendar-nav {
   width: 75px;
   line-height: 77px;
   text-align: center;
-  background-color: #eb4135;
+  background-color: #cb251c;
   color: #fff;
   border-radius: 50%;
   position: relative;
@@ -2069,7 +2069,7 @@ nav.wp-calendar-nav {
   width: 100px;
   opacity: 0;
   border-radius: 50%;
-  border: 1px solid #eb4135;
+  border: 1px solid #cb251c;
   animation: btnWave 1500ms linear infinite;
 }
 .popup-btn:after {
@@ -2081,7 +2081,7 @@ nav.wp-calendar-nav {
   width: 100%;
   opacity: 0;
   border-radius: 50%;
-  border: 10px solid #eb4135;
+  border: 10px solid #cb251c;
   animation: btnWave 1000ms linear infinite;
 }
 .popup-btn:hover {
@@ -2226,9 +2226,9 @@ nav.wp-calendar-nav {
   font-size: 14px;
 }
 .cnv-team__social li a:hover {
-  background: #eb4135;
+  background: #cb251c;
   color: #fff;
-  border-color: #eb4135;
+  border-color: #cb251c;
 }
 .cnv-team--one {
   border: 1px solid #e5e5e5;
@@ -2254,6 +2254,7 @@ nav.wp-calendar-nav {
 }
 .cnv-team--one .cnv-team__short-info {
   margin: 0;
+  margin-top: 15px;
 }
 .cnv-team--one .cnv-team__social {
   margin-top: 20px;
@@ -2261,22 +2262,42 @@ nav.wp-calendar-nav {
 .cnv-team .btn-small {
   margin-top: 20px;
 }
+.cnv-team .cnv-team__info-header {
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.cnv-team .cnv-team__info-header:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 70px;
+  height: 3px;
+  background: linear-gradient(to left, #eb4135, #FF9800);
+  left: 50%;
+  transform: translateX(-50%);
+}
 .cnv-team--two {
   text-align: center;
-  padding: 10px;
-  border-radius: 10px;
+  padding: 15px 15px 0;
+  border-radius: 6px;
   background: #fff;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
+.cnv-team--two .cnv-team__avater {
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+}
 .cnv-team--two .cnv-team__avater img {
-  border-radius: 10px;
-  height: 260px;
+  height: 100%;
   width: 100%;
   object-fit: cover;
+  border-radius: 50%;
 }
 .cnv-team--two .cnv-team__info {
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
 }
 .cnv-team--two .cnv-team__social {
   padding-top: 10px;
@@ -2319,12 +2340,107 @@ nav.wp-calendar-nav {
 .cnv-team__designation {
   font-size: 15px;
   font-weight: 500;
-  margin-bottom: 10px;
+  margin-bottom: 0;
 }
 .cnv-team__number {
   font-size: 15px;
   font-weight: 500;
-  margin-bottom: 10px;
+  margin-bottom: 0;
+}
+.cnv-team__qualification {
+  margin-bottom: 0;
+}
+
+.cnv-principal-info {
+  padding: 30px;
+  background: #fff;
+  border-radius: 6px;
+}
+
+.cnv-principal-info__header {
+  text-align: center;
+  padding: 20px 20px 15px;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+.cnv-principal-info__header .cnv-principal-info__image {
+  margin-bottom: 15px;
+  overflow: hidden;
+  border-radius: 6px;
+  height: 340px;
+}
+.cnv-principal-info__header .cnv-principal-info__name {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 0;
+  line-height: 1.1;
+}
+.cnv-principal-info__header .cnv-principal-info__designation {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.cnv-principal-info__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  padding-bottom: 10px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 40px;
+}
+.cnv-principal-info__title:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(to left, #eb4135, #FF9800);
+  left: 0;
+  transform: translate(0);
+}
+
+.cnv-principal-info {
+  display: flex;
+  gap: 30px;
+}
+.cnv-principal-info .cnv-principal-info__list {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+}
+.cnv-principal-info .cnv-principal-info__content {
+  flex: 0 0 66.66%;
+  max-width: 66.66%;
+  padding: 0 40px 0 0;
+}
+
+.cnv-principal-info__content-left .cnv-principal-info__content-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+.cnv-principal-info__content-left .cnv-principal-info__content-list > li {
+  padding: 5px 15px;
+}
+.cnv-principal-info__content-left .cnv-principal-info__content-list > li:not(:last-child) {
+  border-bottom: 1px solid #ddd;
+}
+.cnv-principal-info__content-left .cnv-principal-info__content-list > li .cnv-principal-info__content-label {
+  font-weight: 500;
+  color: #121212;
+}
+.cnv-principal-info__content-left .cnv-principal-info__content-list > li .cnv-principal-info__text {
+  flex: 1;
+}
+
+.cnv-principal-info__content-text {
+  font-size: 18px;
+  line-height: 32px;
 }
 
 /*--------------------------------------------------------------
@@ -2392,6 +2508,72 @@ nav.wp-calendar-nav {
 }
 
 /*--------------------------------------------------------------
+## School Info
+--------------------------------------------------------------*/
+h2.school-info-heading {
+  background: linear-gradient(174deg, #80cc06, #388811) !important;
+  color: #fff;
+  margin-bottom: 0;
+  text-align: center;
+  padding: 10px 30px;
+  border: 1px solid #b0b0b0;
+  border-bottom: 0;
+  font-size: 24px;
+  border-radius: 6px 6px 0 0;
+}
+
+.school-info {
+  border: 1px solid #b0b0b0;
+  border-radius: 0 0 6px 6px;
+}
+
+.school-info-item {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #b0b0b0;
+}
+.school-info-item:last-child {
+  border-bottom: 0;
+}
+@media (max-width: 576px) {
+  .school-info-item {
+    flex-direction: column;
+  }
+}
+.school-info-item .school-info-title {
+  flex: 1 1 30%;
+  max-width: 30%;
+  font-size: 18px;
+  font-weight: 500;
+  border-right: 1px solid #b0b0b0;
+  margin-bottom: 0;
+  padding: 14px 20px;
+}
+@media (max-width: 576px) {
+  .school-info-item .school-info-title {
+    font-size: 16px;
+    max-width: 100%;
+    flex: 1 1 100%;
+    border-right: 0;
+    border-bottom: 1px solid #b0b0b0;
+    text-align: center;
+  }
+}
+.school-info-item .school-info-content {
+  flex: 0 0 70%;
+  max-width: 70%;
+  padding: 12px 20px;
+  margin-bottom: 0;
+}
+@media (max-width: 576px) {
+  .school-info-item .school-info-content {
+    max-width: 100%;
+    flex: 0 0 100%;
+    text-align: center;
+  }
+}
+
+/*--------------------------------------------------------------
 ## Notice
 --------------------------------------------------------------*/
 .notice-content-area {
@@ -2433,12 +2615,12 @@ nav.wp-calendar-nav {
   display: inline-flex;
   gap: 10px;
   align-items: center;
-  background: #eb4135;
+  background: #cb251c;
   border-radius: 10px;
   color: #fff;
 }
 .cnv-notice__file a:hover {
-  background: #d82215;
+  background: #9e1d16;
   color: #fff;
 }
 
@@ -2538,7 +2720,7 @@ h3.cnv-image-carousel-title {
   position: absolute;
   top: 0;
   left: 0;
-  background: #eb4135;
+  background: #cb251c;
   height: 100%;
   width: 0;
   content: "";
@@ -2577,7 +2759,7 @@ h3.cnv-image-carousel-title {
 }
 .cnv-post__feature-image img:hover {
   transform: scale(1.1) translateY(-5px);
-  box-shadow: 0 30px 30px 0 rgba(235, 65, 53, 0.1);
+  box-shadow: 0 30px 30px 0 rgba(203, 37, 28, 0.1);
 }
 .cnv-post__blog-content {
   padding-top: 30px;
@@ -2601,10 +2783,10 @@ h3.cnv-image-carousel-title {
   align-items: center;
 }
 .cnv-post__meta li a:hover {
-  color: #eb4135;
+  color: #cb251c;
 }
 .cnv-post__meta li i {
-  color: #eb4135;
+  color: #cb251c;
   margin-right: 3px;
 }
 .cnv-post__meta li .entry-date {
@@ -2631,7 +2813,7 @@ h3.cnv-image-carousel-title {
   padding-bottom: 2px;
   margin-bottom: -2px;
   text-transform: uppercase;
-  color: #eb4135;
+  color: #cb251c;
 }
 .cnv-post__read-more i {
   margin-left: 0;
@@ -2644,7 +2826,7 @@ h3.cnv-image-carousel-title {
   left: 0;
   width: 0;
   height: 2px;
-  background: #eb4135;
+  background: #cb251c;
   transition: all 0.3s ease-in-out;
 }
 .cnv-post__read-more:hover i {
@@ -2692,7 +2874,7 @@ h3.cnv-image-carousel-title {
   flex-wrap: wrap-reverse;
   align-items: baseline;
   font-size: 2em;
-  color: #eb4135;
+  color: #cb251c;
   position: relative;
   transition: transform 0.3s, border 0.3s, background 0.3s, color 0.3s;
   transition: transform 0.3s, border 0.3s, background 0.3s, color 0.3s, -webkit-transform 0.3s;
@@ -2746,7 +2928,7 @@ h3.cnv-image-carousel-title {
   color: #121212;
 }
 .cnvschool-icon-box__title a:hover {
-  color: #eb4135;
+  color: #cb251c;
 }
 .cnvschool-icon-box__description {
   margin: 0;
@@ -2770,7 +2952,7 @@ h3.cnv-image-carousel-title {
   font-weight: 500;
 }
 .cnvschool-icon-box__button:not(.cnvschool-btn):hover {
-  color: #eb4135;
+  color: #cb251c;
 }
 .cnvschool-icon-box .cnvschool-btn {
   margin-top: 45px;
@@ -2780,7 +2962,7 @@ h3.cnv-image-carousel-title {
   color: #6a7695;
 }
 .cnvschool-icon-box .cnvschool-btn.btn-outline:hover {
-  border-color: #eb4135;
+  border-color: #cb251c;
   color: #fff;
 }
 .cnvschool-icon-box__badge {
@@ -2791,8 +2973,8 @@ h3.cnv-image-carousel-title {
   font-weight: 500;
   padding: 6px 17px;
   line-height: 1;
-  background-color: rgba(235, 65, 53, 0.2);
-  color: #eb4135;
+  background-color: rgba(203, 37, 28, 0.2);
+  color: #cb251c;
   border-radius: 4px;
   width: max-content;
   height: max-content;
@@ -2821,7 +3003,7 @@ h3.cnv-image-carousel-title {
   border-radius: 50%;
   font-size: 22px;
   text-align: center;
-  background: #eb4135;
+  background: #cb251c;
   color: #fff;
   display: inline-block;
   margin-bottom: 31px;
@@ -2835,15 +3017,15 @@ h3.cnv-image-carousel-title {
   margin-bottom: 8px;
 }
 .cnvschool-icon-box.style--two:hover {
-  border-color: #eb4135;
-  background-color: #eb4135;
+  border-color: #cb251c;
+  background-color: #cb251c;
 }
 .cnvschool-icon-box.style--two:hover:before {
   opacity: 0;
 }
 .cnvschool-icon-box.style--two:hover .cnvschool-icon-box__icon-container {
   background: #fff;
-  color: #eb4135;
+  color: #cb251c;
 }
 .cnvschool-icon-box.style--two:hover .cnvschool-icon-box__title {
   color: #fff;
@@ -2859,7 +3041,7 @@ h3.cnv-image-carousel-title {
 }
 .cnvschool-icon-box.style--three .cnvschool-icon-box__icon-container {
   font-size: 36px;
-  color: #eb4135;
+  color: #cb251c;
   margin-bottom: 29px;
 }
 .cnvschool-icon-box.style--three .cnvschool-icon-box__icon-container img, .cnvschool-icon-box.style--three .cnvschool-icon-box__icon-container svg {
@@ -2886,11 +3068,11 @@ h3.cnv-image-carousel-title {
   transition: all 0.3s ease-in-out;
 }
 .cnvschool-icon-box.style--three .cnvschool-btn-link:hover {
-  color: #eb4135;
+  color: #cb251c;
 }
 .cnvschool-icon-box.style--three .cnvschool-btn-link:hover i {
   margin-left: 3px;
-  color: #eb4135;
+  color: #cb251c;
 }
 .cnvschool-icon-box.style--three:hover {
   box-shadow: 0 30px 50px 0 rgba(1, 4, 45, 0.08);
@@ -2922,13 +3104,13 @@ h3.cnv-image-carousel-title {
 }
 
 .cnvschool-view-stacked .cnvschool-icon-box__icon-container {
-  background-color: #eb4135;
+  background-color: #cb251c;
   color: #fff;
 }
 
 .cnvschool-view-framed .cnvschool-icon-box__icon-container {
-  border: 2px solid #eb4135;
-  color: #eb4135;
+  border: 2px solid #cb251c;
+  color: #cb251c;
 }
 
 .cnvschool-shape-rounded .cnvschool-icon-box__icon-container {
@@ -3000,7 +3182,7 @@ h3.cnv-image-carousel-title {
   position: relative;
 }
 #cnvschool-dynamic-tabs.horizontal #cnvschool-dynamic-tabs-nav.style-two li.active a {
-  color: #eb4135;
+  color: #cb251c;
 }
 #cnvschool-dynamic-tabs.horizontal #cnvschool-dynamic-tabs-nav.style-two li.active a:after {
   animation: featureProgressScaleX 10s linear forwards;
@@ -3065,7 +3247,7 @@ h3.cnv-image-carousel-title {
 }
 #cnvschool-dynamic-tabs.vertical #cnvschool-dynamic-tabs-nav li.active a {
   color: #ffffff;
-  background: #eb4135;
+  background: #cb251c;
 }
 #cnvschool-dynamic-tabs.vertical #cnvschool-dynamic-tabs-content {
   flex: 1;
@@ -3080,7 +3262,7 @@ h3.cnv-image-carousel-title {
 }
 
 .tab-swipe-line {
-  background: #eb4135;
+  background: #cb251c;
   position: absolute;
   left: 0;
   -webkit-transition: all 0.3s ease;
@@ -3310,7 +3492,7 @@ h3.cnv-image-carousel-title {
 --------------------------------------------------------------*/
 .cnvschool-faq__item {
   padding-left: 30px;
-  border-left: 2px solid #eb4135;
+  border-left: 2px solid #cb251c;
   transition: all 0.3s ease;
 }
 .cnvschool-faq__item:not(:last-child) {
@@ -3401,14 +3583,14 @@ h3.cnv-image-carousel-title {
   text-decoration: none;
 }
 .faq_content .card-header .btn:hover {
-  color: #eb4135;
+  color: #cb251c;
 }
 .faq_content .card-header .btn:after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f068";
   transition: 0.5s;
-  color: #eb4135;
+  color: #cb251c;
   font-size: 14px;
   position: absolute;
   right: 30px;
@@ -3430,7 +3612,7 @@ h3.cnv-image-carousel-title {
   margin-bottom: 15px;
 }
 .faq_content .card.active .card-header .btn {
-  color: #eb4135;
+  color: #cb251c;
 }
 .faq_content .card-body {
   padding: 0 1.5rem 1.5rem 1.5rem;
@@ -3494,13 +3676,13 @@ h3.cnv-image-carousel-title {
   }
 }
 .cnvschool-accordion .accordion-button:not(.collapsed) {
-  color: #eb4135;
+  color: #cb251c;
   background-color: transparent;
   box-shadow: none;
 }
 .cnvschool-accordion .accordion-button:not(.collapsed):after {
   content: "\f068";
-  color: #eb4135;
+  color: #cb251c;
   background-image: none;
   transform: translateY(-50%) rotate(0);
 }
@@ -3531,7 +3713,7 @@ h3.cnv-image-carousel-title {
   color: #2c2c51;
 }
 .contact-info-wrapper .contact-info .info-title.style-two {
-  color: #eb4135;
+  color: #cb251c;
 }
 .contact-info-wrapper .contact-info p {
   margin-bottom: 0;
@@ -3541,7 +3723,7 @@ h3.cnv-image-carousel-title {
   margin-bottom: 21px;
 }
 .contact-info-wrapper .phone i {
-  color: #eb4135;
+  color: #cb251c;
   margin-right: 12px;
   font-size: 25px;
 }
@@ -3581,7 +3763,7 @@ h3.cnv-image-carousel-title {
 }
 .cnv-contact-info__icon {
   font-size: 40px;
-  color: #eb4135;
+  color: #cb251c;
   margin-bottom: 30px;
 }
 .cnv-contact-info__title {
@@ -3602,12 +3784,12 @@ h3.cnv-image-carousel-title {
   font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
-  background-color: #eb4135;
-  border-color: #eb4135;
+  background-color: #cb251c;
+  border-color: #cb251c;
 }
 .cnv-contact-info .cnv-btn:hover {
   background-color: transparent;
-  color: #eb4135;
+  color: #cb251c;
 }
 .cnv-contact-info__button {
   display: flex;
@@ -3969,11 +4151,13 @@ h3.cnv-image-carousel-title {
 .site-footer .widget {
   position: relative;
   z-index: 2;
+  margin-bottom: 30px;
+  border: 0;
   padding: 0;
 }
 .site-footer p {
   color: #fff;
-  font-size: 18px;
+  font-size: 15px;
 }
 .site-footer .menu {
   margin: 0;
@@ -4040,7 +4224,7 @@ h3.cnv-image-carousel-title {
   font-size: 16px;
 }
 .site-footer .site-info .copyright p a {
-  color: #eb4135;
+  color: #cb251c;
 }
 .site-footer .site-info .copyright p a:hover {
   color: #668014;
@@ -4145,8 +4329,8 @@ input[type=submit] {
   display: inline-block;
   padding: 11px 30px;
   height: auto;
-  background-color: #eb4135;
-  border: 1px solid #eb4135;
+  background-color: #cb251c;
+  border: 1px solid #cb251c;
   border-radius: 30px;
   font-weight: 500;
 }
@@ -4155,7 +4339,7 @@ input[type=button]:hover,
 input[type=reset]:hover,
 input[type=submit]:hover {
   background-color: transparent;
-  color: #eb4135;
+  color: #cb251c;
 }
 
 .return-to-top {
@@ -4217,12 +4401,12 @@ input[type=submit]:hover {
 }
 .return-to-top:hover:after {
   transform: scale(1.07);
-  background: #eb4135;
-  box-shadow: 0 10px 20px 8px rgba(235, 65, 53, 0.15);
+  background: #cb251c;
+  box-shadow: 0 10px 20px 8px rgba(203, 37, 28, 0.15);
 }
 .home-analytics .return-to-top:hover:after {
-  background: #eb4135;
-  box-shadow: 0 10px 20px 8px rgba(235, 65, 53, 0.15);
+  background: #cb251c;
+  box-shadow: 0 10px 20px 8px rgba(203, 37, 28, 0.15);
 }
 .return-to-top:hover > i {
   text-shadow: 0 -50px #fff, 0 0 #fff;
@@ -4296,7 +4480,7 @@ textarea {
   background: #F1F6FE;
 }
 .post-password-form input[type=submit] {
-  background: #eb4135;
+  background: #cb251c;
   color: #fff;
   border: 0;
   height: 50px;
@@ -4365,7 +4549,7 @@ input[type=checkbox], input[type=radio] {
   content: "";
   width: 12px;
   height: 12px;
-  background: #eb4135;
+  background: #cb251c;
   position: absolute;
   top: 3px;
   left: 3px;
@@ -4426,7 +4610,7 @@ a {
   transition: all 0.3s ease-in-out;
 }
 a:hover, a:focus, a:active {
-  color: #eb4135;
+  color: #cb251c;
   text-decoration: none;
 }
 a:hover, a:active {
@@ -4466,7 +4650,7 @@ a:hover, a:active {
   color: #fff;
 }
 .site-header .cnv-header-topbar__left a:hover, .site-header .cnv-header-topbar__right a:hover {
-  color: #eb4135;
+  color: #cb251c;
 }
 .site-header .cnv-header-topbar__left i, .site-header .cnv-header-topbar__right i {
   font-size: 14px;
@@ -4489,7 +4673,7 @@ a:hover, a:active {
   border-radius: 0;
 }
 .site-header .cnv-header-topbar .cnv-social-links li a:hover i {
-  color: #eb4135 !important;
+  color: #cb251c !important;
 }
 .site-header .cnv-header-topbar__item {
   display: flex;
@@ -4557,7 +4741,7 @@ a:hover, a:active {
   color: #121212;
 }
 .site-header .add-menu li a:hover {
-  color: #eb4135;
+  color: #cb251c;
 }
 .site-header .cnvschool-hamburger {
   width: 34px;
@@ -4691,7 +4875,7 @@ a:hover, a:active {
   font-size: 12px;
 }
 .site-header .site-main-menu li.menu-active > a {
-  color: #eb4135;
+  color: #cb251c;
 }
 .site-header .site-main-menu li .sub-menu {
   background: #fff;
@@ -4747,7 +4931,7 @@ a:hover, a:active {
   }
 }
 .site-header .site-main-menu > li > a {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   color: #121212;
   display: block;
@@ -4757,7 +4941,7 @@ a:hover, a:active {
   text-transform: uppercase;
 }
 .site-header .site-main-menu > li > a:hover {
-  color: #eb4135;
+  color: #cb251c;
 }
 .site-header .site-main-menu > li:not(.mega-menu) {
   position: relative;
@@ -4780,13 +4964,13 @@ a:hover, a:active {
   }
 }
 .site-header .site-main-menu > li.current_page_item > a {
-  color: #eb4135;
+  color: #cb251c;
 }
 .site-header .site-main-menu > li.menu-item-has-children > a {
   position: relative;
 }
 .site-header .site-main-menu > li.menu-item-has-children > a:hover:after {
-  color: #eb4135;
+  color: #cb251c;
 }
 .site-header.submenu-align-right .menu-wrapper {
   width: auto;
@@ -4816,7 +5000,7 @@ a:hover, a:active {
   color: #fff;
 }
 .site-header.header_transparent.header_light:not(.showed) .nav-right .nav-btn {
-  background: #eb4135;
+  background: #cb251c;
   color: #fff;
   border-color: #fff;
 }
@@ -4848,7 +5032,7 @@ a:hover, a:active {
   display: block;
 }
 .site-header.header-fixed.showed .site-main-menu li a:hover {
-  color: #eb4135;
+  color: #cb251c;
 }
 .site-header.header-fixed.showed .site-main-menu li .sub-menu li a:hover {
   color: #fff;
@@ -5280,7 +5464,7 @@ a:hover, a:active {
 ## Page Header
 --------------------------------------------------------------*/
 .page-header, .event-page-header {
-  min-height: 350px;
+  min-height: 250px;
   padding: 50px 0;
   height: auto;
   display: flex;
@@ -5289,16 +5473,7 @@ a:hover, a:active {
   overflow: hidden;
   background-size: cover;
   background-position: center center;
-  background: #eb4135;
-}
-.page-header:after, .event-page-header:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: #cb251c;
 }
 @media (max-width: 991px) {
   .page-header, .event-page-header {
@@ -5312,7 +5487,7 @@ a:hover, a:active {
 }
 .page-header .page-header_title, .event-page-header .page-header_title {
   color: #fff;
-  font-size: 60px;
+  font-size: 46px;
   font-weight: 700;
   position: relative;
   z-index: 2;
@@ -5339,7 +5514,7 @@ a:hover, a:active {
   color: #fff;
 }
 .page-header .breadcrumbs a:hover, .event-page-header .breadcrumbs a:hover {
-  color: #eb4135;
+  color: #cb251c;
 }
 .page-header .breadcrumbs .separator, .event-page-header .breadcrumbs .separator {
   display: inline-block;
@@ -5496,11 +5671,11 @@ a:hover, a:active {
   transition: all 0.3s ease-in-out;
 }
 .widget ul li a:hover {
-  color: #eb4135;
+  color: #cb251c;
 }
 
 .site-footer .widget_nav_menu ul li a:hover {
-  color: #eb4135;
+  color: #cb251c;
 }
 
 @media (max-width: 991px) {
@@ -5645,7 +5820,7 @@ a:hover, a:active {
 .widget_rss a:hover,
 .widget_pages a:hover,
 .widget_nav_menu a:hover {
-  color: #eb4135;
+  color: #cb251c;
 }
 
 .widget_recent_comments ul {
@@ -5783,7 +5958,7 @@ a:hover, a:active {
 }
 
 .widget_calendar td#today {
-  background: #eb4135;
+  background: #cb251c;
   color: #fff;
   border-radius: 3px;
 }
@@ -5820,8 +5995,8 @@ a:hover, a:active {
   line-height: 1.7;
 }
 .tagcloud a:hover {
-  color: #eb4135;
-  border-color: #eb4135;
+  color: #cb251c;
+  border-color: #cb251c;
 }
 .tagcloud .tagcloud {
   margin-top: 20px;
@@ -5855,7 +6030,7 @@ a:hover, a:active {
   line-height: 1.2;
 }
 .cnvschool-widget-recent-posts .post-title a:hover {
-  color: #eb4135;
+  color: #cb251c;
 }
 .cnvschool-widget-recent-posts .date {
   color: #71717c;
@@ -5961,7 +6136,7 @@ a:hover, a:active {
   z-index: -1;
   border-radius: 4px;
   transition: all 0.3s ease-in-out;
-  background-color: #eb4135;
+  background-color: #cb251c;
 }
 .author-about-widget .author-social-link li a i.fa-facebook:after {
   background-color: #405fa4;
@@ -6003,7 +6178,7 @@ a:hover, a:active {
   line-height: 1;
 }
 .tagcloud a:hover {
-  background-color: #eb4135;
+  background-color: #cb251c;
   color: #fff;
   position: relative;
   z-index: 2;
@@ -6024,13 +6199,13 @@ a:hover, a:active {
   bottom: 0;
   width: 51px;
   height: 3px;
-  background: #eb4135;
+  background: #cb251c;
 }
 .site-footer .widget-title:after, .site-footer h2:after, .site-footer h3:after, .site-footer h4:after, .site-footer h5:after, .site-footer h6:after {
   width: 10px;
   left: 56px;
-  border-right: 10px solid #eb4135;
-  box-shadow: 15px 0 0 0 #eb4135;
+  border-right: 10px solid #cb251c;
+  box-shadow: 15px 0 0 0 #cb251c;
 }
 .site-footer .widget {
   margin-bottom: 30px;
@@ -6055,10 +6230,10 @@ a:hover, a:active {
   color: #CDD0D3;
 }
 .site-footer .widget ul li a:hover {
-  color: #eb4135;
+  color: #cb251c;
 }
 .site-footer .widget ul li a:hover .post-count {
-  color: #eb4135;
+  color: #cb251c;
 }
 .site-footer .widget ul li .rsswidget {
   color: #fff;
@@ -6103,7 +6278,7 @@ a:hover, a:active {
   letter-spacing: 1px;
   height: 46px;
   outline: 0;
-  border: 1px solid #eb4135;
+  border: 1px solid #cb251c;
 }
 .site-footer .cnvschool-newsletter-widget .newsletter-inner .newsletter-submit .fa-spin {
   display: none;
@@ -6125,7 +6300,7 @@ a:hover, a:active {
   border-top-color: rgba(255, 255, 255, 0.2);
 }
 .site-footer.footer_dark .calendar_wrap caption {
-  background: #eb4135;
+  background: #cb251c;
   color: #ffffff;
 }
 .site-footer.footer_dark .widget_recent_comments .recentcomments:before, .site-footer.footer_dark .widget_rss a {
@@ -6213,7 +6388,7 @@ a:hover, a:active {
   color: #121212;
 }
 .widget .wp-block-latest-posts li > a:hover {
-  color: #eb4135;
+  color: #cb251c;
 }
 
 .wp-block-latest-posts__featured-image img {
@@ -6252,8 +6427,8 @@ a:hover, a:active {
 }
 .wp-block-tag-cloud a:hover {
   color: #fff;
-  background-color: #eb4135;
-  border-color: #eb4135;
+  background-color: #cb251c;
+  border-color: #cb251c;
 }
 
 .cnvschool-block-social-link {
@@ -6280,9 +6455,9 @@ a:hover, a:active {
   transition: all 0.3s ease-in-out;
 }
 .cnvschool-block-social-link li a:hover {
-  background: #eb4135;
-  border-color: #eb4135;
-  box-shadow: 0 20px 30px 0 rgba(235, 65, 53, 0.34);
+  background: #cb251c;
+  border-color: #cb251c;
+  box-shadow: 0 20px 30px 0 rgba(203, 37, 28, 0.34);
   color: #fff;
 }
 
@@ -6344,10 +6519,10 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 .blog-list .post.sticky {
   display: block;
-  border-color: #eb4135;
+  border-color: #cb251c;
 }
 .blog-list .post.sticky .blog-content .entry-title a {
-  color: #eb4135;
+  color: #cb251c;
 }
 
 .no-results .page-content {
@@ -6447,10 +6622,10 @@ a:hover, a:active {
   font-weight: 500;
   line-height: 1;
   color: #fff;
-  background-color: #eb4135;
+  background-color: #cb251c;
 }
 .related-post .post-meta li a:hover {
-  background-color: #eb4135;
+  background-color: #cb251c;
   color: #fff;
 }
 .related-post .post-meta li a:not(:last-child) {
@@ -6475,10 +6650,10 @@ a:hover, a:active {
   font-weight: 400;
 }
 .related-post .post-footer-meta li a:hover {
-  color: #eb4135;
+  color: #cb251c;
 }
 .related-post .post-footer-meta li i {
-  color: #eb4135;
+  color: #cb251c;
   margin-right: 10px;
 }
 .related-post .blog-content {
@@ -6494,7 +6669,7 @@ a:hover, a:active {
   color: #212d46;
 }
 .related-post .blog-content .post-title a:hover {
-  color: #eb4135;
+  color: #cb251c;
 }
 
 .share_social-wpapper {
@@ -6538,8 +6713,8 @@ a:hover, a:active {
 }
 .social-share-link li a:hover {
   color: #fff;
-  background-color: #eb4135;
-  border-color: #eb4135;
+  background-color: #cb251c;
+  border-color: #cb251c;
 }
 
 .cnvschool-btn-link {
@@ -6634,12 +6809,12 @@ a:hover, a:active {
   line-height: 1.4;
 }
 .single-post-nav:hover i {
-  background-color: #eb4135;
+  background-color: #cb251c;
   color: #fff;
-  border-color: #eb4135;
+  border-color: #cb251c;
 }
 .single-post-nav:hover .post-title {
-  color: #eb4135;
+  color: #cb251c;
 }
 
 @media (max-width: 767px) {
@@ -6717,7 +6892,7 @@ blockquote:before, .wp-block-quote:before {
   height: 60px;
   width: 60px;
   line-height: 60px;
-  background-color: #eb4135;
+  background-color: #cb251c;
   color: #fff;
   border-radius: 50%;
   text-align: center;
@@ -6903,7 +7078,7 @@ blockquote cite, .wp-block-quote cite {
   font-weight: 400;
 }
 .post-single .single-tagcloud a:hover {
-  color: #eb4135;
+  color: #cb251c;
 }
 
 .single-post-header-bg {
@@ -7008,7 +7183,7 @@ blockquote cite, .wp-block-quote cite {
   color: #fff;
 }
 .feature-image-banner .single-post-header .post-meta a:hover {
-  color: #eb4135;
+  color: #cb251c;
 }
 
 .blog-share {
@@ -7053,9 +7228,9 @@ blockquote cite, .wp-block-quote cite {
   border: 1px solid #e5dada;
 }
 .share-link li a:hover {
-  background: #eb4135;
+  background: #cb251c;
   color: #fff;
-  border-color: #eb4135;
+  border-color: #cb251c;
 }
 
 .post-single .wp-block-search {
@@ -7128,11 +7303,11 @@ blockquote cite, .wp-block-quote cite {
 }
 .page-links a:hover,
 .page-links .current:hover {
-  background: #eb4135;
+  background: #cb251c;
   color: #fff;
 }
 .page-links .current {
-  background: #eb4135;
+  background: #cb251c;
   color: #fff;
 }
 
@@ -7175,7 +7350,7 @@ blockquote cite, .wp-block-quote cite {
 }
 .post-navigation .nav-links .nav-previous:hover,
 .post-navigation .nav-links .nav-next:hover {
-  background: #eb4135;
+  background: #cb251c;
 }
 .post-navigation .nav-links .nav-previous {
   padding-right: 30px;
@@ -7338,7 +7513,7 @@ blockquote cite, .wp-block-quote cite {
   border: 0;
   background: transparent;
   padding: 10px 20px;
-  color: #eb4135;
+  color: #cb251c;
   font-size: 22px;
 }
 
@@ -7390,8 +7565,8 @@ blockquote cite, .wp-block-quote cite {
 #post-pagination .page-numbers li a .current,
 #post-pagination .page-numbers li span:hover,
 #post-pagination .page-numbers li span .current {
-  background: #eb4135;
-  border-color: #eb4135;
+  background: #cb251c;
+  border-color: #cb251c;
   color: #fff;
 }
 #post-pagination .page-numbers li a:hover a,
@@ -7402,9 +7577,9 @@ blockquote cite, .wp-block-quote cite {
 }
 #post-pagination .page-numbers li a.current,
 #post-pagination .page-numbers li span.current {
-  background: #eb4135;
+  background: #cb251c;
   color: #fff;
-  border-color: #eb4135;
+  border-color: #cb251c;
 }
 #post-pagination .page-numbers li i {
   font-size: 20px;
@@ -7449,8 +7624,8 @@ blockquote cite, .wp-block-quote cite {
 .woocommerce nav.woocommerce-pagination .page-numbers li a.current, .woocommerce nav.woocommerce-pagination .page-numbers li a:hover,
 .woocommerce nav.woocommerce-pagination .page-numbers li span.current,
 .woocommerce nav.woocommerce-pagination .page-numbers li span:hover {
-  background: #eb4135;
-  border-color: #eb4135;
+  background: #cb251c;
+  border-color: #cb251c;
 }
 .woocommerce nav.woocommerce-pagination .page-numbers li i {
   font-size: 14px;
@@ -7471,7 +7646,7 @@ blockquote cite, .wp-block-quote cite {
 }
 .woocommerce nav.woocommerce-pagination .page-numbers li:hover,
 .woocommerce nav.woocommerce-pagination .page-numbers li .current {
-  background: #eb4135;
+  background: #cb251c;
   color: #fff;
 }
 .woocommerce nav.woocommerce-pagination .page-numbers li:hover a,
@@ -7479,7 +7654,7 @@ blockquote cite, .wp-block-quote cite {
   color: #fff;
 }
 .woocommerce nav.woocommerce-pagination .page-numbers li.current {
-  background: #eb4135;
+  background: #cb251c;
   color: #fff;
 }
 .woocommerce .pprefix-post-navigation {
@@ -7538,7 +7713,7 @@ blockquote cite, .wp-block-quote cite {
   height: 100%;
   left: 0;
   top: 0;
-  background: rgba(235, 65, 53, 0.8);
+  background: rgba(203, 37, 28, 0.8);
   opacity: 0;
   transition: all 0.3s ease-in-out;
 }
@@ -7580,7 +7755,7 @@ blockquote cite, .wp-block-quote cite {
   line-height: 40px;
   text-align: center;
   background: #fff;
-  color: #eb4135;
+  color: #cb251c;
   cursor: pointer;
   outline: 0;
   border-radius: 50%;
@@ -7663,10 +7838,10 @@ blockquote cite, .wp-block-quote cite {
   color: #878793;
 }
 .widget_search .search-form input:focus {
-  border-color: #eb4135;
+  border-color: #cb251c;
 }
 .widget_search .search-form .search-submit {
-  background-color: #eb4135;
+  background-color: #cb251c;
   border: 0;
   padding: 12px 18px 10px 20px;
   color: #fff;
@@ -7697,7 +7872,7 @@ blockquote cite, .wp-block-quote cite {
   width: 60px;
   line-height: 65px;
   border-radius: 50%;
-  background-color: #eb4135;
+  background-color: #cb251c;
   color: #fff;
   z-index: 9999999;
   opacity: 5;
@@ -7782,7 +7957,7 @@ blockquote cite, .wp-block-quote cite {
   }
 }
 #search-menu-wrapper .search-form button:hover {
-  color: #eb4135;
+  color: #cb251c;
 }
 
 .sea-wrapper .search-form {
@@ -7797,7 +7972,7 @@ blockquote cite, .wp-block-quote cite {
   margin: 0;
 }
 .sea-wrapper .search-form .search-submit {
-  background: #eb4135;
+  background: #cb251c;
   color: #fff;
   border: 0;
   height: 54px;
@@ -7820,7 +7995,7 @@ blockquote cite, .wp-block-quote cite {
   align-items: center;
 }
 .author-info_wrapper .author {
-  color: #eb4135;
+  color: #cb251c;
   margin-bottom: 3px;
 }
 @media (max-width: 480px) {
@@ -7897,7 +8072,7 @@ blockquote cite, .wp-block-quote cite {
   color: #6d6d6d;
 }
 .author-info_social-wrapper a:hover {
-  color: #eb4135;
+  color: #cb251c;
 }
 
 .author-info_title {
@@ -8046,7 +8221,7 @@ blockquote cite, .wp-block-quote cite {
   margin-right: 5px;
 }
 .comment-list .comment .comment-body .comment-reply-link:hover {
-  color: #eb4135;
+  color: #cb251c;
 }
 .comment-list .comment .children {
   margin: 0;
@@ -8072,7 +8247,7 @@ blockquote cite, .wp-block-quote cite {
 }
 #comments .comment-list .comment-respond #cancel-comment-reply-link {
   font-size: 15px;
-  color: #eb4135;
+  color: #cb251c;
   margin-left: 10px;
   font-weight: 600;
 }
@@ -8123,9 +8298,9 @@ blockquote cite, .wp-block-quote cite {
 }
 .comment-form #submit {
   margin-bottom: 0;
-  background-color: #eb4135;
+  background-color: #cb251c;
   color: #fff;
-  border: 2px solid #eb4135;
+  border: 2px solid #cb251c;
   padding: 11px 20px;
   width: 100%;
   max-width: 200px;
@@ -8135,8 +8310,8 @@ blockquote cite, .wp-block-quote cite {
   border-radius: 6px;
 }
 .comment-form #submit:hover {
-  color: #eb4135;
-  border-color: #eb4135;
+  color: #cb251c;
+  border-color: #cb251c;
   background: transparent;
 }
 .comment-form .comment-form-cookies-consent {
@@ -8189,7 +8364,7 @@ blockquote cite, .wp-block-quote cite {
   font-size: inherit;
 }
 .comment-form .comment-form-cookies-consent input[type=checkbox]:checked + label:before {
-  background: #eb4135;
+  background: #cb251c;
   border: none;
 }
 .comment-form .comment-form-cookies-consent input[type=checkbox]:checked + label:after {
@@ -8211,7 +8386,7 @@ blockquote cite, .wp-block-quote cite {
 }
 #review_form input[type=text]:focus,
 #review_form textarea:focus {
-  border-color: rgba(235, 65, 53, 0.5);
+  border-color: rgba(203, 37, 28, 0.5);
 }
 
 @media (max-width: 991px) {
@@ -8356,7 +8531,7 @@ iframe {
   line-height: 1.2;
 }
 .wp-block-button .wp-block-button__link:hover {
-  background: #eb4135;
+  background: #cb251c;
   color: #fff;
 }
 .wp-block-button .wp-block-button__link br {
@@ -8368,8 +8543,8 @@ iframe {
   border-color: #121212;
 }
 .wp-block-button.is-style-outline .wp-block-button__link:hover {
-  border-color: #eb4135;
-  color: #eb4135;
+  border-color: #cb251c;
+  color: #cb251c;
 }
 .wp-block-button.is-style-squared .wp-block-button__link {
   border-radius: 0;
@@ -8505,7 +8680,7 @@ iframe {
 .entry .entry-content .wp-block-archives li a:hover,
 .entry .entry-content .wp-block-categories li a:hover,
 .entry .entry-content .wp-block-latest-posts li a:hover {
-  color: #eb4135;
+  color: #cb251c;
 }
 .entry .entry-content .wp-block-archives li .children,
 .entry .entry-content .wp-block-categories li .children,
@@ -8562,7 +8737,7 @@ pre.wp-block-preformatted {
   display: inline-block;
 }
 .wp-block-latest-comments__comment .wp-block-latest-comments__comment-meta a:hover {
-  color: #eb4135;
+  color: #cb251c;
 }
 
 .wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
@@ -8618,7 +8793,7 @@ pre.wp-block-preformatted {
   padding: 0 15px;
 }
 .wp-block-search .wp-block-search__button:hover {
-  background: #eb4135;
+  background: #cb251c;
   color: #fff;
 }
 
@@ -8736,7 +8911,7 @@ pre.wp-block-preformatted {
   text-decoration: none;
 }
 .site-footer.footer_dark .wp-calendar-nav a:hover {
-  color: #eb4135;
+  color: #cb251c;
 }
 
 .wp-block-calendar a {

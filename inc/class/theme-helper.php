@@ -79,7 +79,7 @@ if ( ! class_exists( 'CNV_Theme_Helper' ) ) {
 				echo '<a href="';
 				echo esc_url( home_url( '/' ) );
 				echo '">';
-				echo esc_html__( 'Home', 'cnvschool' );
+				echo esc_html__( 'মুলপাতা', 'cnvschool' );
 				echo '</a>' . $brseparator;
 				if ( is_category() || is_single() ) {
 					$categories = get_the_category();
@@ -132,7 +132,7 @@ if ( ! class_exists( 'CNV_Theme_Helper' ) ) {
 				} elseif ( is_post_type_archive( 'notice' ) ) {
 					echo "<span>" . esc_html__( 'Notice', 'cnvschool' );
 				} elseif ( is_post_type_archive( 'gallery' ) ) {
-					echo "<span>" . esc_html__( 'Gallery', 'cnvschool' );
+					echo "<span>" . esc_html__( 'গ্যালারি', 'cnvschool' );
 				}
 				echo '</div>';
 			} else {
@@ -145,7 +145,7 @@ if ( ! class_exists( 'CNV_Theme_Helper' ) ) {
 				if ( isset( $cnv_opt['blog_header_text'] ) && $cnv_opt['blog_header_text'] != "" ) {
 					echo esc_html( $cnv_opt['blog_header_text'] );
 				} else {
-					echo esc_html__( 'Blog', 'cnvschool' );
+					echo esc_html__( 'নিউজ এবং ইভেন্ট', 'cnvschool' );
 				}
 				echo '</div>';
 			}

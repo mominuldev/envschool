@@ -1,46 +1,54 @@
 <?php
 // Control core classes for avoid errors
-if( class_exists( 'CSF' ) ) {
+if ( class_exists( 'CSF' ) ) {
 
 	//
 	// Create a widget 1
 	//
 	CSF::createWidget( 'contact_widget', array(
-		'title'       => __('Contact Info', 'cnv-school'),
+		'title'       => __( 'Contact Info', 'cnv-school' ),
 		'classname'   => 'cnv-contact__widget',
 		'description' => 'A description for widget example 1',
 		'fields'      => array(
+
+			// Title
+			array(
+				'id' => 'title',
+				'type' => 'text',
+				'title' => __( 'Title', 'cnv-school' ),
+				'desc' => __( 'Enter your title here.', 'cnv-school' ),
+			),
 
 			// School Name
 			array(
 				'id'    => 'description',
 				'type'  => 'text',
-				'title' => __('Description', 'cnv-school'),
-				'desc'  => __('Enter contact description here.', 'cnv-school'),
+				'title' => __( 'Description', 'cnv-school' ),
+				'desc'  => __( 'Enter contact description here.', 'cnv-school' ),
 			),
 
 			// Phone Number
 			array(
 				'id'    => 'phone_number',
 				'type'  => 'text',
-				'title' => __('Phone Number', 'cnv-school'),
-				'desc'  => __('Enter your phone number here.', 'cnv-school'),
+				'title' => __( 'Phone Number', 'cnv-school' ),
+				'desc'  => __( 'Enter your phone number here.', 'cnv-school' ),
 			),
 
 			// Email Address
 			array(
 				'id'    => 'email_address',
 				'type'  => 'text',
-				'title' => __('Email Address', 'cnv-school'),
-				'desc'  => __('Enter your email address here.', 'cnv-school'),
+				'title' => __( 'Email Address', 'cnv-school' ),
+				'desc'  => __( 'Enter your email address here.', 'cnv-school' ),
 			),
 
 			// Address
 			array(
 				'id'    => 'address',
 				'type'  => 'text',
-				'title' => __('Address', 'cnv-school'),
-				'desc'  => __('Enter your address here.', 'cnv-school'),
+				'title' => __( 'Address', 'cnv-school' ),
+				'desc'  => __( 'Enter your address here.', 'cnv-school' ),
 			),
 
 		)
@@ -50,7 +58,7 @@ if( class_exists( 'CSF' ) ) {
 	// Front-end display of widget example 1
 	// Attention: This function named considering above widget base id.
 	//
-	if( ! function_exists( 'contact_widget' ) ) {
+	if ( ! function_exists( 'contact_widget' ) ) {
 		function contact_widget( $args, $instance ) {
 
 			echo $args['before_widget'];
@@ -61,22 +69,22 @@ if( class_exists( 'CSF' ) ) {
 
 			?>
 
-            <?php if( ! empty( $instance['description'] )) : ?>
+			<?php if ( ! empty( $instance['description'] ) ) : ?>
                 <p class="cnv-footer-contact-description"><?php echo $instance['description']; ?></p>
-            <?php endif; ?>
+			<?php endif; ?>
 
             <ul class="cnv-footer-contact-info">
-	            <?php if( ! empty( $instance['address'] )) : ?>
+				<?php if ( ! empty( $instance['address'] ) ) : ?>
                     <li><i class="fa-solid fa-map-location-dot"></i> <?php echo $instance['address']; ?></li>
-	            <?php endif; ?>
+				<?php endif; ?>
 
-                <?php if( ! empty( $instance['email_address'] )) : ?>
+				<?php if ( ! empty( $instance['email_address'] ) ) : ?>
                     <li><i class="fa-solid fa-envelope"></i> <?php echo $instance['email_address']; ?></li>
-                <?php endif; ?>
+				<?php endif; ?>
 
-	            <?php if( ! empty( $instance['phone_number'] )) : ?>
+				<?php if ( ! empty( $instance['phone_number'] ) ) : ?>
                     <li><i class="fa-solid fa-phone-volume"></i> <?php echo $instance['phone_number']; ?></li>
-	            <?php endif; ?>
+				<?php endif; ?>
             </ul>
 
 			<?php

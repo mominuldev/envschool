@@ -712,7 +712,7 @@ if ( class_exists( 'CSF' ) ) {
 				'max'     => 550,
 				'step'    => 1,
 				'unit'    => 'px',
-				'default' => 350,
+				'default' => 250,
 				'output'  => [
 					'min-height' => '.page-header',
 				]
